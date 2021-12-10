@@ -1,4 +1,21 @@
 header{
+  /* border-bottom: 1px solid #EFEFEF;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr 23.1rem;
+  grid-template-rows: 7.3rem 6.6rem;
+  grid-template-areas: "logo telephone"
+                        "nav login";
+  align-items: center; */
+  /* margin-left: 4.9rem; */
+  position: relative;
+}
+
+.header{
   border-bottom: 1px solid #EFEFEF;
   background-color: #fff;
   position: fixed;
@@ -11,7 +28,6 @@ header{
   grid-template-areas: "logo telephone"
                         "nav login";
   align-items: center;
-  /* margin-left: 4.9rem; */
 }
 
 .logo,
@@ -51,6 +67,8 @@ header{
 nav.menu{
   grid-area: nav;
   padding-left: 4.9rem;
+  border-bottom: 1px solid #EFEFEF;
+
 }
 
 nav.menu ul{
@@ -83,10 +101,11 @@ nav.menu ul li a img{
 
 /* DROPDOWN */
 .menu-dropdown{
-  /* margin-top: 13.9rem; */
-  /* display: none; */
-  /* border: 1px solid red; */
+  display: none;
   background-color: #fff;
+  position: absolute;
+  top: 0.1rem;
+  width: 100%;
 }
 
 .menu-dropdown .container{
@@ -96,6 +115,7 @@ nav.menu ul li a img{
 
 /* MENU USING CLOVERSECURITY.COM */
 .dropdown-using{
+  /* display: none; */
   display: flex;
   gap: 4.5rem;
 }
@@ -131,6 +151,7 @@ nav.menu ul li a img{
 
 /* MENU UNDERSTANDING DATA SECURITY */
 .menu-dropdown .dropdown-understand{
-  /* border: 1px solid red; */
-  display: none;
+  display: flex;
+  gap: 4.5rem;
+
 }
