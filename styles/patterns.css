@@ -31,7 +31,6 @@
 }
 
 /****** BUTTONS *******/
-
 .btn1{
   text-transform: uppercase;
   background-color: #FFFFFF;
@@ -46,6 +45,7 @@
 
 .btn2{
   background-color: #228800;
+  border: none;
   
 }
 

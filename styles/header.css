@@ -1,3 +1,136 @@
+header{
+  border-bottom: 1px solid #EFEFEF;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr 23.1rem;
+  grid-template-rows: 7.3rem 6.6rem;
+  grid-template-areas: "logo telephone"
+                        "nav login";
+  align-items: center;
+  /* margin-left: 4.9rem; */
+}
+
+.logo,
+.phone-number,
+.menu,
+.login{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  grid-area: logo;
+  padding-left: 4.9rem;
+  background-color: #FBFBFB;
+}
+
+.logo a{
+  width: 100%;
+  max-width: 22.9rem;
+  height: 2.8rem;
+  background: url('../assets/svg/logo.svg') no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.phone-number{
+  background-color: #FBFBFB;
+}
+
+.phone-number a{
+  grid-area: telephone;
+  margin-left: auto;
+  padding-right: 4.9rem;
+}
+
+nav.menu{
+  grid-area: nav;
+  padding-left: 4.9rem;
+}
+
+nav.menu ul{
+  display: flex;
+  gap: 5.7rem;
+}
+
+nav.menu ul li a{
+  color: #000;
+  font-weight: 400;
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav.menu ul li a img{
+  padding-bottom: 0.5rem;
+}
+
+.login{
+  grid-area: login;
+}
+
+.login button.btn2{
+  width: 100%;
+  min-height: 6.6rem;
+}
+
+
+
+
+/* DROPDOWN */
 .menu-dropdown{
+  /* margin-top: 13.9rem; */
+  /* display: none; */
+  /* border: 1px solid red; */
+  background-color: #fff;
+}
+
+.menu-dropdown .container{
+  max-width: 100%;
+  padding: 4.7rem 4.9rem 6.1rem;
+}
+
+/* MENU USING CLOVERSECURITY.COM */
+.dropdown-using{
+  display: flex;
+  gap: 4.5rem;
+}
+
+.dropdown-txt{
+  width: 100%;
+  max-width: 25.1rem;
+}
+
+.dropdown-txt h3{
+  font-weight: 300;
+  text-decoration: underline;
+  margin-bottom: 2.1rem;
+}
+
+.menu-dropdown nav{
+  display: flex;
+  gap: 4.5rem;
+}
+.menu-dropdown nav ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2.9rem;
+}
+
+.menu-dropdown nav ul li a{
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #000;
+}
+
+
+
+/* MENU UNDERSTANDING DATA SECURITY */
+.menu-dropdown .dropdown-understand{
+  /* border: 1px solid red; */
   display: none;
 }

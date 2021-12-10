@@ -9,21 +9,30 @@
   <link rel="stylesheet" href="./styles/font.css">
   <link rel="stylesheet" href="./styles/patterns.css">
   <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/main.css">
 
 </head>
 <body>
   <header>
     <div class="logo">
-      <a href="index.html"><img src="./assets/svg/logo.svg" alt="Clover Security"></a>
+      <a href="index.html"></a>
     </div>
     <div class="phone-number">
-      <img src="./assets/svg/contact.svg" alt="Telephone icon">
+      <a href="">
+        <img src="./assets/svg/contact.svg" alt="Telephone icon">
+      </a>
     </div>
     <nav class="menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#" class="dropdown-using">Using cloversecurity.com</a></li>
-        <li><a href="#" class="dropdown-understanding">Understanding Data Security</a></li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#" class="dropdown-using">Using cloversecurity.com <img src="./assets/svg/dropdown-icon.svg" alt="Dropdown icon"></a>
+        </li>
+        <li>
+          <a href="#" class="dropdown-understanding">Understanding Data Security <img src="./assets/svg/dropdown-icon.svg" alt="Dropdown icon"></a>
+        </li>
       </ul>
     </nav>
     <div class="login">
@@ -31,15 +40,16 @@
         <a href="">Log in</a>
       </button>
     </div>
-  </header>
 
-  <!-- DROPDOWN -->
-  <div class="menu-dropdown">
-    <div class="container">
-      <div class="dropdown-using">
-        <div class="dropdown-txt">
-          <h3>View Learning Center</h3>
-          <p>Visit the Learning Center welcome page. Here'll find a step by step guide on how to use the Clover Security portal.</p>
+    <!-- DROPDOWN -->
+    <div class="menu-dropdown">
+      <div class="container">
+        <!-- MENU USING CLOVERSECURITY.COM -->
+        <div class="dropdown-using">
+          <div class="dropdown-txt">
+            <h3>View Learning Center</h3>
+            <p>Visit the Learning Center welcome page. Here'll find a step by step guide on how to use the Clover Security portal.</p>
+          </div>
           <nav>
             <ul class="dropdown-using_column1">
               <li><a href="">Logging In And Registering</a></li>
@@ -56,12 +66,13 @@
             </ul>
           </nav>
         </div>
-      </div>
 
-      <div class="dropdown-understand">
-        <div class="dropdown-txt">
-          <h3>Understanding Data Security</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+        <!-- MENU UNDERSTANDING DATA SECURITY -->
+        <div class="dropdown-understand">
+          <div class="dropdown-txt">
+            <h3>Understanding Data Security</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+          </div>
           <nav>
             <ul >
               <li><a href="">Education Videos</a></li>
@@ -69,10 +80,11 @@
               <li><a href="">Useful Links</a></li>
             </ul>
           </nav>
+          
         </div>
       </div>
     </div>
-  </div>
+  </header>
 
   <main>
     <!-- HERO -->
