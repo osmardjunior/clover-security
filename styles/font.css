@@ -1,26 +1,61 @@
 @font-face {
   font-family: "Graphik";
-  src: url('./assets/fonts/Graphik-Light.woff') format('woff');
+  src: url('../assets/fonts/Graphik-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Graphik";
-  src: url('./assets/fonts/Graphik-Regular.woff') format('woff');
+  src: url('../assets/fonts/Graphik-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Graphik";
-  src: url('./assets/fonts/Graphik-Medium.woff') format('woff');
+  src: url('../assets/fonts/Graphik-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
+/****** TYPOGRAPHY *****/
 h1{
-  font-family: "Graphik";
-  font-weight: 500;
-  font-style: normal;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 46px;
 }
+
+h2{
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+h3{
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+h4{
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+}
+
+h5{
+  font-size: 1.8rem;
+  line-height: 4.6rem;
+}
+
+h6{
+  font-size: 1.7rem; 
+  line-height: 1.5rem;
+}
+
+h3, h4, h5, h6{
+  font-weight: 500;
+}
+
+p{
+  line-height: 2.4rem;
+} 

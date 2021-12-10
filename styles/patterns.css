@@ -1,0 +1,67 @@
+/********** VARIABLES ***********/
+:root{
+  --white1: #fff;
+  --white2: #FBFBFB;
+  --white3: #EFEFEF;
+  --black: #000;
+  --green: #228800;
+  --gray1: #BFBFBF;
+  --gray2: #CCCCCC;
+  --gray3: #DDDDDD;
+  --gray4: #E5E5E5;
+  --gray5: #EDEDED;
+}
+
+.container{
+  width: 100%;
+  max-width: 119rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.menu{
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+}
+
+.tab-name{
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+/****** BUTTONS *******/
+
+.btn1{
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+}
+
+.btn1 a{
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 3.8rem;
+}
+
+.btn2{
+  background-color: #228800;
+  
+}
+
+.btn2 a{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+
+/***** LINKS ******/
+.link{
+  color: var(--green);
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 2.6rem;
+}
