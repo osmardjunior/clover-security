@@ -64,6 +64,18 @@ header{
   padding-right: 4.9rem;
 }
 
+.login{
+  grid-area: login;
+  /* border-bottom: 1px solid var(--line2); */
+}
+
+.login button.btn2{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*** MENU NAV ***/
 nav.menu{
   grid-area: nav;
   padding-left: 4.9rem;
@@ -86,17 +98,8 @@ nav.menu ul li a img{
   padding-bottom: 0.5rem;
 }
 
-.login{
-  grid-area: login;
-  /* border-bottom: 1px solid var(--line2); */
-}
 
-.login button.btn2{
-  width: 100%;
-  height: 100%;
-}
-
-/* HEADER ACTIVE */
+/**** HEADER ACTIVE ****/
 .header.active{
   grid-template-columns: 27.8rem 1fr 23.1rem;
   grid-template-rows: 7.3rem;
@@ -115,26 +118,25 @@ nav.menu ul li a img{
 
 
 
-/* DROPDOWN */
-.menu-dropdown{
-  display: none;
+/**** DROPDOWN ****/
+.menu-dropdown1,
+.menu-dropdown2{
   background-color: var(--white);
   position: absolute;
   top: 0.1rem;
   width: 100%;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all .2s;
 }
 
-.menu-dropdown .container{
+.menu-dropdown1 .container,
+.menu-dropdown2 .container{
   max-width: 100%;
   padding: 4.7rem 4.9rem 6.1rem;
 }
 
-/* MENU USING CLOVERSECURITY.COM */
-.dropdown-using{
-  /* display: none; */
-  display: flex;
-  gap: 4.5rem;
-}
 
 .dropdown-txt{
   width: 100%;
@@ -147,27 +149,41 @@ nav.menu ul li a img{
   margin-bottom: 2.1rem;
 }
 
-.menu-dropdown nav{
+.menu-dropdown1 nav,
+.menu-dropdown2 nav{
   display: flex;
   gap: 4.5rem;
 }
-.menu-dropdown nav ul{
+.menu-dropdown1 nav ul,
+.menu-dropdown2 nav ul{
   display: flex;
   flex-direction: column;
   gap: 2.9rem;
 }
 
-.menu-dropdown nav ul li a{
+.menu-dropdown1 nav ul li a,
+.menu-dropdown2 nav ul li a{
   font-size: 2.4rem;
   line-height: 3rem;
   color: var(--black);
 }
 
-
-
-/* MENU UNDERSTANDING DATA SECURITY */
-.menu-dropdown .dropdown-understand{
+/* MENU USING CLOVERSECURITY.COM */
+.top-dropdown_menu1{
   display: flex;
   gap: 4.5rem;
+}
 
+/* MENU UNDERSTANDING DATA SECURITY */
+.top-dropdown_menu2{
+  display: flex;
+  gap: 4.5rem; 
+}
+
+
+.menu-dropdown1.active,
+.menu-dropdown2.active,
+.header.active .menu-dropdown1.active{
+  opacity: 1;
+  pointer-events: all;
 }
