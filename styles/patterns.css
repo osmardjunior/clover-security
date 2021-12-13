@@ -1,5 +1,27 @@
 /********** VARIABLES ***********/
+
+/* 
+  background1: #fff;
+  background2: #FBFBFB;
+  background3: #EEFFEE;
+  green1: #228800;
+  green-title-hero: #226600;
+  black1: #000;
+  linha-hr: #E5E5E5;
+  font-cinza: #BFBFBF
+
+  background-article: #F0F0F0;
+
+  background-hero: #2288000D;
+
+  BUTTONS
+  borda-button: #CCCCCC;
+  background-button: #fff;
+
+
+*/
 :root{
+  
   --white1: #fff;
   --white2: #FBFBFB;
   --white3: #EFEFEF;
@@ -17,7 +39,6 @@
   max-width: 119rem;
   margin: 0 auto;
   padding: 0 2.4rem;
-  background-color: lightpink;
 }
 
 .menu{
