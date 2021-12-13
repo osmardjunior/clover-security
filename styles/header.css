@@ -16,8 +16,8 @@ header{
 }
 
 .header{
-  border-bottom: 1px solid #EFEFEF;
-  background-color: #fff;
+  border-bottom: 1px solid var(--line2);
+  background-color: var(--white);
   position: fixed;
   top: 0;
   left: 0;
@@ -31,7 +31,7 @@ header{
 }
 
 .logo,
-.phone-number,
+.phone,
 .menu,
 .login{
   height: 100%;
@@ -42,7 +42,7 @@ header{
 .logo{
   grid-area: logo;
   padding-left: 4.9rem;
-  background-color: #FBFBFB;
+  background-color: var(--bg1);
 }
 
 .logo a{
@@ -54,12 +54,12 @@ header{
   display: inline-block;
 }
 
-.phone-number{
-  background-color: #FBFBFB;
+.phone{
+  background-color: var(--bg1);
+  grid-area: telephone;
 }
 
-.phone-number a{
-  grid-area: telephone;
+.phone a{
   margin-left: auto;
   padding-right: 4.9rem;
 }
@@ -67,8 +67,8 @@ header{
 nav.menu{
   grid-area: nav;
   padding-left: 4.9rem;
-  border-bottom: 1px solid #EFEFEF;
-
+  border-bottom: 1px solid var(--line2);
+  /* border: 1px solid blue; */
 }
 
 nav.menu ul{
@@ -88,11 +88,28 @@ nav.menu ul li a img{
 
 .login{
   grid-area: login;
+  /* border-bottom: 1px solid var(--line2); */
 }
 
 .login button.btn2{
   width: 100%;
-  min-height: 6.6rem;
+  height: 100%;
+}
+
+/* HEADER ACTIVE */
+.header.active{
+  grid-template-columns: 27.8rem 1fr 23.1rem;
+  grid-template-rows: 7.3rem;
+  grid-template-areas: "logo nav login";
+}
+
+.header.active .logo{
+  background-color: var(--white);
+  /* border: 1px solid red; */
+}
+
+.header.active .phone{
+  display: none;
 }
 
 
@@ -101,7 +118,7 @@ nav.menu ul li a img{
 /* DROPDOWN */
 .menu-dropdown{
   display: none;
-  background-color: #fff;
+  background-color: var(--white);
   position: absolute;
   top: 0.1rem;
   width: 100%;
@@ -143,7 +160,7 @@ nav.menu ul li a img{
 .menu-dropdown nav ul li a{
   font-size: 2.4rem;
   line-height: 3rem;
-  color: #000;
+  color: var(--black);
 }
 
 

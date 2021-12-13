@@ -1,37 +1,21 @@
 /********** VARIABLES ***********/
-
-/* 
-  background1: #fff;
-  background2: #FBFBFB;
-  background3: #EEFFEE;
-  green1: #228800;
-  green-title-hero: #226600;
-  black1: #000;
-  linha-hr: #E5E5E5;
-  font-cinza: #BFBFBF
-
-  background-article: #F0F0F0;
-
-  background-hero: #2288000D;
-
-  BUTTONS
-  borda-button: #CCCCCC;
-  background-button: #fff;
-
-
-*/
 :root{
-  
-  --white1: #fff;
-  --white2: #FBFBFB;
-  --white3: #EFEFEF;
+  --white: #fff;
   --black: #000;
   --green: #228800;
-  --gray1: #BFBFBF;
-  --gray2: #CCCCCC;
-  --gray3: #DDDDDD;
-  --gray4: #E5E5E5;
-  --gray5: #EDEDED;
+
+  --bg1: #FBFBFB;
+  --bg2: #EEFFEE;
+  --bg-article: #F0F0F0;
+  --bg-hero: #2288000D;
+
+  --line: #E5E5E5;
+  --line2: #EFEFEF;
+
+  --font-title-hero: #226600;
+  --font-inactive: #BFBFBF;
+
+  --btn-border: #CCCCCC;
 }
 
 .container{
@@ -55,8 +39,8 @@
 /****** BUTTONS *******/
 .btn1{
   text-transform: uppercase;
-  background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  background-color: var(--white);
+  border: 1px solid var(--btn-border);
 }
 
 .btn1 a{
@@ -66,13 +50,13 @@
 }
 
 .btn2{
-  background-color: #228800;
+  background-color: var(--green);
   border: none;
   
 }
 
 .btn2 a{
-  color: #fff;
+  color: var(--white);
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2rem;

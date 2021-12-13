@@ -1,5 +1,5 @@
 footer{
-  background-color: #FBFBFB;
+  background-color: var(--bg1);
 }
 
 .footer-top .container,
@@ -13,7 +13,7 @@ footer{
   gap: 8.1rem;
   padding-top: 5.9rem;
   padding-bottom:5.9rem;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid var(--line);
 }
 
 .footer-top p{
@@ -38,7 +38,6 @@ footer{
 .footer-bottom{
   padding-top: 4.3rem;
   padding-bottom: 7.8rem;
-  background-color: #FBFBFB;
 }
 
 .footer-bottom .container{
