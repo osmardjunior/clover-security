@@ -20,12 +20,14 @@ const menu2DropdownHandler = document.querySelector('.js-top-dropdown_menu2')
 const menu2 = document.querySelector('.menu-dropdown2')
 
 
-function dropdownMenu1() {
+function dropdownMenu1(event) {
+  event.preventDefault()
   menu1.classList.toggle('active')
   menu2.classList.remove('active')
 }
 
-function dropdownMenu2() {
+function dropdownMenu2(event) {
+  event.preventDefault()
   menu2.classList.toggle('active')
   menu1.classList.remove('active')
 }
