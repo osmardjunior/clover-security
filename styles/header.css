@@ -108,6 +108,7 @@ nav.menu ul li a{
   position: fixed;
   top: 14rem;
   width: 100%;
+  border: 1px solid red;
 
   opacity: 0;
   pointer-events: none;
@@ -118,6 +119,7 @@ nav.menu ul li a{
 .menu-dropdown2 .container{
   max-width: 100%;
   padding: 4.7rem 4.9rem 6.1rem;
+  border: 1px solid blue;
 }
 
 
@@ -155,6 +157,8 @@ nav.menu ul li a{
 .top-dropdown_menu1{
   display: flex;
   gap: 4.5rem;
+  border: 1px solid green;
+  max-width: 106.5rem;
 }
 
 /* MENU UNDERSTANDING DATA SECURITY */

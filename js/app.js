@@ -44,5 +44,5 @@ function dropdownMenu2(event) {
 
 menu1DropdownHandler.addEventListener('click', dropdownMenu1)
 menu2DropdownHandler.addEventListener('click', dropdownMenu2)
-menu1.addEventListener('mouseleave', dropdownMenu1)
-menu2.addEventListener('mouseleave', dropdownMenu2)
+// menu1.addEventListener('mouseleave', dropdownMenu1)
+// menu2.addEventListener('mouseleave', dropdownMenu2)
