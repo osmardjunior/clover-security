@@ -191,6 +191,8 @@ nav.menu ul li a{
   }
 }
 
+
+/***************/
 @media (max-width: 720px){
   nav.menu ul li:first-child{
     display: none;
@@ -202,12 +204,26 @@ nav.menu ul li a{
   }
 }
 
+/***************/
 @media (max-width: 500px){
+  .header{
+    border: 1px solid red;
+  }
+
+  .phone a{
+    padding-right: 1.6rem;
+  }
+  .login{
+    width: 100%;
+    max-width: 9.2rem;
+  }
+
   nav.menu ul li a img{
     display: none;
   }
 }
 
+/***************/
 @media (max-width: 412px){
   nav.menu{
     width: 100%;
