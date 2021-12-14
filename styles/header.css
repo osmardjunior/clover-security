@@ -123,6 +123,7 @@ nav.menu ul li a img{
 .menu-dropdown2{
   background-color: var(--white);
   position: fixed;
+  top: 14rem;
   width: 100%;
 
   opacity: 0;

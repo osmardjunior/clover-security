@@ -5,9 +5,13 @@ function menuHandler(event){
 
   if (window.scrollY > 200) {
     header.classList.add('active')
+    menu1.style.top = '7.1rem'
+    menu2.style.top = '7.1rem'
 
   } else {
     header.classList.remove('active')
+    menu1.style.top = '14rem'
+    menu2.style.top = '14rem'
 
   }
 }
@@ -24,22 +28,18 @@ const menu2 = document.querySelector('.menu-dropdown2')
 
 function dropdownMenu1(event) {
   event.preventDefault()
+
   menu1.classList.toggle('active')
   menu2.classList.remove('active')
 
-  if (header.classList.contains('active')) {
-    menu1.style.top = '7.1rem'
-  }
+  
 }
 
 function dropdownMenu2(event) {
   event.preventDefault()
   menu2.classList.toggle('active')
   menu1.classList.remove('active')
-
-  if (header.classList.contains('active')) {
-    menu2.style.top = '7.1rem'
-  }
+  
 }
 
 menu1DropdownHandler.addEventListener('click', dropdownMenu1)
