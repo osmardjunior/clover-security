@@ -153,18 +153,13 @@ nav.menu ul li a{
   color: var(--black);
 }
 
-/* MENU USING CLOVERSECURITY.COM */
-.top-dropdown_menu1{
+/* DROPDOWN CONTENT */
+.top-dropdown_menu1,
+.top-dropdown_menu2{
   display: flex;
   gap: 4.5rem;
   max-width: 106.5rem;
   padding: 4.7rem 4.9rem 6.1rem;
-}
-
-/* MENU UNDERSTANDING DATA SECURITY */
-.top-dropdown_menu2{
-  display: flex;
-  gap: 4.5rem; 
 }
 
 
@@ -192,6 +187,35 @@ nav.menu ul li a{
   nav.menu{
     padding-left: 1.6rem;
     padding-right: 1.6rem;
+  }
+
+  /* DROPDOWN */
+  .menu-dropdown1,
+  .menu-dropdown2{
+    bottom: 0;
+    top: 11.1rem;
+    border: 1px solid red;
+    gap: 4rem;
+  }
+
+  .top-dropdown_menu1,
+  .top-dropdown_menu2{
+    flex-direction: column;
+    padding: 4rem 1.6rem 1.6rem 1.6rem;
+  }
+
+  .menu-dropdown1 nav,
+  .menu-dropdown2 nav{
+    flex-direction: column;
+    gap: 3.1rem;
+  }
+  .menu-dropdown1 nav ul,
+  .menu-dropdown2 nav ul{
+    gap: 3.1rem;
+  }
+
+  .dropdown-txt{
+    max-width: 32.7rem;
   }
 }
 
@@ -249,5 +273,16 @@ nav.menu ul li a{
   nav.menu{
     width: 100%;
     max-width: 34.1rem;
+  }
+
+  /* DROPDOWN */
+  .dropdown-txt h3{
+    font-size: 1.8rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .menu-dropdown1 nav ul li a,
+  .menu-dropdown2 nav ul li a{
+    font-size: 1.8rem;
   }
 }
