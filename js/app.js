@@ -5,13 +5,11 @@ function menuHandler(event){
 
   if (window.scrollY > 200) {
     header.classList.add('active')
-    menu1.style.top = '7.1rem'
-    menu2.style.top = '7.1rem'
+    menuDropdown.style.top = '7.1rem'
 
-  } else {
+  } else if(window.scrollY < 200 || window.innerWidth < 950){
     header.classList.remove('active')
-    menu1.style.top = '14rem'
-    menu2.style.top = '14rem'
+    menuDropdown.style.top = '14rem'
 
   }
 }
@@ -19,10 +17,11 @@ function menuHandler(event){
 window.addEventListener('scroll', menuHandler)
 
 // OPEN/CLOSE DROPDOWN
-const menu1DropdownHandler = document.querySelector('.js-top-dropdown_menu1')
 const menu1 = document.querySelector('.menu-dropdown1')
-const menu2DropdownHandler = document.querySelector('.js-top-dropdown_menu2')
 const menu2 = document.querySelector('.menu-dropdown2')
+const menuDropdown = document.querySelector('.js-menu-dropdown')
+const menu1DropdownHandler = document.querySelector('.js-top-dropdown_menu1')
+const menu2DropdownHandler = document.querySelector('.js-top-dropdown_menu2')
 
 
 
@@ -46,3 +45,16 @@ menu1DropdownHandler.addEventListener('click', dropdownMenu1)
 menu2DropdownHandler.addEventListener('click', dropdownMenu2)
 // menu1.addEventListener('mouseleave', dropdownMenu1)
 // menu2.addEventListener('mouseleave', dropdownMenu2)
+
+
+// VERIFY WINDOW SIZE AND FIX DROPDOWN TOP
+window.addEventListener('resize', (event) => {
+  // console.log(event)
+  if (event.target.innerWidth < 950) {
+    menuDropdown.style.top = '11.1rem'
+
+  } else if(event.target.innerWidth > 950 && window.scrollY < 200){
+    menuDropdown.style.top = '14rem'
+
+  }
+})

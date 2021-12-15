@@ -120,7 +120,8 @@ nav.menu ul li a:hover::after{
 
 /**** DROPDOWN ****/
 .menu-dropdown{
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  background-color: lightgray;
   position: fixed;
   top: 14rem;
   left: 0;
@@ -181,6 +182,7 @@ nav.menu ul li a:hover::after{
 
 /********* RESPONSIVE *************/
 @media (max-width: 950px){
+  /* MOBILE HEADER LAYOUT */
   .header{
     grid-template-columns: 26rem 1fr 12.2rem;
     grid-template-rows: 5.5rem 5.5rem;
@@ -202,7 +204,6 @@ nav.menu ul li a:hover::after{
     bottom: 0;
     top: 11.1rem;
     gap: 4rem;
-    border: 1px solid red;
   }
 
   .top-dropdown_menu{
@@ -220,6 +221,10 @@ nav.menu ul li a:hover::after{
 
   .dropdown-txt{
     max-width: 32.7rem;
+  }
+
+  nav.menu ul li a::after{
+    bottom: -2rem;
   }
 }
 
@@ -258,7 +263,6 @@ nav.menu ul li a:hover::after{
   nav.menu ul{
     width: 100%;
     max-width: 32.7rem;
-    border: 1px solid red;
     justify-content: space-between;
     gap: 0.9rem;
   }
