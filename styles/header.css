@@ -81,6 +81,21 @@ nav.menu ul li a{
   display: flex;
   gap: 1.2rem;
   font-size: 1.3rem;
+  position: relative;
+}
+
+nav.menu ul li a::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--green);
+  bottom: -2.6rem;
+  transition: .3s;
+}
+
+nav.menu ul li a:hover::after{
+  width: 100%;
 }
 
 
