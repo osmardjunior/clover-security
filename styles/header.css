@@ -1,5 +1,6 @@
 header{
   position: relative;
+  width: 100%;
 }
 
 .header{
@@ -107,8 +108,8 @@ nav.menu ul li a{
   background-color: var(--white);
   position: fixed;
   top: 14rem;
-  width: 100%;
-  border: 1px solid red;
+  left: 0;
+  right: 0;
 
   opacity: 0;
   pointer-events: none;
@@ -117,11 +118,10 @@ nav.menu ul li a{
 
 .menu-dropdown1 .container,
 .menu-dropdown2 .container{
-  max-width: 100%;
-  padding: 4.7rem 4.9rem 6.1rem;
-  border: 1px solid blue;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
-
 
 .dropdown-txt{
   width: 100%;
@@ -157,8 +157,8 @@ nav.menu ul li a{
 .top-dropdown_menu1{
   display: flex;
   gap: 4.5rem;
-  border: 1px solid green;
   max-width: 106.5rem;
+  padding: 4.7rem 4.9rem 6.1rem;
 }
 
 /* MENU UNDERSTANDING DATA SECURITY */

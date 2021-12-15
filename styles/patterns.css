@@ -18,6 +18,12 @@
   --btn-border: #CCCCCC;
 }
 
+body,
+html{
+  width: 100%;
+  height: 100%;
+}
+
 .container{
   width: 100%;
   max-width: 119rem;
