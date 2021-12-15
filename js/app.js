@@ -3,13 +3,17 @@ const header = document.querySelector('.js-header')
 
 function menuHandler(event){
 
-  if (window.scrollY > 200) {
+  if (window.scrollY > 200 && window.innerWidth > 950) {
     header.classList.add('active')
     menuDropdown.style.top = '7.1rem'
 
-  } else if(window.scrollY < 200 || window.innerWidth < 950){
+  } else if(window.scrollY < 200 && window.innerWidth > 950){
     header.classList.remove('active')
     menuDropdown.style.top = '14rem'
+
+  } else if(window.scrollY < 200 && window.innerWidth < 950){
+    header.classList.remove('active')
+    menuDropdown.style.top = '11.1rem'
 
   }
 }
@@ -46,15 +50,3 @@ menu2DropdownHandler.addEventListener('click', dropdownMenu2)
 // menu1.addEventListener('mouseleave', dropdownMenu1)
 // menu2.addEventListener('mouseleave', dropdownMenu2)
 
-
-// VERIFY WINDOW SIZE AND FIX DROPDOWN TOP
-window.addEventListener('resize', (event) => {
-  // console.log(event)
-  if (event.target.innerWidth < 950) {
-    menuDropdown.style.top = '11.1rem'
-
-  } else if(event.target.innerWidth > 950 && window.scrollY < 200){
-    menuDropdown.style.top = '14rem'
-
-  }
-})

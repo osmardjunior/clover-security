@@ -32,6 +32,7 @@ header{
   grid-area: logo;
   padding-left: 4.9rem;
   background-color: var(--bg1);
+  border: 1px solid red
 }
 
 .logo a{
@@ -68,12 +69,14 @@ header{
 nav.menu{
   grid-area: nav;
   padding-left: 4.9rem;
+  padding-right: 1.6rem;
   border-bottom: 1px solid var(--line2);
 }
 
 nav.menu ul{
   display: flex;
   gap: 5.7rem;
+  align-items: center;
 }
 
 nav.menu ul li a{
@@ -181,6 +184,16 @@ nav.menu ul li a:hover::after{
 
 
 /********* RESPONSIVE *************/
+@media (max-width: 1150px){
+  .header.active{
+    grid-template-columns: 28rem 1fr 15rem;
+  }
+
+  nav.menu{
+    padding-left: 2rem;
+  }
+}
+
 @media (max-width: 950px){
   /* MOBILE HEADER LAYOUT */
   .header{
