@@ -1,6 +1,7 @@
 header{
   position: relative;
   width: 100%;
+  border: 1px solid blue;
 }
 
 .header{
@@ -103,8 +104,7 @@ nav.menu ul li a{
 
 
 /**** DROPDOWN ****/
-.menu-dropdown1,
-.menu-dropdown2{
+.menu-dropdown{
   background-color: var(--white);
   position: fixed;
   top: 14rem;
@@ -116,8 +116,7 @@ nav.menu ul li a{
   transition: all .2s;
 }
 
-.menu-dropdown1 .container,
-.menu-dropdown2 .container{
+.menu-dropdown .container{
   width: 100%;
   padding: 0;
   margin: 0;
@@ -134,28 +133,24 @@ nav.menu ul li a{
   margin-bottom: 2.1rem;
 }
 
-.menu-dropdown1 nav,
-.menu-dropdown2 nav{
+.menu-dropdown nav{
   display: flex;
   gap: 4.5rem;
 }
-.menu-dropdown1 nav ul,
-.menu-dropdown2 nav ul{
+.menu-dropdown nav ul{
   display: flex;
   flex-direction: column;
   gap: 2.9rem;
 }
 
-.menu-dropdown1 nav ul li a,
-.menu-dropdown2 nav ul li a{
+.menu-dropdown nav ul li a{
   font-size: 2.4rem;
   line-height: 3rem;
   color: var(--black);
 }
 
 /* DROPDOWN CONTENT */
-.top-dropdown_menu1,
-.top-dropdown_menu2{
+.top-dropdown_menu{
   display: flex;
   gap: 4.5rem;
   max-width: 106.5rem;
@@ -163,9 +158,7 @@ nav.menu ul li a{
 }
 
 
-.menu-dropdown1.active,
-.menu-dropdown2.active,
-.header.active .menu-dropdown1.active{
+.menu-dropdown.active{
   opacity: 1;
   pointer-events: all;
 }
@@ -190,27 +183,23 @@ nav.menu ul li a{
   }
 
   /* DROPDOWN */
-  .menu-dropdown1,
-  .menu-dropdown2{
+  .menu-dropdown{
     bottom: 0;
     top: 11.1rem;
-    border: 1px solid red;
     gap: 4rem;
+    border: 1px solid red;
   }
 
-  .top-dropdown_menu1,
-  .top-dropdown_menu2{
+  .top-dropdown_menu{
     flex-direction: column;
     padding: 4rem 1.6rem 1.6rem 1.6rem;
   }
 
-  .menu-dropdown1 nav,
-  .menu-dropdown2 nav{
+  .menu-dropdown nav{
     flex-direction: column;
     gap: 3.1rem;
   }
-  .menu-dropdown1 nav ul,
-  .menu-dropdown2 nav ul{
+  .menu-dropdown nav ul{
     gap: 3.1rem;
   }
 
@@ -281,8 +270,7 @@ nav.menu ul li a{
     margin-bottom: 1.7rem;
   }
 
-  .menu-dropdown1 nav ul li a,
-  .menu-dropdown2 nav ul li a{
+  .menu-dropdown nav ul li a{
     font-size: 1.8rem;
   }
 }
