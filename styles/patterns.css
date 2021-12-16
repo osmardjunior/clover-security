@@ -24,12 +24,6 @@ main{
   margin-top: 20.3rem;
 }
 
-@media (max-width: 950px){
-  main{
-    margin-top: 17.4rem;
-  }
-}
-
 .clover-container{
   width: 100%;
   max-width: 119rem;
@@ -50,6 +44,15 @@ main{
   text-transform: uppercase;
 }
 
+.home_txt2 h1{
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
+}
+
+.home-txt2_p{
+  margin-bottom: 4rem;
+}
+
 /****** BUTTONS *******/
 .btn1{
   text-transform: uppercase;
@@ -67,6 +70,10 @@ main{
 
 .btn1:hover{
   border-color: var(--black);
+}
+
+.btn1:hover a{
+  color: var(--black);
 }
 
 .btn2{

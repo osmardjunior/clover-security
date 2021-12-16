@@ -81,14 +81,12 @@
 }
 
 .s-whatis .clover-container{
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .s-whatis .home-txt{
-  border: 1px solid blue;
   width: 100%;
   max-width: 58rem;
   padding-right: 2.5rem;
@@ -106,4 +104,32 @@
 .s-whatis-img{
   width: 100%;
   max-width: 48.7rem;
+}
+
+
+
+
+/* ======= INDEX REPORTING ======*/
+.s-reporting{
+  padding: 8.6rem 2.4rem 0rem;
+}
+
+.s-reporting .clover-container{
+  position: relative;
+  background: url(../assets/home-page-img/home_img4.png) no-repeat;
+  background-position: 28% 100%;
+  background-size: cover;
+  min-height: 50rem;
+  width: 100%;
+  max-width: 95.1rem;
+}
+
+.s-reporting .home_txt2{
+  width: 100%;
+  max-width: 41.3rem;
+  padding: 4rem;
+  background-color: var(--bg1);
+  position: absolute;
+  right: -11rem;
+  bottom: -7rem;
 }
