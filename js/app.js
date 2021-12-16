@@ -81,13 +81,20 @@ window.addEventListener('scroll', menuHandler)
 
 // OPEN CLOSE HEADER DROPDOWN
 const headerLinkMenu = document.querySelectorAll('.js-menu-dropdown')
+const menuDropdown = document.querySelectorAll('.menu-dropdown')
 
 
 headerLinkMenu.forEach((item) => {
-  function handleHeaderDropdown(menuItem) {
+  function handleHeaderDropdown(event) {
+    event.preventDefault()
+    // console.log(event)
+
+    menuDropdown.forEach((link) => {
+      link.classList.remove('active')
+    })
+
     this.classList.add('active')
-    
   }
-  
+
   item.addEventListener('click', handleHeaderDropdown)
 })
