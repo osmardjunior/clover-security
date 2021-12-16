@@ -69,3 +69,41 @@
 .s-why_content_box p{
   text-align: center;
 }
+
+
+
+
+/* ======== INDEX WHAT IS CLOVER ======= */
+.s-whatis{
+  background-color: var(--bg2);
+  padding-top: 5.2rem;
+  padding-bottom: 5.2rem;
+}
+
+.s-whatis .clover-container{
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s-whatis .home-txt{
+  border: 1px solid blue;
+  width: 100%;
+  max-width: 58rem;
+  padding-right: 2.5rem;
+}
+
+.s-whatis .home-txt h1{
+  font-size: 3.8rem;
+  margin-bottom: 3rem;
+}
+
+.s-whatis .home-txt .home-txt_p{
+  margin-bottom: 3rem;
+}
+
+.s-whatis-img{
+  width: 100%;
+  max-width: 48.7rem;
+}

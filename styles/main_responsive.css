@@ -3,6 +3,7 @@
   .s-hero{
     padding: 0 1.6rem;
   }
+}
 
 @media (max-width:800px){
   /* ======= INDEX HERO ====== */
@@ -26,6 +27,34 @@
   .s-why_content_box{
     max-width: 66%;
     margin-inline: auto;
+  }
+
+
+  /* ======= INDEX WHAT IS CLOVER */
+  .s-whatis{
+    padding-top: 4.2rem;
+    padding-bottom: 7.2rem;
+  }
+
+  .s-whatis .clover-container{
+    flex-direction: column-reverse;
+    padding: 0rem;
+  }
+
+  .s-whatis-img{
+    max-width: 100%;
+  }
+
+  .s-whatis .home-txt{
+    width: 100%;
+    max-width: 58rem;
+    margin-top: 3.6rem;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+  }
+
+  .s-whatis .home-txt h1{
+    font-size: 2.6rem;
   }
 }
 

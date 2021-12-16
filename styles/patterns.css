@@ -55,12 +55,18 @@ main{
   text-transform: uppercase;
   background-color: var(--white);
   border: 1px solid var(--btn-border);
+  padding: 0 3.2rem;
+  transition: .2s;
 }
 
 .btn1 a{
   font-size: 1.4rem;
   font-weight: 500;
-  line-height: 3.8rem;
+  line-height: 5.3rem;
+}
+
+.btn1:hover{
+  border-color: var(--black);
 }
 
 .btn2{
