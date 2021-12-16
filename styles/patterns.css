@@ -24,7 +24,17 @@ html{
   height: 100%;
 }
 
-.container{
+body.js-prevent-scroll{
+  overflow: hidden;
+  position: fixed;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.clover-container{
   width: 100%;
   max-width: 119rem;
   margin: 0 auto;

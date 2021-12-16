@@ -1,11 +1,10 @@
 header{
   position: relative;
   width: 100%;
-  border: 1px solid blue;
 }
 
 .header{
-  border-bottom: 1px solid var(--line2);
+  border-bottom: 1px solid var(--line);
   background-color: var(--white);
   position: fixed;
   top: 0;
@@ -32,7 +31,6 @@ header{
   grid-area: logo;
   padding-left: 4.9rem;
   background-color: var(--bg1);
-  border: 1px solid red
 }
 
 .logo a{
@@ -70,7 +68,7 @@ nav.menu{
   grid-area: nav;
   padding-left: 4.9rem;
   padding-right: 1.6rem;
-  border-bottom: 1px solid var(--line2);
+  /* border-bottom: 1px solid var(--line2); */
 }
 
 nav.menu ul{
@@ -135,7 +133,7 @@ nav.menu ul li a:hover::after{
   transition: all .2s;
 }
 
-.menu-dropdown .container{
+.menu-dropdown .clover-container{
   width: 100%;
   padding: 0;
   margin: 0;
@@ -181,6 +179,7 @@ nav.menu ul li a:hover::after{
   opacity: 1;
   pointer-events: all;
 }
+
 
 
 /********* RESPONSIVE *************/
@@ -269,15 +268,11 @@ nav.menu ul li a:hover::after{
     margin-left: auto;
   }
 
-  nav.menu{
-    border: 1px solid blue;
-  }
-
   nav.menu ul{
     width: 100%;
-    max-width: 32.7rem;
+    /* max-width: 32.7rem; */
     justify-content: space-between;
-    gap: 0.9rem;
+    gap: 0rem;
   }
 
   nav.menu ul li a img{
@@ -288,7 +283,7 @@ nav.menu ul li a:hover::after{
 /***************/
 @media (max-width: 412px){
   .header{
-    grid-template-columns: 25rem 1fr 8.5rem;
+    grid-template-columns: 25rem 0.3fr 8.3rem;
   }
 
   nav.menu{
