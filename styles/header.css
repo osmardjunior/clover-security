@@ -219,14 +219,9 @@ nav.menu ul li a{
     margin-left: auto;
   }
 
-  nav.menu{
-    border: 1px solid blue;
-  }
-
   nav.menu ul{
     width: 100%;
     max-width: 32.7rem;
-    border: 1px solid red;
     justify-content: space-between;
     gap: 0.9rem;
   }

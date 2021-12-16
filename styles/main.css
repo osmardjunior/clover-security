@@ -1,4 +1,4 @@
-/* ========= HOME ========== */
+/* ========= INDEX / HOME ========== */
 .s-hero{
   padding: 0 4.9rem;
 }
@@ -25,4 +25,47 @@
 .s-hero_txt h1{
   font-size: 3.8rem;
   margin-bottom: 2rem;
+}
+
+
+
+
+/* =========== INDEX / WHY =========*/
+.s-why{
+  margin-top: 15.5rem;
+  margin-bottom: 8.6rem;
+}
+
+.s-why .clover-container{
+  display: flex;
+  justify-content: center;
+}
+
+.s-why_content{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 2rem;
+  max-width: 103.9rem;
+}
+
+.s-why_content_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 25rem;
+}
+
+.s-why_content_box img{
+  width: 3.8rem;
+}
+
+.s-why_content_box h3{
+  font-size: 1.4rem;
+  margin: 2.4rem 0 1.6rem;
+}
+
+.s-why_content_box p{
+  text-align: center;
 }
