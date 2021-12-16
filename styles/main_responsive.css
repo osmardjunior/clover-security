@@ -1,0 +1,35 @@
+@media (max-width: 950px){
+  /* ======= INDEX HERO ======= */
+  .s-hero{
+    padding: 0 1.6rem;
+  }
+}
+
+@media (max-width:800px){
+  /* ======= INDEX HERO ====== */
+
+  .s-hero_txt{
+    padding: 3.6rem;
+  }
+
+  .s-hero h1{
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+  }
+}
+
+@media(max-width: 600px){
+  /* ====== INDEX HERO ====== */
+  .s-hero .clover-container{
+    width: 100%;
+    max-width: 28.8rem;
+    height: 38.7rem;
+    right: -2rem;
+  }
+
+  .s-hero_txt{
+    max-width: 28.8rem;
+    left: -4rem;
+    bottom: -22rem;
+  }
+}

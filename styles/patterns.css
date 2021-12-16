@@ -14,16 +14,30 @@
 
   --font-title-hero: #226600;
   --font-inactive: #BFBFBF;
+  --link-hover: #276A16;
 
   --btn-border: #CCCCCC;
 }
 
-.container{
+/* LAYOUT */
+main{
+  margin-top: 20.3rem;
+}
+
+@media (max-width: 950px){
+  main{
+    margin-top: 17.4rem;
+  }
+}
+
+.clover-container{
   width: 100%;
   max-width: 119rem;
   margin: 0 auto;
   padding: 0 2.4rem;
 }
+
+/* PATTERNS */
 
 .menu{
   font-size: 1.3rem;
@@ -70,4 +84,14 @@
   font-weight: 500;
   text-decoration: underline;
   line-height: 2.6rem;
+}
+
+.link:hover{
+  color: var(--link-hover);
+  transition: .3s;
+}
+
+a{
+  color: var(--black);
+  text-decoration: none;
 }

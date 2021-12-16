@@ -1,3 +1,28 @@
-main{
-  margin-top: 13.9rem;
+/* ========= HOME ========== */
+.s-hero{
+  padding: 0 4.9rem;
+}
+
+.s-hero .clover-container{
+  background: url('../assets/home-page-img/home_img1.png') no-repeat;
+  background-size: cover;
+  background-position: 77% 30%;
+  min-height: 50rem;
+  padding: 0rem;
+  position: relative;
+}
+
+.s-hero_txt{
+  width: 100%;
+  max-width: 49.9rem;
+  padding: 4rem;
+  background-color: var(--bg1);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -11rem;
+}
+
+.s-hero_txt h1{
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
 }

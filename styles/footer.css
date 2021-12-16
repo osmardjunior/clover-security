@@ -2,8 +2,8 @@ footer{
   background-color: var(--bg1);
 }
 
-.footer-top .container,
-.footer-bottom .container{
+.footer-top .clover-container,
+.footer-bottom .clover-container{
   max-width: 126.8rem;
   padding: 0rem 4.9rem;
 }
@@ -40,7 +40,7 @@ footer{
   padding-bottom: 7.8rem;
 }
 
-.footer-bottom .container{
+.footer-bottom .clover-container{
   display: flex;
   gap: 6.8rem;
 }
@@ -50,8 +50,8 @@ footer{
   gap: 4.7rem;
 }
 
-.footer-bottom .container p,
-.footer-bottom .container a{
+.footer-bottom .clover-container p,
+.footer-bottom .clover-container a{
   font-size: 1.2rem;
   line-height: 2.4rem;
 }
