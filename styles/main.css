@@ -133,3 +133,37 @@
   right: -11rem;
   bottom: -7rem;
 }
+
+
+/* ======== INDEX UNDERSTANDING DATA SECURITY ========= */
+.s-understanding{
+  border: 1px solid red;
+  padding: 15.2rem 2.4rem;
+}
+
+.s-understanding .clover-container{
+  border: 1px solid blue;
+  position: relative;
+}
+
+.s-understanding .s-understanding_content{
+  background: url(../assets/home-page-img/home_img3.png) no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+  width: 100%;
+  max-width: 95.1rem;
+  min-height: 50rem;
+  position: absolute;
+  right: 0;
+}
+
+.s-understanding .home_txt2{
+  width: 100%;
+  max-width: 41.3rem;
+  padding: 4rem;
+  background-color: var(--bg1);
+  position: absolute;
+  bottom: -7.5rem;
+  left: -11rem;
+  border: 1px solid red;
+}
