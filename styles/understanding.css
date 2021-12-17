@@ -155,7 +155,7 @@
   max-width: 51.8rem;
 }
 
-.video-box:not(:last-child){
+.apply-margin{
   margin-bottom: 7rem;
 }
 
