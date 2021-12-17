@@ -91,3 +91,54 @@
 .understanding-page .s-contact-us{
   margin-top: 0rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################### EDUCATION VIDEOS PAGE ############## */
+.s-hero-green-template{
+  border: 1px solid red;
+  background-color: var(--bg-hero);
+  padding-top: 5.5rem;
+  padding-bottom: 5.4rem;
+}
+.s-hero-green-template .clover-container{
+  border: 1px solid blue;
+}
+
+.s-hero-green-template_txt{
+  width: 100%;
+  max-width: 32.6rem;
+  border: 1px solid green;
+}
+
+.s-hero-green-template_txt h1,
+.s-hero-green-template_txt p{
+  color: var(--font-title-hero);
+}
+
+.s-hero-green-template_txt p{
+  font-size: 2.2rem;
+  margin-top: 0.6rem;
+}
+

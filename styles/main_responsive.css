@@ -166,6 +166,11 @@
     max-width: 87.2%;
     margin-inline: auto;
   }
+
+  /* ====== VIDEOS PAGE || HERO */
+  .s-hero-green-template .clover-container{
+    padding: 0 1.6rem;
+  }
 }
 
 
@@ -189,6 +194,10 @@
   h1{
     font-size: 3rem;
     line-height: 3.7rem;
+  }
+
+  h4{
+    font-size: 2rem;
   }
 
   .btn1{
@@ -231,6 +240,11 @@
 
   .s-hero-understanding_txt p{
     margin-top: 0.7rem;
+  }
+
+  /* ====== VIDEOS PAGE || HERO */
+  .s-hero-green-template_txt p{
+    font-size: 1.8rem;
   }
 }
 
