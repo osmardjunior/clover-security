@@ -222,7 +222,6 @@
 }
 
 .s-education-articles{
-  border: 1px solid red;
   padding-top: 9.5rem;
   padding-bottom: 10rem;
 }
@@ -231,14 +230,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: 1px solid blue;
 }
 
 .article{
   width: 100%;
   max-width: 34.9rem;
   min-height: 50.4rem;
-  border: 1px solid red;
   margin-bottom: 7rem;
   gap: 1.6rem;
 }
