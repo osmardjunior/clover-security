@@ -1,6 +1,6 @@
 /* ========= INDEX / HOME ========== */
 .s-hero{
-  padding: 0 4.9rem;
+  padding: 6.4rem 4.9rem;
 }
 
 .s-hero .clover-container{
@@ -210,3 +210,7 @@
 .phone-number p a:hover{
   color: var(--link-hover);
 }
+
+
+
+

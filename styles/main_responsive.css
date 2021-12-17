@@ -18,12 +18,12 @@
 
 @media (max-width: 950px){
   main{
-    margin-top: 17.4rem;
+    margin-top: 11.1rem;
   }
 
   /* ======= INDEX HERO ======= */
   .s-hero{
-    padding: 0 1.6rem;
+    padding: 6.4rem 1.6rem;
   }
 }
 
@@ -121,6 +121,11 @@
   .s-contact-us .clover-container{
     padding: 0 1.6rem;
   }
+
+  /* =========== UNDERSTANDING || HERO ========== */
+  .s-hero-understanding .clover-container{
+    padding: 0 1.6rem;
+  }
 }
 
 
@@ -141,6 +146,11 @@
 
 
 @media(max-width: 600px){
+  h1{
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+
   .btn1{
     padding: 0 2rem;
   }
@@ -163,6 +173,24 @@
   .s-why{
     margin-top: 37.1rem;
     margin-bottom: 6.4rem;
+  }
+
+  /* =========== UNDERSTANDING || HERO ======== */
+  .s-hero-understanding{
+    background: url(../assets/svg/black-gradient.svg),
+              url(../assets/svg/green-gradient.svg),
+              url(../assets/understanding-page-img/hero-understanding-mobile.png);
+    background-position: 0% 100%, 0% 100%, 61% 29%;
+    background-size: cover;
+  }
+
+  .s-hero-understanding_txt{
+    padding: 6.1rem 0rem 7.3rem;
+    max-width: 32.7rem;
+  }
+
+  .s-hero-understanding_txt p{
+    margin-top: 0.7rem;
   }
 }
 

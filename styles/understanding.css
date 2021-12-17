@@ -1,0 +1,25 @@
+/* ========== UNDERSTAND || HERO =========== */
+.s-hero-understanding{
+  background: url(../assets/svg/black-gradient.svg),
+              url(../assets/svg/green-gradient.svg),
+              url(../assets/understanding-page-img/hero-understanding.png);
+  background-size: cover;
+  background-position: 0% 100%, 0% 100%, 61% 0%;
+}
+
+.s-hero-understanding_txt{
+  padding: 8.5rem 0rem;
+  width: 100%;
+  max-width: 52rem;
+}
+
+.s-hero-understanding_txt h1{
+  color: var(--white);
+}
+
+.s-hero-understanding_txt p{
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 2.6rem;
+}
