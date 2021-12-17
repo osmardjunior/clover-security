@@ -5,12 +5,17 @@
   }
 }
 
+
+
 @media (max-width: 1080px){
   /* ======== INDEX REPORTING ======== */
   .s-reporting .home_txt2{
     right: -1rem;
   }
 }
+
+
+
 @media (max-width: 950px){
   main{
     margin-top: 17.4rem;
@@ -21,6 +26,9 @@
     padding: 0 1.6rem;
   }
 }
+
+
+
 
 @media (max-width:800px){
   .btn1 a{
@@ -83,10 +91,6 @@
     padding-top: 6.4rem;
   }
 
-  .s-reporting .clover-container{
-    padding: 0 1.6rem;
-  }
-
   .s-reporting .home_txt2{
     bottom: -29rem;
     left: -1.4rem;
@@ -112,7 +116,29 @@
     right: -1rem;
     bottom: -25rem;
   }
+
+  /* ======== INDEX CONTACT US ======= */
+  .s-contact-us .clover-container{
+    padding: 0 1.6rem;
+  }
 }
+
+
+@media (max-width: 700px){
+  /* ====== INDEX CONTACT US ====== */
+  .s-contact-us{
+    margin-top: 68.2rem;
+    padding: 6.7rem 0;
+  }
+
+  .s-contact-us .clover-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 5.8rem;
+  }
+}
+
+
 
 @media(max-width: 600px){
   .btn1{
@@ -139,6 +165,10 @@
     margin-bottom: 6.4rem;
   }
 }
+
+
+
+
 
 @media (max-width: 500px){
   /* ======= INDEX REPORTING ====== */

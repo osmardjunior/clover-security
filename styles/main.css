@@ -115,6 +115,10 @@
 }
 
 .s-reporting .clover-container{
+  padding: 0;
+}
+
+.s-reporting_content{
   position: relative;
   background: url(../assets/home-page-img/home_img4.png) no-repeat;
   background-position: 28% 100%;
@@ -137,12 +141,10 @@
 
 /* ======== INDEX UNDERSTANDING DATA SECURITY ========= */
 .s-understanding{
-  border: 1px solid red;
-  padding: 15.2rem 2.4rem;
+  padding: 15.2rem 2.4rem 0 2.4rem;
 }
 
 .s-understanding .clover-container{
-  border: 1px solid blue;
   position: relative;
 }
 
@@ -165,5 +167,46 @@
   position: absolute;
   bottom: -7.5rem;
   left: -11rem;
-  border: 1px solid red;
+}
+
+/* ======= CONTACT US ======== */
+.s-contact-us{
+  margin-top: 68.9rem;
+  padding: 9.2rem 0 8.9rem;
+  background-color: var(--bg2);
+}
+
+.s-contact-us .clover-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.s-contact-us_box{
+  width: 100%;
+  max-width: 52.7rem;
+}
+
+.s-contact-us_header h2{
+  margin: 2rem 0rem;
+  font-weight: 300;
+}
+
+.s-contact-us_box p{
+  margin-bottom: 2.9rem;
+}
+
+.phone-number p{
+  font-size: 2rem;
+}
+
+.phone-number p a{
+  font-size: 2rem;
+  color: var(--green);
+  text-decoration: underline;
+  transition: .2s;
+}
+
+.phone-number p a:hover{
+  color: var(--link-hover);
 }
