@@ -115,6 +115,10 @@
 
 
 
+
+
+
+
 /* ################### EDUCATION VIDEOS PAGE ############## */
 .s-hero-green-template{
   background-color: var(--bg-hero);
@@ -194,3 +198,34 @@
 } */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################ EDUCATION ARTICLES PAGE ############### */
+.s-hero-education-articles{
+  border: 1px solid red;
+}
+
+.s-hero-education-articles .clover-container{
+  border: 1px solid blue;
+}
+
+.s-hero-education-articles .s-hero-green-template_txt{
+  border: 1px solid green;
+  max-width: 34.1rem;
+}
