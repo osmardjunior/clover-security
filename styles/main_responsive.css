@@ -224,6 +224,19 @@
     margin-bottom: 6rem;
   }
 
+  /* ========== USEFUL LINKS PAGE || LINKS =========== */
+  .s-links{
+    padding-top: 6rem;
+    padding-bottom: 12.9rem;
+  }
+
+  .s-links .clover-container{
+    padding: 0 1.6rem;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+
 }
 
 

@@ -276,3 +276,19 @@
 .s-hero-useful-links .s-hero-green-template_txt{
   max-width: 84.6rem;
 }
+
+.s-links{
+  padding-top: 9.5rem;
+  padding-bottom: 17rem;
+}
+
+.s-links .clover-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.s-links .article{
+  min-height: auto;
+  margin-bottom: 0rem;
+}
