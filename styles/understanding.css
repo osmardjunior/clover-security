@@ -139,6 +139,7 @@
 .s-hero-green-template_txt p{
   font-size: 2.2rem;
   margin-top: 0.6rem;
+  line-height: 2.6rem;
 }
 
 /* ======= VIDEOS PAGE || VIDEOS =========*/
@@ -250,4 +251,28 @@
   margin-top: 1.7rem;
   display: inline-block;
   font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ########### USEFUL LINKS PAGE ############## */
+.s-hero-useful-links .s-hero-green-template_txt{
+  max-width: 84.6rem;
 }
