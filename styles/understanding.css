@@ -23,3 +23,37 @@
   font-weight: 300;
   margin-top: 2.6rem;
 }
+
+/* ========== UNDERSTANDING || WHAT IS DATA SECURITY======= */
+.s-understand-security{
+  padding-top: 11.9rem;
+}
+
+.s-understand-security .clover-container{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.s-understand-security_txt{
+  width: 100%;
+  max-width: 51.8rem;
+  padding-top: 6.5rem;
+  padding-bottom: 4.4rem;
+}
+
+.s-understand-security_txt_content:not(:last-child){
+  margin-bottom: 3.3rem;
+}
+
+.s-understand-security_txt_content p{
+  margin-top: 1.3rem;
+  font-weight: 300;
+}
+
+.s-understand-security_img{
+  background: url(../assets/understanding-page-img/cashier.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 54.9rem;
+}
