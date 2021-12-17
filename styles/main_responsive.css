@@ -145,6 +145,27 @@
   .s-understand-security_txt_content:not(:last-child){
     margin-bottom: 3.5rem;
   }
+
+  /* ====== UNDERSTANDING || ARTICLES BOX ====== */ 
+  .s-understand_boxes .clover-container{
+    padding: 0 1.6rem;
+  }
+
+  /* ===== UNDERSTANDING || BOX OF CONTENTS */
+  .s-understand_boxes{
+    padding-top: 6rem;
+    padding-bottom: 12.8rem;
+  }
+
+  .s-understand_boxes .clover-container{
+    flex-direction: column;
+    gap: 6.1rem;
+  }
+
+  .s-understand-boxes_box{
+    max-width: 87.2%;
+    margin-inline: auto;
+  }
 }
 
 

@@ -27,7 +27,6 @@
 /* ========== UNDERSTANDING || WHAT IS DATA SECURITY======= */
 .s-understand-security{
   padding-top: 11.9rem;
-  border: 1px solid red
 }
 
 .s-understand-security .clover-container{
@@ -35,7 +34,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  border: 1px solid blue;
 }
 
 .s-understand-security_txt{
@@ -61,4 +59,33 @@
   width: 100%;
   max-width: 54.9rem;
   min-height: 40.8rem;
+}
+
+
+/* ======= UNDERSTANDING || BOX OF CONTENTS ======= */
+.s-understand_boxes{
+  border: 1px solid red;
+  padding-top: 11.9rem;
+  padding-bottom: 17rem;
+}
+
+.s-understand_boxes .clover-container{
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.s-understand-boxes_box{
+  width: 100%;
+  max-width: 34.9rem;
+}
+
+.s-understand-boxes_box_content{
+  padding: 4rem;
+  background-color: var(--bg-article);
+}
+
+.s-understand-boxes_box_content p{
+  margin: 1.3rem 0 3.2rem;
 }
