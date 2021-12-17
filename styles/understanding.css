@@ -139,21 +139,18 @@
 
 /* ======= VIDEOS PAGE || VIDEOS =========*/
 .s-videos{
-  border: 1px solid red;
   padding-top: 9.5rem;
   padding-bottom: 17rem;
 }
 
 .s-videos .clover-container{
-  border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .video-box{
-  border: 1px solid green;
   width: 100%;
   max-width: 51.8rem;
 }
@@ -164,6 +161,7 @@
 
 .video-box-img button{
   position: relative;
+  border: none;
 }
 
 .play-icon{
@@ -174,20 +172,16 @@
 
 .video-box-txt h3{
   margin: 3.3rem 0 1.7rem;
+  line-height: 3rem;
 }
 
 /* ========== MODAL // VIDEOS ========== */
-
-.modal-dialog{
-  border: 1px solid blue;
-}
-
 .modal-content{
   background-color: transparent;
-  border: 1px solid red;
 }
 
-.btn-close {
+/* CLOSE MODAL BUTTON */
+/* .btn-close {
   box-sizing: content-box;
   width: 1em;
   height: 1em;
@@ -197,6 +191,6 @@
   border: 0;
   border-radius: 0.25rem;
   opacity: .5;
-}
+} */
 
 

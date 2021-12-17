@@ -3,6 +3,12 @@
   .s-understanding .home_txt2{
     left: -2rem;
   }
+
+  /* ======= VIDEOS PAGE || VIDEOS =========*/
+  .video-box{
+    max-width: 91.46%;
+    margin-inline: auto;
+  }
 }
 
 
@@ -163,7 +169,7 @@
   }
 
   .s-understand-boxes_box{
-    max-width: 87.2%;
+    max-width: 91.46%;
     margin-inline: auto;
   }
 
@@ -171,6 +177,32 @@
   .s-hero-green-template .clover-container{
     padding: 0 1.6rem;
   }
+
+  /* ========= VIDEOS PAGE || VIDEOS ======= */
+  .s-videos{
+    padding-top: 6rem;
+    padding-bottom: 12.9rem;
+  }
+
+  .s-videos .clover-container{
+    gap: 6rem;
+    padding: 0 1.6rem;
+  }
+
+  .video-box{
+    max-width: 100%;
+  }
+
+  .video-box:not(:last-child){
+    margin-bottom: 0rem;
+  }
+
+  .video-box-txt h3{
+    margin: 2.6rem 0 1.6rem;
+    line-height: 3rem;
+  }
+
+  
 }
 
 
@@ -245,6 +277,10 @@
   /* ====== VIDEOS PAGE || HERO */
   .s-hero-green-template_txt p{
     font-size: 1.8rem;
+  }
+
+  .video-box-txt h3{
+    font-size: 2rem;
   }
 }
 
