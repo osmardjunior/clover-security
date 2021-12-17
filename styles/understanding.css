@@ -64,13 +64,11 @@
 
 /* ======= UNDERSTANDING || BOX OF CONTENTS ======= */
 .s-understand_boxes{
-  border: 1px solid red;
   padding-top: 11.9rem;
   padding-bottom: 17rem;
 }
 
 .s-understand_boxes .clover-container{
-  border: 1px solid blue;
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
@@ -88,4 +86,8 @@
 
 .s-understand-boxes_box_content p{
   margin: 1.3rem 0 3.2rem;
+}
+
+.understanding-page .s-contact-us{
+  margin-top: 0rem;
 }
