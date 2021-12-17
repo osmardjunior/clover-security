@@ -7,8 +7,8 @@
   <title>Clover Security</title>
 
   <!-- BOOTSTRAP CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
   <!-- CSS -->
   <link rel="stylesheet" href="./styles/patterns.css">
   <link rel="stylesheet" href="./styles/reset.css">
@@ -88,27 +88,46 @@
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
-    </section>
+    </section>  
 
     <!-- VIDEOS -->
     <section class="s-videos">
       <div class="clover-container">
-        <div class="video-box">
-          <div class="vide-box-img">
-            <img src="./assets/education-videos-img/getting-started.png" alt="Video's print screen">
-            <img src="./assets/education-videos-img/play.svg" alt="Play icon">
 
+        <!-- VIDEO 1 -->
+        <div class="video-box">
+          <div class="video-box-img">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#video1">
+              <img src="./assets/education-videos-img/getting-started.png" alt="Video's print screen">
+              <img src="./assets/education-videos-img/play.svg" alt="Play icon" class="play-icon">
+            </button>
+
+            <!-- MODAL 1 -->
+            <div class="vide-modal">
+              <div id="video1" class="modal fade video" data-bs-backdrops="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <iframe src="https://player.vimeo.com/video/657506089?h=302917918e" width="640" height="346" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="video-box-txt">
             <h3>Getting Started With PCI DSS - US</h3>
             <p class="hero-subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita</p>
           </div>
         </div>
 
+        <!-- VIDEO 2 -->
         <div class="video-box">
-          <div class="vide-box-img">
-            <img src="./assets/education-videos-img/protecting.png" alt="Video's print screen">
-            <img src="./assets/education-videos-img/play.svg" alt="Play icon">
+          <div class="video-box-img">
+            <a href="">
+              <img src="./assets/education-videos-img/protecting.png" alt="Video's print screen">
+              <img src="./assets/education-videos-img/play.svg" alt="Play icon" class="play-icon">
+            </a>
 
           </div>
           <div class="video-box-txt">
@@ -117,10 +136,13 @@
           </div>
         </div>
 
+        <!-- VIDEO 3 -->
         <div class="video-box">
-          <div class="vide-box-img">
-            <img src="./assets/education-videos-img/pci.png" alt="Video's print screen">
-            <img src="./assets/education-videos-img/play.svg" alt="Play icon">
+          <div class="video-box-img">
+            <a href="">
+              <img src="./assets/education-videos-img/pci.png" alt="Video's print screen">
+              <img src="./assets/education-videos-img/play.svg" alt="Play icon" class="play-icon">
+            </a>
 
           </div>
           <div class="video-box-txt">
@@ -129,10 +151,13 @@
           </div>
         </div>
 
+        <!-- VIDEO 4 -->
         <div class="video-box">
-          <div class="vide-box-img">
-            <img src="./assets/education-videos-img/dealing.png" alt="Video's print screen">
-            <img src="./assets/education-videos-img/play.svg" alt="Play icon">
+          <div class="video-box-img">
+            <a href="">
+              <img src="./assets/education-videos-img/dealing.png" alt="Video's print screen">
+              <img src="./assets/education-videos-img/play.svg" alt="Play icon" class="play-icon">
+            </a>
 
           </div>
           <div class="video-box-txt">
@@ -141,10 +166,13 @@
           </div>
         </div>
 
+        <!-- VIDEO 5 -->
         <div class="video-box">
-          <div class="vide-box-img">
-            <img src="./assets/education-videos-img/challenges.png" alt="Video's print screen">
-            <img src="./assets/education-videos-img/play.svg" alt="Play icon">
+          <div class="video-box-img">
+            <a href="">
+              <img src="./assets/education-videos-img/challenges.png" alt="Video's print screen">
+              <img src="./assets/education-videos-img/play.svg" alt="Play icon" class="play-icon">
+            </a>
 
           </div>
           <div class="video-box-txt">
@@ -153,10 +181,13 @@
           </div>
         </div>
 
+        <!-- VIDEO 6 -->
         <div class="video-box">
-          <div class="vide-box-img">
-            <img src="./assets/education-videos-img/real-cost.png" alt="Video's print screen">
-            <img src="./assets/education-videos-img/play.svg" alt="Play icon">
+          <div class="video-box-img">
+            <a href="">
+              <img src="./assets/education-videos-img/real-cost.png" alt="Video's print screen">
+              <img src="./assets/education-videos-img/play.svg" alt="Play icon" class="play-icon">
+            </a>
 
           </div>
           <div class="video-box-txt">
@@ -215,7 +246,6 @@
   <script src="./js/app.js"></script>
 
   <!-- BOOTSTRAP JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -60,6 +60,7 @@ main{
   border: 1px solid var(--btn-border);
   padding: 0 3.2rem;
   transition: .2s;
+  cursor: pointer;
 }
 
 .btn1 a{
@@ -79,7 +80,7 @@ main{
 .btn2{
   background-color: var(--green);
   border: none;
-  
+  cursor: pointer;
 }
 
 .btn2 a{
