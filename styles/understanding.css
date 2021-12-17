@@ -217,15 +217,40 @@
 
 
 /* ################ EDUCATION ARTICLES PAGE ############### */
-.s-hero-education-articles{
-  border: 1px solid red;
+.s-hero-education-articles .s-hero-green-template_txt{
+  max-width: 34.1rem;
 }
 
-.s-hero-education-articles .clover-container{
+.s-education-articles{
+  border: 1px solid red;
+  padding-top: 9.5rem;
+  padding-bottom: 10rem;
+}
+
+.s-education-articles .clover-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   border: 1px solid blue;
 }
 
-.s-hero-education-articles .s-hero-green-template_txt{
-  border: 1px solid green;
-  max-width: 34.1rem;
+.article{
+  width: 100%;
+  max-width: 34.9rem;
+  min-height: 50.4rem;
+  border: 1px solid red;
+  margin-bottom: 7rem;
+  gap: 1.6rem;
+}
+
+.article h4{
+  margin: 2.6rem 0 1.7rem;
+}
+
+.article a{
+  color: var(--green);
+  font-weight: 500;
+  margin-top: 1.7rem;
+  display: inline-block;
+  font-size: 1.8rem;
 }

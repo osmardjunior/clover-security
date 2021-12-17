@@ -9,6 +9,11 @@
     max-width: 91.46%;
     margin-inline: auto;
   }
+
+  /* ========= EDUCATION ARTICLES PAGE || ARTICLES ======== */
+  .s-education-articles .clover-container{
+    justify-content: space-around;
+  }
 }
 
 
@@ -202,7 +207,23 @@
     line-height: 3rem;
   }
 
-  
+  /* ============ EDUCATION ARTCILES PAGE || ARTICLES ===== */
+  .s-education-articles{
+    padding-top: 6rem;
+    padding-bottom: 12.3rem;
+  }
+
+  .s-education-articles .clover-container{
+    padding: 0 1.6rem;
+    flex-direction: column;
+  }
+
+  .article{
+    max-width: 100%;
+    margin-inline: auto;
+    margin-bottom: 6rem;
+  }
+
 }
 
 
