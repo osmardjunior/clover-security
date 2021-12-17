@@ -272,6 +272,36 @@
 
 
 
+
+/* ############# ARTICLES ################# */
+.s-hero-article-content .clover-container{
+  border: 1px solid blue;
+}
+
+.s-hero-green-template_txt{
+  max-width: 78.1rem;
+  border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ########### USEFUL LINKS PAGE ############## */
 .s-hero-useful-links .s-hero-green-template_txt{
   max-width: 84.6rem;

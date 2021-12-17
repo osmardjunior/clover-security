@@ -194,6 +194,10 @@
     padding: 0 1.6rem;
   }
 
+  .s-hero-green-template_txt p{
+    font-size: 1.8rem;
+  }
+
   .video-box{
     max-width: 100%;
   }
@@ -309,10 +313,6 @@
   }
 
   /* ====== VIDEOS PAGE || HERO */
-  .s-hero-green-template_txt p{
-    font-size: 1.8rem;
-  }
-
   .video-box-txt h3{
     font-size: 2rem;
   }
