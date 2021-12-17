@@ -126,6 +126,25 @@
   .s-hero-understanding .clover-container{
     padding: 0 1.6rem;
   }
+
+  /* ========= UNDERSTANDING || WHAT IS ============= */
+  .s-understand-security{
+    padding-top: 6rem;
+  }
+
+  .s-understand-security .clover-container{
+    flex-direction: column-reverse;
+    gap: 0rem;
+  }
+
+  .s-understand-security_txt{
+    padding-top: 3.5rem;
+    padding-bottom: 0rem;
+  }
+
+  .s-understand-security_txt_content:not(:last-child){
+    margin-bottom: 3.5rem;
+  }
 }
 
 
