@@ -248,6 +248,10 @@
   }
 
   /* ============= ARTICLES PAGE || BREADCRUMBS */
+  .breadcrumbs nav{
+    padding-right: 0rem;
+  }
+
   .breadcrumbs .clover-container{
     padding: 0 1.6rem;
   }
@@ -314,6 +318,33 @@
   
   ul.aside-articles_list li a:not(:last-child){
     margin-bottom: 0rem;
+  }
+
+  /* =========== ARTICLE PAGE || CONTENT ========== */
+  .s-article-text{
+    margin-right: 0rem;
+  }
+
+  .s-article-text .clover-container{
+    padding: 0 1.6rem;
+    max-width: 100%;
+  }
+
+  .s-article-text .clover-container img{
+    margin-bottom: 3.5rem;
+  }
+
+  .article-content h2{
+    font-size: 2.4rem;
+  }
+
+  .article-content p{
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+
+  .article-content ul{
+    margin-left: 1.6rem;
   }
 }
 

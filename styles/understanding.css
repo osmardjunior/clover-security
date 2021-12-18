@@ -390,14 +390,44 @@ ul.aside-articles_list li a.active::before{
 /* ============ ARTICLES PAGE || TEXT ========= */
 .s-article-text{
   margin-right: 30rem;
-
+  border: 1px solid red;
 }
 
 .s-article-text .clover-container{
   max-width: 83.2rem;
   padding-left: 4.9rem;
   margin: 0;
+  border: 1px solid blue;
+}
 
+.s-article-text .clover-container img{
+  margin-bottom: 5.7rem;
+}
+
+.article-content_wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.article-content h2{
+  color: var(--green);
+  margin-bottom: 1rem;
+  font-size: 2.8rem;
+}
+
+.article-content p{
+  font-weight: 400;
+}
+
+.article-content ul li{
+  list-style: disc;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.article-content ul li::marker{
+  color: var(--green);
 }
 
 
