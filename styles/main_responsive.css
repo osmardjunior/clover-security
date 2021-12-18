@@ -240,11 +240,25 @@
     gap: 6rem;
   }
 
+  /* ============= ARTICLES PAGE || BREADCRUMBS */
+  .breadcrumbs .clover-container{
+    padding: 0 1.6rem;
+  }
+
 
 }
 
 
 @media (max-width: 700px){
+  h1{
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+
+  h4{
+    font-size: 2rem;
+  }
+
   /* ====== INDEX CONTACT US ====== */
   .s-contact-us{
     margin-top: 68.2rem;
@@ -256,20 +270,39 @@
     align-items: center;
     gap: 5.8rem;
   }
+
+  /* ========== ARTICLES PAGE || BREADCRUMBS ========== */
+  .breadcrumbs{
+    padding-top: 2.4rem;
+    padding-bottom: 2.6rem;
+  }
+
+  .breadcrumbs ol{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .breadcrumb-item + .breadcrumb-item{
+    padding-left: 0;
+  }
+
+  .breadcrumb-item:first-child::before{
+    content: '>';
+    color: var(--gray);
+    font-weight: 500;
+    padding-right: 0.5rem;
+  }
+
+  .breadcrumb-item a{ 
+    color: var(--black);
+    font-size: 1.3rem;
+  }
 }
 
 
 
 @media(max-width: 600px){
-  h1{
-    font-size: 3rem;
-    line-height: 3.7rem;
-  }
-
-  h4{
-    font-size: 2rem;
-  }
-
   .btn1{
     padding: 0 2rem;
   }
