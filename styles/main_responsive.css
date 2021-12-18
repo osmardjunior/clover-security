@@ -43,12 +43,6 @@
   .s-hero{
     padding: 6.4rem 1.6rem;
   }
-
-  /* ============ ARTICLES PAGE || ASIDE ========= */
-  /* aside{
-    position: unset;
-    margin-left: 4.9rem;
-  } */
 }
 
 
@@ -258,7 +252,69 @@
     padding: 0 1.6rem;
   }
 
+   /* ============ ARTICLES PAGE || ASIDE ========= */
+   aside{
+    position: unset;
+    margin-left: 0rem;
+    max-width: 100%;
+    padding: 0rem;
+    background-color: var(--bg1);
+  }
 
+  .aside-header{
+    margin: 0 1.6rem;
+  }
+
+  .aside-header a{
+    line-height: 4.6rem;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .aside-header a img{
+    display: inline-block;
+  }
+
+  .aside-articles_list::before,
+  ul.aside-articles_list li a.active::before{
+    width: 0rem;
+    height: 0rem;
+  }
+
+  .aside-articles_list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul{
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  ul.aside-articles_list li{
+    border-bottom: 1px solid var(--line2);
+    padding: 1.5rem 0;
+
+  }
+
+  ul.aside-articles_list li a{
+    margin-left: 0rem;
+    padding-top: 0rem;
+    padding-left: 1.6rem;
+  }
+
+  ul.aside-articles_list li a.active{
+    color: var(--green);
+  }
+
+  ul.aside-articles_list li a:last-child{
+    padding-bottom: 0rem;
+  }
+  
+  ul.aside-articles_list li a:not(:last-child){
+    margin-bottom: 0rem;
+  }
 }
 
 

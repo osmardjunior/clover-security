@@ -291,8 +291,9 @@
 
 .breadcrumbs nav{
   width: 100%;
-  max-width: 57.4rem;
-  margin-right: 33.05rem;
+  /* max-width: 57.4rem; */
+  /* margin-right: 33.05rem; */
+  padding-right: 33.05rem;
 }
 
 .breadcrumb-item a{ 
@@ -335,55 +336,68 @@ aside{
   margin-bottom: 1.65rem;
 }
 
+.aside-header a img{
+  transform: rotate(-90deg);
+  display: none;
+}
+
+.aside-header a img.rotate-icon{
+  transform: rotate(90deg);
+}
+
 .aside-articles{
   position: relative;
 }
 
-.aside-articles_links::before{
+.aside-articles_list::before{
   content: '';
   width: 4px;
   height: 100%;
+  left: 0;
   background-color: #EDEDED;
   position: absolute;
 }
 
-.aside-articles a{
+ul.aside-articles_list li a{
   font-weight: 400;
   display: inline-block;
   margin-left: 1.65rem;
   padding-top: 1rem;
 }
 
-.aside-articles a:last-child{
+ul.aside-articles_list li a:last-child{
   padding-bottom: 1rem;
 }
 
-.aside-articles a:not(:last-child){
+ul.aside-articles_list li a:not(:last-child){
   margin-bottom: 1.3rem;
 }
 
-.aside-articles a.active{
+ul.aside-articles_list li a.active{
   font-weight: 500;
 }
 
-.aside-articles a.active::before{
+ul.aside-articles_list li a.active::before{
   content: '';
   width: 4px;
   height: 7rem;
   position: absolute;
   left: 0;
   top: 0rem;
+  background-color: var(--green);
 }
 
 /* ============ ARTICLES PAGE || TEXT ========= */
 .s-article-text{
   margin-right: 30rem;
+
 }
 
 .s-article-text .clover-container{
   max-width: 83.2rem;
   padding-left: 4.9rem;
   margin: 0;
+
 }
 
 

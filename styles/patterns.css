@@ -94,6 +94,10 @@ main{
 
 
 /***** LINKS ******/
+a:hover{
+  color: var(--black);
+}
+
 .link{
   color: var(--green);
   font-weight: 500;
