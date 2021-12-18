@@ -273,20 +273,31 @@
 
 
 
-/* ############# ARTICLES ################# */
+/* ############# ARTICLES PAGE ################# */
 .s-hero-green-template_txt{
   max-width: 78.1rem;
 }
 
+.article-page-grid{
+  display: grid;
+  grid-template-columns: 1fr 28.15rem;
+  grid-template-rows: 12.1rem auto;
+  grid-template-areas: "breadcrumb aside"
+                        "article aside";
+  align-items: start;
+}
+
 /* ======= ARTICLES PAGE || ASIDE ========= */
 aside{
+  grid-area: aside;
   width: 100%;
-  max-width: 28.15rem;
+  min-height: 28rem;
+  /* max-width: 28.15rem; */
   position: sticky;
   right: 16rem;
   top: 30%;
   margin-left: auto;
-  border: 1px solid red;
+  margin-top: 7.7rem;
 }
 
 .aside-header a{
@@ -350,6 +361,8 @@ ul.aside-articles_list li a.active::before{
 .breadcrumbs{
   padding-top: 7.7rem;
   padding-bottom: 3.1rem;
+  grid-area: breadcrumb;
+  position: sticky;
 }
 
 .breadcrumbs .clover-container{
@@ -361,7 +374,7 @@ ul.aside-articles_list li a.active::before{
   width: 100%;
   /* max-width: 57.4rem; */
   /* margin-right: 33.05rem; */
-  padding-right: 33.05rem;
+  /* padding-right: 33.05rem; */
 }
 
 .breadcrumb-item a{ 
@@ -389,15 +402,16 @@ ul.aside-articles_list li a.active::before{
 
 /* ============ ARTICLES PAGE || TEXT ========= */
 .s-article-text{
-  margin-right: 30rem;
-  border: 1px solid red;
+  width: 100%;
+  max-width: 83.2rem;
+  grid-area: article;
 }
 
 .s-article-text .clover-container{
-  max-width: 83.2rem;
-  padding-left: 4.9rem;
+  /* max-width: 83.2rem; */
+  max-width: unset;
+  padding: 0 4.9rem;
   margin: 0;
-  border: 1px solid blue;
 }
 
 .s-article-text .clover-container img{
