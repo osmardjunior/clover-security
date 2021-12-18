@@ -286,12 +286,13 @@
 
 .breadcrumbs .clover-container{
   margin-left: 0rem;
-  padding: 0 4.9rem;
+  padding: 0 0 0 4.9rem;
 }
 
 .breadcrumbs nav{
   width: 100%;
-  max-width: 83.2rem;
+  max-width: 57.4rem;
+  margin-right: 33.05rem;
 }
 
 .breadcrumb-item a{ 
@@ -369,12 +370,21 @@ aside{
   content: '';
   width: 4px;
   height: 7rem;
-  background-color: green;
   position: absolute;
   left: 0;
   top: 0rem;
 }
 
+/* ============ ARTICLES PAGE || TEXT ========= */
+.s-article-text{
+  margin-right: 30rem;
+}
+
+.s-article-text .clover-container{
+  max-width: 83.2rem;
+  padding-left: 4.9rem;
+  margin: 0;
+}
 
 
 

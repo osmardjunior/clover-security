@@ -1,3 +1,10 @@
+@media (max-width: 1290px){
+  /* ============ ARTICLES PAGE || ASIDE ========= */
+  aside{
+    right: 2.4rem;
+  }
+}
+
 @media (max-width: 1110px){
   /* ========= INDEX UNDERSTANDING CLOVER ======= */
   .s-understanding .home_txt2{
@@ -36,6 +43,12 @@
   .s-hero{
     padding: 6.4rem 1.6rem;
   }
+
+  /* ============ ARTICLES PAGE || ASIDE ========= */
+  /* aside{
+    position: unset;
+    margin-left: 4.9rem;
+  } */
 }
 
 
