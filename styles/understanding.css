@@ -280,14 +280,11 @@
 
 /* =======ARTICLES | BREADCRUMBS ========== */
 .breadcrumbs{
-  border: 1px solid red;
   padding-top: 7.7rem;
   padding-bottom: 3.1rem;
 }
 
 .breadcrumbs .clover-container{
-  border: 1px solid blue;
-  /* max-width: 83.2rem; */
   margin-left: 0rem;
   padding: 0 4.9rem;
 }
@@ -295,7 +292,6 @@
 .breadcrumbs nav{
   width: 100%;
   max-width: 83.2rem;
-  border: 1px solid orange;
 }
 
 .breadcrumb-item a{ 
@@ -320,9 +316,69 @@
 }
 
 /* ======= ARTICLES PAGE || ASIDE ========= */
-aside{
-  border: 1px solid red;
+.breadcrumb-aside{
+  position: relative;
 }
+
+aside{
+  width: 100%;
+  max-width: 28.15rem;
+  position: absolute;
+  right: 16rem;
+  top: 7.7rem;
+}
+
+.aside-header a{
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 1.65rem;
+}
+
+.aside-articles{
+  position: relative;
+}
+
+.aside-articles_links::before{
+  content: '';
+  width: 4px;
+  height: 100%;
+  background-color: #EDEDED;
+  position: absolute;
+}
+
+.aside-articles a{
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 1.65rem;
+  padding-top: 1rem;
+}
+
+.aside-articles a:last-child{
+  padding-bottom: 1rem;
+}
+
+.aside-articles a:not(:last-child){
+  margin-bottom: 1.3rem;
+}
+
+.aside-articles a.active{
+  font-weight: 500;
+}
+
+.aside-articles a.active::before{
+  content: '';
+  width: 4px;
+  height: 7rem;
+  background-color: green;
+  position: absolute;
+  left: 0;
+  top: 0rem;
+}
+
+
+
+
+
 
 
 
