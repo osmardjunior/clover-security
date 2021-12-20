@@ -1,22 +1,24 @@
 // CHANGE MENU ON SCROLL
-// const header = document.querySelector('.js-header')
+const header = document.querySelector('.js-header')
 
-// function menuHandler(event){
+function menuHandler(event){
 
-//   if (window.scrollY > 200) {
-//     header.classList.add('active')
-//     menu1.style.top = '7.1rem'
-//     menu2.style.top = '7.1rem'
+  if (window.scrollY > 200 && window.innerWidth > 1100) {
+    header.classList.add('active')
+    menu1.style.top = '7.1rem'
+    menu2.style.top = '7.1rem'
 
-//   } else {
-//     header.classList.remove('active')
-//     menu1.style.top = '14rem'
-//     menu2.style.top = '14rem'
+  } else if(window.scrollY < 200 || window.innerWidth > 1100){
+    header.classList.remove('active')
+    menu1.style.top = '14rem'
+    menu2.style.top = '14rem'
 
-//   }
-// }
+  }
+}
 
-// window.addEventListener('scroll', menuHandler)
+window.addEventListener('scroll', menuHandler)
+
+
 
 // OPEN/CLOSE DROPDOWN
 // const menu1DropdownHandler = document.querySelector('.js-top-dropdown_menu1')

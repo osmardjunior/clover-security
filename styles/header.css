@@ -31,6 +31,9 @@ header{
   grid-area: logo;
   padding-left: 4.9rem;
   background-color: var(--bg1);
+  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 277.9rem;
 }
 
 .logo a{
@@ -45,6 +48,10 @@ header{
 .phone{
   background-color: var(--bg1);
   grid-area: telephone;
+  /* border: 1px solid blue; */
+  width: 100%;
+  max-width: 6.92rem;
+  margin-left: auto;
 }
 
 .phone a{
@@ -52,8 +59,14 @@ header{
   padding-right: 4.9rem;
 }
 
+.phone a img{
+  max-width: 2.02rem;
+}
+
 .login{
   grid-area: login;
+  width: 100%;
+  max-width: 23.1rem;
 }
 
 .login button.btn2{
@@ -66,13 +79,26 @@ header{
 nav.menu{
   grid-area: nav;
   padding-left: 4.9rem;
+  padding-right: 1.6rem;
+  /* border: 1px solid green; */
+  width: 100%;
+  max-width: 72rem;
   /* border-bottom: 1px solid var(--line2); */
 }
 
 nav.menu ul{
+  width: 100%;
   display: flex;
-  gap: 5.7rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  gap: 2rem;
 }
+
+nav.menu ul li{
+  padding-top: 1rem;
+}
+
 
 nav.menu ul li a{
   font-weight: 400;
@@ -96,6 +122,10 @@ nav.menu ul li a{
 
 .header.active .phone{
   display: none;
+}
+
+.header.active nav.menu{
+  padding-left: 3.8rem;
 }
 
 
@@ -173,13 +203,43 @@ nav.menu ul li a{
 
 
 /********* RESPONSIVE *************/
-@media (max-width: 950px){
+@media (max-width: 1100px){
   .header{
-    grid-template-columns: 26rem 1fr 12.2rem;
+    grid-template-columns: 28rem 1fr 12.2rem;
     grid-template-rows: 5.5rem 5.5rem;
     grid-template-areas: "logo telephone login"
                           "nav nav nav";
   }
+
+  .phone{
+    max-width: 100%;
+  }
+
+  .phone a{
+    padding-right: 2.5rem;
+  }
+
+  nav.menu{
+    max-width: 100%;
+  }
+
+  nav.menu ul{
+    justify-content: start;
+    gap: 4rem;
+  }
+
+  nav.menu ul li:first-child{
+    display: none;
+  }
+}
+
+@media (max-width: 950px){
+  /* .header{
+    grid-template-columns: 26rem 1fr 12.2rem;
+    grid-template-rows: 5.5rem 5.5rem;
+    grid-template-areas: "logo telephone login"
+                          "nav nav nav";
+  } */
 
   .logo{
     padding-left: 1.6rem;
@@ -194,10 +254,6 @@ nav.menu ul li a{
 
 /***************/
 @media (max-width: 720px){
-  nav.menu ul li:first-child{
-    display: none;
-  }
-
   nav.menu ul li a{
     font-size: 1.05rem;
   }
@@ -221,7 +277,6 @@ nav.menu ul li a{
 
   nav.menu ul{
     width: 100%;
-    max-width: 32.7rem;
     justify-content: space-between;
     gap: 0.9rem;
   }
@@ -235,10 +290,5 @@ nav.menu ul li a{
 @media (max-width: 412px){
   .header{
     grid-template-columns: 25rem 1fr 8.5rem;
-  }
-
-  nav.menu{
-    width: 100%;
-    max-width: 34.1rem;
   }
 }
