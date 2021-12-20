@@ -51,12 +51,12 @@ const allAccordions = document.querySelectorAll('.accordion-footer')
 
 accordionContent.forEach((item) => {
     function accordionActive() {
-      allAccordions.forEach((accordion) => {
-        accordion.classList.remove('active')
-      })
-
-        this.parentElement.classList.add('active')
-
+      // allAccordions.forEach((accordion) => {
+      //   accordion.classList.remove('active')
+      // })
+      
+      this.parentElement.classList.toggle('active')
+      
     }
 
     item.addEventListener('click', accordionActive)
