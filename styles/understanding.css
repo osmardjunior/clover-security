@@ -273,7 +273,7 @@
 
 
 
-/* ############# ARTICLES PAGE ################# */
+/* ############# ARTICLE PAGE ################# */
 .s-hero-green-template_txt{
   max-width: 78.1rem;
 }
@@ -357,7 +357,7 @@ ul.aside-articles_list li a.active::before{
   background-color: var(--green);
 }
 
-/* =======ARTICLES | BREADCRUMBS ========== */
+/* =======ARTICLE | BREADCRUMBS ========== */
 .breadcrumbs{
   padding-top: 7.7rem;
   padding-bottom: 3.1rem;
@@ -400,7 +400,7 @@ ul.aside-articles_list li a.active::before{
 
 
 
-/* ============ ARTICLES PAGE || TEXT ========= */
+/* ============ ARTICLE PAGE || TEXT ========= */
 .s-article-text{
   width: 100%;
   max-width: 83.2rem;
@@ -416,6 +416,7 @@ ul.aside-articles_list li a.active::before{
 
 .s-article-text .clover-container img{
   margin-bottom: 5.7rem;
+  border: 1px solid red;
 }
 
 .article-content_wrapper{
