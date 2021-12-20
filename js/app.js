@@ -48,6 +48,22 @@
 // menu1.addEventListener('mouseleave', dropdownMenu1)
 // menu2.addEventListener('mouseleave', dropdownMenu2)
 
+// ACCORDION MOBILE FOOTER
+const accordionContent = document.querySelectorAll('.js-accordion')
+const allAccordions = document.querySelectorAll('.accordion-footer')
+
+accordionContent.forEach((item) => {
+    function accordionActive() {
+      // allAccordions.forEach((accordion) => {
+      //   accordion.classList.remove('active')
+      // })
+      
+      this.parentElement.classList.toggle('active')
+      
+    }
+
+    item.addEventListener('click', accordionActive)
+})
 
 // ADD CLASS COLLAPSE TO ASIDE
 const articleCollapse = document.querySelector('#articlesCollapse')
@@ -76,20 +92,6 @@ function handleDropdownIcon(){
 
 }
 
-asideHeader.addEventListener('click', handleDropdownIcon)
+// asideHeader.addEventListener('click', handleDropdownIcon)
 
-const accordionContent = document.querySelectorAll('.js-accordion')
-const allAccordions = document.querySelectorAll('.accordion-footer')
 
-accordionContent.forEach((item) => {
-    function accordionActive() {
-      // allAccordions.forEach((accordion) => {
-      //   accordion.classList.remove('active')
-      // })
-      
-      this.parentElement.classList.toggle('active')
-      
-    }
-
-    item.addEventListener('click', accordionActive)
-})

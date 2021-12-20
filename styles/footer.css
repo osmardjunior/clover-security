@@ -67,6 +67,22 @@ footer{
   }
 }
 
+@media (max-width: 700px){
+  .footer-bottom{
+    padding-top: 3.9rem;
+    padding-bottom: 2.6rem;
+  }
+
+  .footer-bottom .clover-container{
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .terms-privacy{
+    gap: 3.4rem;
+  }
+}
+
 @media(max-width: 560px){
   .footer-top nav{
     flex-direction: column;
