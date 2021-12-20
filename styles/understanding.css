@@ -368,7 +368,7 @@ ul.aside-articles_list li a.active::before{
 
 .breadcrumbs .clover-container{
   margin-left: 0rem;
-  padding: 0 0 0 2.9rem;
+  padding: 0 0 0 4.9rem;
 }
 
 .breadcrumbs nav{
@@ -412,6 +412,7 @@ ul.aside-articles_list li a.active::before{
   /* max-width: 83.2rem; */
   max-width: unset;
   /* padding: 0 4.9rem 10.8rem 4.9rem; */
+  padding-left: 4.9rem;
   margin: 0;
 }
 
@@ -443,6 +444,10 @@ h2.no-margin-top{
 
 .article-p-mobile{
   padding-bottom: 10.8rem;
+}
+
+.article-content ul{
+  margin-left: 1.5rem;
 }
 
 .article-content ul li{
