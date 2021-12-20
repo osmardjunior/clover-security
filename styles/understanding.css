@@ -368,7 +368,7 @@ ul.aside-articles_list li a.active::before{
 
 .breadcrumbs .clover-container{
   margin-left: 0rem;
-  padding: 0 0 0 4.9rem;
+  padding: 0 0 0 2.9rem;
 }
 
 .breadcrumbs nav{
@@ -411,12 +411,16 @@ ul.aside-articles_list li a.active::before{
 .s-article-text .clover-container{
   /* max-width: 83.2rem; */
   max-width: unset;
-  padding: 0 4.9rem 10.8rem 4.9rem;
+  /* padding: 0 4.9rem 10.8rem 4.9rem; */
   margin: 0;
 }
 
 .s-article-text .clover-container img{
   margin-bottom: 5.7rem;
+}
+
+.article-content{
+  margin-right: 2rem;
 }
 
 .article-content h2{
@@ -425,12 +429,20 @@ ul.aside-articles_list li a.active::before{
   font-size: 2.8rem;
 }
 
-.article-content:not(:first-child) h2{
+.article-content h2{
   margin-top: 4rem;
+}
+
+h2.no-margin-top{
+  margin-top: 0;
 }
 
 .article-content p{
   font-weight: 400;
+}
+
+.article-p-mobile{
+  padding-bottom: 10.8rem;
 }
 
 .article-content ul li{
@@ -452,7 +464,7 @@ ul.aside-articles_list li a.active::before{
   width: 100%;
   max-width: 80.2rem;
   grid-area: next;
-  padding: 0 4.9rem;
+  padding: 0rem;
   /* border: 1px solid red; */
   width: 100%;
 }
