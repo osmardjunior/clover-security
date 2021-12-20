@@ -21,6 +21,12 @@
   .s-education-articles .clover-container{
     justify-content: space-around;
   }
+
+  /* ========== ARTICLE PAGE || PREVIOUS NEXT ====== */
+  /* .previous-next .clover-container {
+    padding-right: 0;
+    max-width: 46.2rem;
+  } */
 }
 
 
@@ -333,7 +339,7 @@
   }
 
   .s-article-text .clover-container{
-    padding: 0 1.6rem;
+    padding: 0 1.6rem 6.2rem 1.6rem;
     max-width: 100%;
   }
 
@@ -353,6 +359,21 @@
   .article-content ul{
     margin-left: 1.6rem;
   }
+
+  /* ===== ARTICLE PAGE || NEXT PREVIOUS ========= */
+  .previous-next{
+    padding: 0 1.6rem;
+    position: sticky;
+  }
+
+  .previous-next .clover-container{
+    padding-bottom: 12.8rem;
+  }
+
+  .previous-next a{
+    font-size: 1.6rem;
+  }
+
 }
 
 
