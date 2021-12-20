@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.917" height="37.917" viewBox="0 0 37.917 37.917">
+  <g id="completely-customizable-icon" transform="translate(-0.042 -0.042)">
+    <path id="Path_4533" data-name="Path 4533" d="M37.208,34.042a3.167,3.167,0,0,1-3.167,3.167H3.958A3.168,3.168,0,0,1,.792,34.042V3.958A3.168,3.168,0,0,1,3.958.792H34.042a3.167,3.167,0,0,1,3.167,3.167ZM.792,8.708H37.208" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_4534" data-name="Path 4534" d="M7.125,4.75a.792.792,0,1,1-.792-.792A.792.792,0,0,1,7.125,4.75Zm4.75,0a.792.792,0,1,1-.792-.792A.792.792,0,0,1,11.875,4.75Zm4.75,0a.792.792,0,1,1-.792-.792A.792.792,0,0,1,16.625,4.75ZM5.542,18.208h4.75m-4.75,4.75h4.75m-4.75,4.75h4.75" fill="none" stroke="#43b02a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_4535" data-name="Path 4535" d="M5.542,32.458h4.75v-19H5.542Z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_4536" data-name="Path 4536" d="M22.958,24.542h2.375l1.881,1.583h5.244v6.333h-9.5Z" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_4537" data-name="Path 4537" d="M17.262,22.278,28.7,15.808" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_4538" data-name="Path 4538" d="M31.469,14.275a1.583,1.583,0,1,1-2.15-.621A1.58,1.58,0,0,1,31.469,14.275ZM16.514,24.389a1.584,1.584,0,1,1,.749-2.111A1.583,1.583,0,0,1,16.514,24.389Z" fill="none" stroke="#43b02a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>
