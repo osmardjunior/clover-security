@@ -18,6 +18,7 @@
 
 // window.addEventListener('scroll', menuHandler)
 
+
 // OPEN/CLOSE DROPDOWN
 // const menu1DropdownHandler = document.querySelector('.js-top-dropdown_menu1')
 // const menu1 = document.querySelector('.menu-dropdown1')

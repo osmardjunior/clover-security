@@ -74,7 +74,7 @@ nav.menu ul{
   gap: 5.7rem;
 }
 
-nav.menu ul li a{
+.header nav.menu ul li a{
   font-weight: 400;
   display: flex;
   gap: 1.2rem;
@@ -108,6 +108,7 @@ nav.menu ul li a{
   position: fixed;
   top: 14rem;
   width: 100%;
+  border: 1px solid red;
 
   opacity: 0;
   pointer-events: none;
@@ -155,6 +156,7 @@ nav.menu ul li a{
 .top-dropdown_menu1{
   display: flex;
   gap: 4.5rem;
+  border: 1px solid green;
 }
 
 /* MENU UNDERSTANDING DATA SECURITY */
