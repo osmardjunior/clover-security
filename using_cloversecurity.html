@@ -140,38 +140,38 @@
     <!-- TABS -->
     <section class="tabs">
       <div class="clover-container">
-        <!-- SWIPER HEADER -->
+        <!-- TABS HEADER -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <p id="loggingin">Logging in and registering</p>
+              <p id="logging">LOGGING IN AND REGISTERING</p>
             </div>
             <div class="swiper-slide">
-              <p id="completing_profile">Completing your profile</p>
+              <p id="completing-profile">COMPLETING YOUR PROFILE</p>
             </div>
             <div class="swiper-slide">
-              <p id="conducting_network">Conducting a network scan</p>
+              <p id="conducting-network">CONDUCTING A NETWORK SCAN</p>
             </div>
             <div class="swiper-slide">
-              <p id="conducting_group">Conducting a group scan</p>
+              <p id="conducting-group">CONDUCTING A GROUP SCAN</p>
             </div>
             <div class="swiper-slide">
-              <p id="network_scanning">Network scanning FAQ</p>
+              <p id="network-scanning">NETWORK SCANNING FAQ</p>
             </div>
             <div class="swiper-slide">
-              <p id="completing_security">Completing your security assessment</p>
+              <p id="completing-security">COMPLETING YOUR SECURITY ASSESSMENT</p>
             </div>
             <div class="swiper-slide">
-              <p id="revalidanting">Revalidating if no changes have occurred</p>
+              <p id="revalidating">REVALIDANTING IF NO CHANGES HAVE OCCURRED</p>
             </div>
             <div class="swiper-slide">
-              <p id="managing_profile">Managing your profile and adding users</p>
+              <p id="managing-profile">MANAGING YOUR PROFILE AND ADDING USERS</p>
             </div>
             <div class="swiper-slide">
               <p id="faq">FAQ</p>
             </div>
           </div>
-          <div class="navigation-buttons">
+          <div class="slider-navigation">
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
@@ -236,12 +236,19 @@
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 0,
+      freeMode: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
     });
+  </script>
+
+  <script>
+    const activeTab = document.querySelector('swiper-slide-active').
+
+    console.log(activeTab)
   </script>
 </body>
 </html>
