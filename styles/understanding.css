@@ -363,6 +363,26 @@ ul.aside-articles_list li a.active::before{
   background-color: var(--green);
 }
 
+main.articleTwo ul.aside-articles_list li a.active::before{
+  height: 5rem;
+  top: 6.5rem;
+}
+
+main.articleThree ul.aside-articles_list li a.active::before{
+  height: 6rem;
+  top: 11.5rem;
+}
+
+main.articleFour ul.aside-articles_list li a.active::before{
+  height: 5rem;
+  top: 17.5rem;
+}
+
+main.articleFive ul.aside-articles_list li a.active::before{
+  height: 5rem;
+  top: 22rem;
+}
+
 /* =======ARTICLE | BREADCRUMBS ========== */
 .breadcrumbs{
   padding-top: 7.7rem;
@@ -465,6 +485,10 @@ h2.no-margin-top{
   color: var(--green);
 }
 
+main.articleThree .article-content p:not(:last-child){
+  margin-bottom: 1.6rem;
+}
+
 /* ====== ARTICLE PAGE || PREVIOUS NEXT ========== */
 .previous-next-mobile{
   display: none;
@@ -500,6 +524,7 @@ h2.no-margin-top{
 
 .previous-next a.inactive-link{
   color: var(--font-inactive);
+  cursor: unset;
 }
 
 
