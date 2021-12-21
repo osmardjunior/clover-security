@@ -7,6 +7,10 @@
   background-position: 0% 100%, 0% 100%, 61% 0%;
 }
 
+.s-hero-using .clover-container{
+  max-width: 131.6rem
+}
+
 .s-hero-using_txt{
   padding: 9.1rem 0rem;
   width: 100%;
@@ -55,6 +59,79 @@
 }
 
 
+/* ============= USING PAGE || TABS ===================== */
+.tabs{
+  border: 1px solid blue;
+}
+.tabs .clover-container{
+  max-width: 131.6rem;
+  border: 1px solid red;
+}
+
+.swiper-wrapper{
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 121.2rem;
+  margin: 0 auto;
+}
+
+.swiper-slide{
+  margin: 0 auto;
+  width: 100%;
+  /* max-width: 30rem; */
+  text-align: center;
+  border: 1px solid pink;
+}
+
+.navigation-buttons{
+  border: 1px solid orange;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: url(../assets/svg/arrow-white.svg);
+  height: 100%;
+  margin-bottom: 2.6rem;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 0;
+  top: 64%;
+  background-color: var(--green);
+  width: 2.8rem;
+  height: 2.8rem;
+  padding-left: 0.3rem;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: url(../assets/svg/arrow-black.svg);
+  height: 100%;
+  margin-bottom: 3rem;
+}
+
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 0rem;
+  top: 64%;
+  border: 1px solid var(--btn-border);
+  background-color: var(--white);
+  width: 2.8rem;
+  height: 2.8rem;
+  padding-left: 0.3rem;
+}
+
+.swiper-slide p{
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--font-inactive);
+  text-transform: uppercase;
+}
+
+.swiper-slide p.active{
+  color: var(--black);
+}
 
 
 
