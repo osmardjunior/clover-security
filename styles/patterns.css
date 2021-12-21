@@ -74,9 +74,9 @@ main{
   border-color: var(--black);
 }
 
-.btn1:hover a{
+/* .btn1:hover a{
   color: var(--black);
-}
+} */
 
 .btn2{
   background-color: var(--green);

@@ -145,6 +145,37 @@
   .s-contact-us .clover-container{
     padding: 0 1.6rem;
   }
+   
+  /* ========== USING PAGE || TEXT CONTENT============ */
+  .s-using-content{
+    padding: 6rem 0rem;
+  }
+
+  .s-using-content .clover-container{
+    padding: 0 1.6rem;
+  }
+
+  .s-using-content .clover-container h1{
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .s-using-content .clover-container > p{
+    font-size: 1.4rem;
+  }
+
+  .highlight p,
+  .highlight p a.link{
+    font-size: 2rem;
+  }
+
+  .arrow{
+    display: block;
+    width: 1.4rem;
+    margin-inline: auto;
+    margin-top: 0.9rem;
+  }
+
 
   /* =========== UNDERSTANDING || HERO ========== */
   .s-hero-understanding .clover-container{
@@ -490,13 +521,34 @@
     margin-bottom: 6.4rem;
   }
 
+  /* =========== USING PAGE || HERO =============== */
+  .s-hero-using{
+    background: url(../assets/svg/black-gradient.svg),
+                url(../assets/svg/green-gradient.svg),
+                url(../assets/using-clover-page-img/hero-using-mobile.png); 
+    background-size: cover;
+    background-position: 0% 100%, 0% 100%, 61% 12%; 
+  }
+
+  .s-hero-using .clover-container{
+    padding: 0 1.6rem;
+  }
+
+  .s-hero-using_txt{
+    padding: 6.6rem 0rem;
+    max-width: 28.3rem;
+  }
+
+  .s-hero-using .btn1 a{
+    font-size: 1.2rem;
+  }
+
   /* =========== UNDERSTANDING || HERO ======== */
   .s-hero-understanding{
     background: url(../assets/svg/black-gradient.svg),
               url(../assets/svg/green-gradient.svg),
               url(../assets/understanding-page-img/hero-understanding-mobile.png);
     background-position: 0% 100%, 0% 100%, 61% 29%;
-    background-size: cover;
   }
 
   .s-hero-understanding_txt{
