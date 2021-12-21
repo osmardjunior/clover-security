@@ -449,10 +449,12 @@
   }
 
   .breadcrumb-item:first-child::before{
-    content: '>';
-    color: var(--gray);
-    font-weight: 500;
+    content: url(../assets/svg/breadcrumb-icon.svg);
     padding-right: 0.5rem;
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    padding-left: 0;
   }
 
   .breadcrumb-item a{ 

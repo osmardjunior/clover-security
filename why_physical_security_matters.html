@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clover Security</title>
+  <title>Clover Security - Why physical security matters</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
 
   <!-- BOOTSTRAP CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -51,7 +53,7 @@
       </nav>
       <div class="login">
         <button class="btn2">
-          <a href="">Log in</a>
+          <a href="https://cloversecurity.com/safemaker/login/portal" target="_blank">Log in</a>
         </button>
       </div>
     </div>
@@ -115,16 +117,16 @@
           <a data-bs-toggle="collapse" href="#articlesCollapse" role="button" aria-expanded="false"
             aria-controls="collapseExample">
             Articles
-            <img src="./assets/svg/arrow-black.svg" alt="Dropdown icon">
+            <img src="./assets/svg/dropdown-mobile-icon.svg" alt="Dropdown icon">
           </a>
         </div>
         <div class="aside-articles" id="articlesCollapse">
           <ul class="aside-articles_list">
-            <li><a href="article1.html">5 Tips To Ensure Your Computer Is Secure</a></li>
+            <li><a href="five_tips_to_ensure_your_computer_is_secure.html">5 Tips To Ensure Your Computer Is Secure</a></li>
             <li><a href="#" class="active">Why Physical Security Matters</a></li>
-            <li><a href="">Good Security Practices For The Retail Industry</a></li>
-            <li><a href="">What is information security?</a></li>
-            <li><a href="">What is sensitive information?</a></li>
+            <li><a href="good_security_practices_for_the_retail_industry.html">Good Security Practices For The Retail Industry</a></li>
+            <li><a href="what_is_information_security.html">What is information security?</a></li>
+            <li><a href="what_is_sensitive_information.html">What is sensitive information?</a></li>
           </ul>
         </div>
       </aside>
@@ -214,6 +216,40 @@
       </div>
     </section>
   </footer>
+
+  <!-- ASIDE JS -->
+  <script>
+    // ADD CLASS COLLAPSE TO ASIDE
+    const articleCollapse = document.querySelector('#articlesCollapse')
+    const dropdownAsideIcon = document.querySelector('.aside-header a img')
+    const asideShow = document.querySelector('.aside-articles')
+
+    function handleCollapseArticle() {
+
+      if (window.innerWidth < 800) {
+        articleCollapse.classList.add('collapse')
+
+      } else {
+        articleCollapse.classList.remove('collapse')
+      }
+
+    }
+
+    window.addEventListener('resize', handleCollapseArticle)
+
+    // ROTATE ASIDE DROPDOWN ICON
+    const asideHeader = document.querySelector('.js-aside-header')
+
+    function handleDropdownIcon() {
+      dropdownAsideIcon.classList.toggle('rotate-icon')
+
+    }
+
+    asideHeader.addEventListener('click', handleDropdownIcon)
+
+
+
+  </script>
 
   <script src="./js/app.js"></script>
 

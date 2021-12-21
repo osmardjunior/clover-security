@@ -313,12 +313,12 @@ aside{
 }
 
 .aside-header a img{
-  transform: rotate(-90deg);
   display: none;
+  transition: .2s;
 }
 
 .aside-header a img.rotate-icon{
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 .aside-articles{
@@ -418,10 +418,13 @@ main.articleFive ul.aside-articles_list li a.active::before{
   color: var(--black);
 }
 
+.breadcrumb-item+.breadcrumb-item {
+  padding-left: 0rem;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
-  content: ">";
-  color: var(--gray);
-  font-weight: 500;
+  content: url(../assets/svg/breadcrumb-icon.svg);
+  padding: 0 0.9rem;
 }
 
 

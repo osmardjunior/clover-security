@@ -65,33 +65,4 @@ accordionContent.forEach((item) => {
     item.addEventListener('click', accordionActive)
 })
 
-// ADD CLASS COLLAPSE TO ASIDE
-const articleCollapse = document.querySelector('#articlesCollapse')
-const dropdownAsideIcon = document.querySelector('.aside-header a img')
-const asideShow = document.querySelector('.aside-articles')
-
-function handleCollapseArticle(){
-
-  if (window.innerWidth < 800) {
-    articleCollapse.classList.add('collapse')
-
-  } else{
-    articleCollapse.classList.remove('collapse')
-  }
-
-}
-
-window.addEventListener('resize', handleCollapseArticle)
-
-
-// ROTATE ASIDE DROPDOWN ICON
-const asideHeader = document.querySelector('.js-aside-header')
-
-function handleDropdownIcon(){
-  dropdownAsideIcon.classList.toggle('rotate-icon')
-
-}
-
-// asideHeader.addEventListener('click', handleDropdownIcon)
-
 
