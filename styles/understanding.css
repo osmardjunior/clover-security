@@ -67,7 +67,7 @@ main{
 
 .tabs .clover-container{
   max-width: 131.6rem;
-  padding: 1.5rem 4.9rem;
+  padding: 0 4.9rem;
   border: 1px solid green;
 }
 
@@ -75,6 +75,7 @@ main{
   max-width: 100%;
   height: 7.3rem;
   border: 1px solid blue;
+  display: flex;
 }
 
 .header-swiper .swiper-wrapper{
@@ -162,19 +163,17 @@ main{
 .swiper-slide.swiper-slide-active p#completing-profile{
   width: 100%;
   max-width: 23.7rem;
+}*/
+
+/* .swiper-slide p#conducting-network{
+  margin-right: 4rem;
 }
 
-.swiper-slide.swiper-slide-active p#conducting-network{
-  width: 100%;
-  max-width: 27.3rem;
-}
+.swiper-slide p#conducting-group{
+  margin-right: 2rem;
+} */
 
-.swiper-slide.swiper-slide-active p#conducting-group{
-  width: 100%;
-  max-width: 24.9rem;
-}
-
-.swiper-slide.swiper-slide-active p#network-scanning{
+/*.swiper-slide.swiper-slide-active p#network-scanning{
   width: 100%;
   max-width: 21.8rem;
 }*/
@@ -192,16 +191,17 @@ main{
 }
 
 .swiper-slide.swiper-slide-active p#revalidating::after{
-  width: 155%;
+  width: 165%;
 }
 
 .swiper-slide p#managing-profile{
-  padding-right: 35rem;
-  width: 186%;
+  /* padding-right: 35rem; */
+  margin-right: 3rem;
+  /* width: 186%; */
 }
 
-.header-swiper .swiper-slide.swiper-slide-active p#managing-profile::after {
-  bottom: 0.6rem;
+.swiper-slide.swiper-slide-active p#managing-profile::after {
+  width: 184%;
 }
 
 .header-swiper .swiper-slide:last-child{
