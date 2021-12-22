@@ -49,6 +49,15 @@
   .s-hero{
     padding: 6.4rem 1.6rem;
   }
+
+  /* ========= USING CLOVER || TABS ============= */
+  .swiper-slide.swiper-slide-next p#network-scanning{
+    margin-right: 4rem;
+  }
+
+  .swiper-slide.swiper-slide-next p#completing-security{
+    margin-right: 4rem;
+  }
 }
 
 

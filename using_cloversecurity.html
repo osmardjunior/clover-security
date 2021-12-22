@@ -237,21 +237,41 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20,
       freeMode: true,
-      slidesOffsetAfter: 450,
+      slidesOffsetAfter: 850,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
       // RESPONSIVE
       breakpoints: {
-        1080: {
+        // window >= 1290px
+        1290: {
           slidesPerView: 3,
-          spaceBetween: 20,
-          slidesOffsetAfter: 750
+          slidesOffsetAfter: 800
+          // slidesOffsetAfter: 0
+
+        },
+
+        // window >= 1080px
+        1150: {
+          slidesPerView: 3,
+          slidesOffsetAfter: 700
+          // slidesOffsetAfter: 0
+
+        },
+        700: {
+          slidesPerView: 2,
+          slidesOffsetAfter: 300
+        },
+        300: {
+          slidesPerView: 1,
+          slidesOffsetAfter: 0
         }
+
+
       }
     });
   </script>
