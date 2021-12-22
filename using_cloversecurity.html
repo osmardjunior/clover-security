@@ -141,39 +141,41 @@
     <section class="tabs">
       <div class="clover-container">
         <!-- TABS HEADER -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <p id="logging">LOGGING IN AND REGISTERING</p>
+        <div class="header-swiper">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p id="logging">LOGGING IN AND REGISTERING</p>
+              </div>
+              <div class="swiper-slide">
+                <p id="completing-profile">COMPLETING YOUR PROFILE</p>
+              </div>
+              <div class="swiper-slide">
+                <p id="conducting-network">CONDUCTING A NETWORK SCAN</p>
+              </div>
+              <div class="swiper-slide">
+                <p id="conducting-group">CONDUCTING A GROUP SCAN</p>
+              </div>
+              <div class="swiper-slide">
+                <p id="network-scanning">NETWORK SCANNING FAQ</p>
+              </div>
+              <div class="swiper-slide">
+                <p id="completing-security">COMPLETING YOUR SECURITY ASSESSMENT</p>
+              </div>
+              <div class="swiper-slide">
+                <p id="revalidating">REVALIDANTING IF NO CHANGES HAVE OCCURRED</p>
+              </div>
+              <div class="swiper-slide">
+                <p id="managing-profile">MANAGING YOUR PROFILE AND ADDING USERS</p>
+              </div>
+              <div class="swiper-slide">
+                <p id="faq">FAQ</p>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <p id="completing-profile">COMPLETING YOUR PROFILE</p>
+            <div class="slider-navigation">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-            <div class="swiper-slide">
-              <p id="conducting-network">CONDUCTING A NETWORK SCAN</p>
-            </div>
-            <div class="swiper-slide">
-              <p id="conducting-group">CONDUCTING A GROUP SCAN</p>
-            </div>
-            <div class="swiper-slide">
-              <p id="network-scanning">NETWORK SCANNING FAQ</p>
-            </div>
-            <div class="swiper-slide">
-              <p id="completing-security">COMPLETING YOUR SECURITY ASSESSMENT</p>
-            </div>
-            <div class="swiper-slide">
-              <p id="revalidating">REVALIDANTING IF NO CHANGES HAVE OCCURRED</p>
-            </div>
-            <div class="swiper-slide">
-              <p id="managing-profile">MANAGING YOUR PROFILE AND ADDING USERS</p>
-            </div>
-            <div class="swiper-slide">
-              <p id="faq">FAQ</p>
-            </div>
-          </div>
-          <div class="slider-navigation">
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div>
@@ -236,7 +238,7 @@
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
-      spaceBetween: 0,
+      spaceBetween: 20,
       freeMode: true,
       slidesOffsetAfter: 850,
       navigation: {
