@@ -1,7 +1,5 @@
 /* ################ USING PAGE || HERO ############ */
-main{
-  border: 1px solid pink;
-}
+
 
 .s-hero-using{
   background: url(../assets/svg/black-gradient.svg),
@@ -541,6 +539,9 @@ main{
 } 
 
 .article-page-grid{
+  width: 100%;
+  max-width: 125.3rem;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 28.15rem;
   grid-template-rows: 12.1rem auto 1fr;
