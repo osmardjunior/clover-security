@@ -1,6 +1,4 @@
 /* ################ USING PAGE || HERO ############ */
-
-
 .s-hero-using{
   background: url(../assets/svg/black-gradient.svg),
               url(../assets/svg/green-gradient.svg),
@@ -231,10 +229,6 @@
   max-width: 4.4rem;
 }
 
-
-
-
-
 /* @keyframes underline {
   from{
     width: 0%;
@@ -254,6 +248,18 @@
     width: 180%
   }
 } */
+
+/* ============ USING PAGE || LOGGING IN AND REGISTERING === */
+.tabs{
+  border: 1px solid red;
+}
+
+.tabs .clover-container{
+  border: 1px solid blue;
+}
+.tabs-content{
+  border: 1px solid red;
+}
 
 
 
