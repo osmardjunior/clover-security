@@ -3,9 +3,14 @@
   aside{
     right: 2.4rem;
   }
+
+  /* ============= USING PAGE || TABS ================ */
+  .swiper-slide.swiper-slide-active p#revalidating::after{
+    width: 145%;
+  } 
 }
 
-@media (max-width: 1110px){
+@media (max-width: 1150px){
   /* ========= INDEX UNDERSTANDING CLOVER ======= */
   .s-understanding .home_txt2{
     left: -2rem;
@@ -22,11 +27,11 @@
     justify-content: space-around;
   }
 
-  /* ========== ARTICLE PAGE || PREVIOUS NEXT ====== */
-  /* .previous-next .clover-container {
-    padding-right: 0;
-    max-width: 46.2rem;
-  } */
+  /* ========== USING PAGE || TABS ====== */
+  .swiper-slide.swiper-slide-active p#revalidating::after{
+    left: -4rem;
+    width: 121%;
+  }
 }
 
 
@@ -183,6 +188,16 @@
     width: 1.4rem;
     margin-inline: auto;
     margin-top: 0.9rem;
+  }
+
+  /* =========== USING PAGE || TABS ================== */
+  .tabs .clover-container{
+    padding: 0 1.6rem;
+  }
+
+  .swiper-slide.swiper-slide-active p#revalidating::after{
+    left: 0;
+    width: 143%;
   }
 
 
@@ -561,6 +576,33 @@
     font-size: 1.2rem;
   }
 
+  /* =========== USING PAGE || TABS ================ */
+  .slider-navigation{
+    display: none;
+  }
+
+  .swiper-slide.swiper-slide-active p#completing-security::after{
+    width: 100%;
+  }
+
+  .swiper-slide.swiper-slide-active p#revalidating{
+    margin-left: 0rem;
+    margin-right: 3rem;
+  }
+
+  .swiper-slide.swiper-slide-active p#revalidating::after{
+    left: 0;
+    width: 100%;
+  }
+
+  .swiper-slide.swiper-slide-active p#managing-profile{
+    margin: 0;
+  }
+
+  .swiper-slide.swiper-slide-active p#managing-profile::after{
+    width: 100%;
+  }
+
   /* =========== UNDERSTANDING || HERO ======== */
   .s-hero-understanding{
     background: url(../assets/svg/black-gradient.svg),
@@ -599,6 +641,35 @@
     bottom: -28rem;
   }
 
+  /* =========== USING PAGE || TABS ====================*/
+  .header-swiper .swiper-wrapper{
+    margin: 0 2.5rem;
+  }
+
+  .header-swiper .swiper-slide{
+    padding-right: 0rem;
+  }
+
+  .swiper-slide.swiper-slide-active p#completing-profile{
+    margin-left: 0;
+  }
+
+  .swiper-slide.swiper-slide-active p#completing-security{
+    margin-right: 5rem;
+  }
+
+  .swiper-slide.swiper-slide-active p#completing-security::after{
+    width: 164%;
+  }
+
+  .swiper-slide.swiper-slide-active p#revalidating::after{
+    width: 150%;
+  }
+
+  .swiper-slide.swiper-slide-active p#managing-profile::after{
+    width: 164%;
+  }
+
   /* ============== INDEX UNDERSTANDING CLOVER ======== */
   .s-understanding .s-understanding_content{
     max-width: 28.8rem;
@@ -612,5 +683,6 @@
     bottom: -33.5rem;
     left: 5rem;
   }
+
   
 }
