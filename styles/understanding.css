@@ -559,9 +559,10 @@ aside{
   /* max-width: 28.15rem; */
   position: sticky;
   right: 16rem;
-  top: 30%;
+  top: 24%;
   margin-left: auto;
   margin-top: 7.7rem;
+  margin-bottom: 30rem;
 }
 
 .aside-header a{
