@@ -135,70 +135,200 @@
     </section>
 
     <!-- TABS -->
-    <section class="tabs">
+    <section class="header-tabs">
       <div class="clover-container">
         <div class="header-carousel">
           <div class="header-slider">
-            <section id="logging" class="active">
-              <h4>Logging</h4>
+            <section class="active">
+              <h4>Logging In And Registering</h4>
             </section>
-            <section id="completing-profile">
-              <h4>Completing profile</h4>
+            <section>
+              <h4>Completing Your Profile</h4>
             </section>
-            <section id="conducting-network">
-              <h4>Conducting profile</h4>
+            <section>
+              <h4>Conducting A Network Scan</h4>
             </section>
-            <section id="conducting-group">
-              <h4>Conducting group</h4>
+            <section>
+              <h4>Conducting A Group Scan</h4>
             </section>
-            <section id="network">
-              <h4>Network</h4>
+            <section>
+              <h4>Network Scanning FAQ</h4>
             </section>
-            <section id="completing-security">
-              <h4>Completing security</h4>
+            <section>
+              <h4>Completing Your Security Assessment</h4>
             </section>
-            <section id="revalidating">
-              <h4>Revalidating</h4>
+            <section>
+              <h4>Revalidating If No Changes Have Occurred</h4>
             </section>
-            <section id="managing">
-              <h4>Managing</h4>
+            <section>
+              <h4>Managing Your Profile And Adding Users</h4>
             </section>
-            <section id="faq">
+            <section>
               <h4>FAQ</h4>
             </section>
           </div>
 
           <div class="controls">
-            <span class="arrow-control previous">PREVIOUS</span>
-            <span class="arrow-control next">NEXT</span>
-            
+            <span class="arrow-control previous inactive">
+              <img src="./assets/svg/arrow-white.svg" alt="Black arrow">
+            </span>
+            <span class="arrow-control next">
+              <img src="./assets/svg/arrow-white.svg" alt="White arrow">
+            </span>  
           </div>
         </div>
       </div>
     </section>
+
+    <!-- TABS CONTENT -->
+    <section class="inner-tabs">
+      <div class="clover-container">
+        <div class="inner-tabs-carousel">
+          <div class="inner-tabs-slider">
+            <section id="logging" >
+              <h1>Logging</h1>
+            </section>
+            <section id="completing-profile">
+              <h1>Completing profile</h1>
+            </section>
+            <section id="conducting-network">
+              <h1>Conducting Netwok</h1>
+            </section>
+            <section id="conducting-group">
+              <h1>Conducting group</h1>
+            </section>
+            <section id="network">
+              <h1>Network</h1>
+            </section>
+            <section id="completing-security">
+              <h1>Completing security</h1>
+            </section>
+            <section id="revalidating">
+              <h1>Revalidating</h1>
+            </section>
+            <section id="managing">
+              <h1>Managing</h1>
+            </section>
+            <section id="faq">
+              <h1>FAQ</h1>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTROL BUTTONS -->
+    <div class="bottom-controls">
+      <div class="clover-container">
+        <span class="arrow-control previous">Previous</span>
+        <span class="arrow-control next">Next</span>
+      </div>
+    </div>
   </main>
 
- 
+  <footer>
+    <!-- FOOTER BOTTOM -->
+    <section class="footer-top">
+      <div class="clover-container">
+        <nav>
+          <div class="footer-nav">
+            <p>USING CLOVERSECURITY.COM</p>
+            <ul>
+              <li><a href="">Logging In And Registering</a></li>
+              <li><a href="">Completing Your Profile</a></li>
+              <li><a href="">Conducting A Network Scan</a></li>
+              <li><a href="">Conducting A Group Scan</a></li>
+              <li><a href="">Network Scanning FAQ</a></li>
+              <li><a href="">Completing Your Security Assessment</a></li>
+              <li><a href="">Revalidating If No Changes Have Occurred</a></li>
+              <li><a href="">Managing Your Profile And Adding Users</a></li>
+              <li><a href="">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav">
+            <p>UNDERSTANDING DATA SECURITY</p>
+            <ul>
+              <li><a href="">Education Videos</a></li>
+              <li><a href="">Education Articles</a></li>
+              <li><a href="">Useful Links</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- FOOTER BOTTOM -->
+    <section class="footer-bottom">
+      <div class="clover-container">
+        <p>© 2021 Fiserv. All rights reserved. The Clover name and logo are registered trademarks owned by Clover
+          Network, Inc., a wholly owned subsidiary of Fiserv.</p>
+        <div class="terms-privacy">
+          <a href="">Terms and Conditions</a>
+          <a href="https://merchants.fiserv.com/en-us/privacy/?utm_source=firstdataus" target="_blank">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+  </footer>
 
   <script src="./js/app.js"></script>
 
   <script>
-    const slider = document.querySelector('.header-slider')
-    const previous = document.querySelector('.previous')
-    const next = document.querySelector('.next')
+    const headerSlider = document.querySelector('.header-slider')
+    const innerSlider = document.querySelector('.inner-tabs-slider')
+    const previous = document.querySelectorAll('.previous')
+    const next = document.querySelectorAll('.next')
+
+    const arrow = document.querySelectorAll('.controls .arrow-control')
 
     let sectionIndex = 0
 
-    previous.addEventListener('click', () => {
-      sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0
+    previous.forEach((buttonPrev) => {
+      buttonPrev.addEventListener('click', () => {
+        const next = document.querySelectorAll('.next')
 
-      slider.style.transform = `translate(${(sectionIndex) * (-3.711)}%)`
+        sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0
+
+        headerSlider.style.transform = `translate(${(sectionIndex) * (-3.711)}%)`
+        innerSlider.style.transform = `translate(${(sectionIndex) * (-11.11)}%)`
+
+        if(sectionIndex == 0){
+          buttonPrev.classList.add('inactive')
+        }
+
+        next.forEach((item) => {
+          item.classList.remove('inactive')
+        })
+
+        // arrow.forEach((arrow) => {
+        //   // arrow.classList.remove('inactive')
+        //   if(sectionIndex < 0 ){
+        //     arrow.classList.add('inactive')
+        //   }
+          
+        // })
+      })
     })
 
-    next.addEventListener('click', () => {
-      sectionIndex = (sectionIndex < 8) ? sectionIndex + 1 : 8
+    next.forEach((buttonNext) => {
+      buttonNext.addEventListener('click', (event) => {
+        const previous = document.querySelectorAll('.previous')
 
-      slider.style.transform = `translate(${(sectionIndex) * (-3.711)}%)`
+        sectionIndex = (sectionIndex < 8) ? sectionIndex + 1 : 8
+
+        headerSlider.style.transform = `translate(${(sectionIndex) * (-3.711)}%)`
+        innerSlider.style.transform = `translate(${(sectionIndex) * (-11.11)}%)`
+
+        if(sectionIndex > 7){
+          buttonNext.classList.add('inactive')
+        }
+
+        previous.forEach((item) => {
+          item.classList.remove('inactive')
+        })
+
+      })
+
     })
 
   </script>
