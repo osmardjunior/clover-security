@@ -48,6 +48,8 @@
 // menu1.addEventListener('mouseleave', dropdownMenu1)
 // menu2.addEventListener('mouseleave', dropdownMenu2)
 
+
+
 // ACCORDION MOBILE FOOTER
 const accordionContent = document.querySelectorAll('.js-accordion')
 const allAccordions = document.querySelectorAll('.accordion-footer')

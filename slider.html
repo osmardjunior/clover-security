@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .container{
+      width: 1268px;
+      margin: 0 auto;
+      border: 1px solid red;
+    }
+
+    .carousel{
+      border: 2px solid #ccc;
+      height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider{
+      height: 100%;
+      display: flex;
+      width: 500%;
+      border: 1px solid blue;
+      transition: .5s;
+    }
+
+    .slider section{
+      flex-basis: 6.65%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid green;
+    }
+
+    .arrow{
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+    }
+
+    .left{
+      left: 10px;
+    }
+
+    .right{
+      right: 10px;
+    }
+
+    ul{
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translate(-50%);
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li{
+      width: 14px;
+      height: 14px;
+      border: 2px solid #333;
+      border-radius: 50px;
+      background-color: #333;
+      cursor: pointer;
+    }
+
+    ul li.selected{
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="carousel">
+      <div class="slider">
+        <section>content for section 1</section>
+        <section>content for section 2</section>
+        <section>content for section 3</section>
+        <section>content for section 4</section>
+        <section>content for section 5</section>
+      </div>
+      <div class="controls">
+        <span class="arrow left">Previous</span>
+        <span class="arrow right">Next</span>
+
+        <ul>
+          <li class="selected"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const slider = document.querySelector('.slider')
+    const leftArrow = document.querySelector('.left')
+    const rightArrow = document.querySelector('.right')
+
+    const dots = document.querySelectorAll('.controls li')
+    const indicatorParents = document.querySelector('.controls ul')
+
+    let sectionIndex = 0
+
+    // function setIndex(){
+    //   const selectedDot = document.querySelector('.controls .selected')
+
+    //   selectedDot.classList.remove('selected')
+
+    //   // when clicking on dot, the slider will slide the same way
+    //   slider.style.transform = `translate(${ (sectionIndex) * (-6.65) }%)`
+
+    // }
+    
+    dots.forEach((indicator, dotIndex) => {
+      indicator.addEventListener('click', () => {
+        const selectedDot = document.querySelector('.controls .selected')
+
+        // to syncronize the dot and the arrow button on the same slider index
+        sectionIndex = dotIndex
+        // setIndex()
+
+        selectedDot.classList.remove('selected')
+        indicator.classList.add('selected')
+
+        // // when clicking on dot, the slider will slide the same way
+        slider.style.transform = `translate(${ (sectionIndex) * (-6.65) }%)`
+      })
+    })
+
+    leftArrow.addEventListener('click', () => {
+      const selectedDot = document.querySelector('.controls .selected')
+
+      // if section index is more then the 0, decrease section index by one, otherwise set it to 0 
+      sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0
+
+      // removes .selected from element
+      selectedDot.classList.remove('selected')
+
+      // syncronize left arrow with dot indicator index
+      indicatorParents.children[sectionIndex].classList.add('selected')
+      // setIndex()
+
+      // moves the slider to to right 
+      slider.style.transform = `translate(${ (sectionIndex) * (-6.65) }%)`
+      
+    })
+
+    rightArrow.addEventListener('click', () => {
+      const selectedDot = document.querySelector('.controls .selected')
+
+      // if section index is less then the lenght of the section, increase section index by one, otherwise set it to lenght of section 
+      sectionIndex = (sectionIndex < 4) ? sectionIndex + 1 : 4
+
+       // removes .selected from element
+       selectedDot.classList.remove('selected')
+
+      // syncronize left arrow with dot indicator index
+      indicatorParents.children[sectionIndex].classList.add('selected')
+      // setIndex()
+
+      // moves slider to the left
+      slider.style.transform = `translate(${ (sectionIndex) * (-6.65) }%)`
+
+    })
+
+    
+
+    
+  </script>
+</body>
+</html>

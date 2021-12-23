@@ -181,7 +181,46 @@
 
 
 
+/* ========== USING PAGE || HEADER SLIDER ========= */
+.tabs .clover-container{
+  max-width: 131.6rem;
+}
 
+.header-carousel{
+  border: 2px solid #ccc;
+  height: 5.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-slider{
+  height: 100%;
+  display: flex;
+  width: 900%;
+  transition: .3s;
+}
+
+.header-slider section{
+  flex-basis: 3.711%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-control{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.previous{
+  left: 10px;
+}
+
+.next{
+  right: 10px;
+}
 
 
 
