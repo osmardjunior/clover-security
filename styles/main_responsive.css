@@ -214,7 +214,7 @@
     margin-right: 41rem;
   }
 
-  .logging-img{
+  .tab-img-area{
     display: none;
   }
 
@@ -222,13 +222,13 @@
     max-width: 100%;
   }
 
-  .logging-img-mobile{
+  .tab-img-mobile{
     display: block;
     padding-top: 4rem;
     margin: 1.4rem auto 1.4rem;
   }
 
-  .logging-img-mobile .label-print{
+  .tab-img-mobile .label-print{
     margin-inline: auto;
   }
 
@@ -252,11 +252,11 @@
     display: none;
   }
 
-  .logging-txt h2{
+  .tab-text-area_content h2{
     font-size: 2.2rem;
   }
 
-  .logging-txt p{
+  .tab-text-area_content p{
     font-size: 1.5rem;
   }
 
