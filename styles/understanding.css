@@ -199,6 +199,7 @@
   display: flex;
   width: 900%;
   transition: .3s;
+  border: 1px solid blue;
 }
 
 .header-slider .tab-name{
@@ -206,17 +207,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 4rem;
+  border: 1px solid green;
 }
 
 .header-slider .tab-name h4{
   text-transform: uppercase;
+  text-align: center;
   font-size: 1.7rem;
   line-height: 1.5rem;
   color: var(--font-inactive);
 }
 
+.header-slider .tab-name h4::after{
+  content: '';
+  width: 0%;
+  height: 0.25rem;
+  background-color: var(--green);
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  transition: .3s;
+}
+
 .header-slider .tab-name.active h4{
   color: var(--black);
+  position: relative;
+}
+
+.header-slider .tab-name.active h4::after{
+  width: 100%;
 }
 
 .controls .arrow-control{
