@@ -201,18 +201,22 @@
   transition: .3s;
 }
 
-.header-slider section{
+.header-slider .tab-name{
   flex-basis: 3.711%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header-slider section h4{
+.header-slider .tab-name h4{
   text-transform: uppercase;
   font-size: 1.7rem;
   line-height: 1.5rem;
   color: var(--font-inactive);
+}
+
+.header-slider .tab-name.active h4{
+  color: var(--black);
 }
 
 .controls .arrow-control{

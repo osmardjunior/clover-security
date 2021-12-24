@@ -139,33 +139,33 @@
       <div class="clover-container">
         <div class="header-carousel">
           <div class="header-slider">
-            <section class="active">
+            <div class="tab-name active" value="0">
               <h4>Logging In And Registering</h4>
-            </section>
-            <section>
+            </div>
+            <div class="tab-name" value="1">
               <h4>Completing Your Profile</h4>
-            </section>
-            <section>
+            </div>
+            <div class="tab-name" value="2">
               <h4>Conducting A Network Scan</h4>
-            </section>
-            <section>
+            </div>
+            <div class="tab-name" value="3">
               <h4>Conducting A Group Scan</h4>
-            </section>
-            <section>
+            </div>
+            <div class="tab-name" value="4">
               <h4>Network Scanning FAQ</h4>
-            </section>
-            <section>
+            </div>
+            <div class="tab-name" value="5">
               <h4>Completing Your Security Assessment</h4>
-            </section>
-            <section>
+            </div>
+            <div class="tab-name" value="6">
               <h4>Revalidating If No Changes Have Occurred</h4>
-            </section>
-            <section>
+            </div>
+            <div class="tab-name" value="7">
               <h4>Managing Your Profile And Adding Users</h4>
-            </section>
-            <section>
+            </div>
+            <div class="tab-name" value="8">
               <h4>FAQ</h4>
-            </section>
+            </div>
           </div>
 
           <div class="controls">
@@ -185,7 +185,7 @@
       <div class="clover-container">
         <div class="inner-tabs-carousel">
           <div class="inner-tabs-slider">
-            <section id="logging" >
+            <section id="logging">
               <h1>Logging</h1>
             </section>
             <section id="completing-profile">
@@ -276,57 +276,73 @@
   <script>
     const headerSlider = document.querySelector('.header-slider')
     const innerSlider = document.querySelector('.inner-tabs-slider')
-    const previous = document.querySelectorAll('.previous')
-    const next = document.querySelectorAll('.next')
+    const allPrevious = document.querySelectorAll('.previous')
+    const allNext = document.querySelectorAll('.next')
+    const allTabs = document.querySelectorAll('.tab-name')
+    const activeTab = document.querySelectorAll('.tab-name.active')
 
     const arrow = document.querySelectorAll('.controls .arrow-control')
 
     let sectionIndex = 0
 
-    previous.forEach((buttonPrev) => {
+    allPrevious.forEach((buttonPrev) => {
       buttonPrev.addEventListener('click', () => {
-        const next = document.querySelectorAll('.next')
+        const allNext = document.querySelectorAll('.next')
 
         sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0
 
         headerSlider.style.transform = `translate(${(sectionIndex) * (-3.711)}%)`
         innerSlider.style.transform = `translate(${(sectionIndex) * (-11.11)}%)`
 
+        // add and remove active class
+        allTabs.forEach((tabs,index) => {
+          tabs.classList.remove('active')
+
+          allTabs[sectionIndex].classList.add('active')
+        })
+
         if(sectionIndex == 0){
           buttonPrev.classList.add('inactive')
         }
 
-        next.forEach((item) => {
+        allNext.forEach((item) => {
           item.classList.remove('inactive')
         })
-
-        // arrow.forEach((arrow) => {
-        //   // arrow.classList.remove('inactive')
-        //   if(sectionIndex < 0 ){
-        //     arrow.classList.add('inactive')
-        //   }
-          
-        // })
       })
     })
 
-    next.forEach((buttonNext) => {
+    allNext.forEach((buttonNext) => {
       buttonNext.addEventListener('click', (event) => {
-        const previous = document.querySelectorAll('.previous')
-
+        const allPrevious = document.querySelectorAll('.previous')
+        
+        // updates index
         sectionIndex = (sectionIndex < 8) ? sectionIndex + 1 : 8
 
+        // slides header and content sliders
         headerSlider.style.transform = `translate(${(sectionIndex) * (-3.711)}%)`
-        innerSlider.style.transform = `translate(${(sectionIndex) * (-11.11)}%)`
+        innerSlider.style.transform = `translate(${(sectionIndex) * (-11.11)}%)`    
+        
+        // add and remove active class
+        allTabs.forEach((tabs,index) => {
+          tabs.classList.remove('active')
 
+          allTabs[sectionIndex].classList.add('active')
+        })
+
+
+        // adds class when on last tab
         if(sectionIndex > 7){
           buttonNext.classList.add('inactive')
         }
 
-        previous.forEach((item) => {
+        // maps all .previous and removes class if it has one
+        allPrevious.forEach((item) => {
           item.classList.remove('inactive')
         })
 
+        activeTab.forEach((elem) => {
+          elem.classList.remove('active')
+        })
       })
 
     })
