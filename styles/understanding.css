@@ -318,8 +318,83 @@
 /* ======== USING PAGE || LOGGING =========== */
 #logging{
   border: 1px solid blue;
-  display: grid;
-  grid-template-columns: ;
+  font-weight: 400;
+  padding-right: 10rem;
+}
+
+.logging-txt p{
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 44.2rem;
+}
+
+.logging-top h2{
+  margin-bottom: 0.3rem;
+}
+
+.inner-tab-list{
+  color: var(--green);
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.dot-list{
+  margin-left: 2.5rem;
+}
+
+.inner-tab-highlight{
+  font-weight: 500;
+}
+
+.inner-tab-dot{
+  width: 5px;
+  height: 5px;
+  background-color: var(--green);
+  display: inline-block;
+  border-radius: 2rem;
+  margin-bottom: 0.3rem;
+  margin-right: 1rem;
+}
+
+.inner-tab-dot + .inner-tab-list{
+  display: none;
+}
+
+.label-print{
+  position: relative;
+}
+
+.label-print.print-sm{
+  width: 100%;
+  max-width: 30rem;
+}
+
+.label-print.print-lg{
+  width: 100%;
+  max-width: 42.2rem;
+}
+
+p.label{
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--white);
+  padding: 0.8rem 1.9rem;
+  background-color: var(--green);
+  display: inline;
+  position: absolute;
+  left: 0;
+  top: -4rem;
+}
+
+.logging-img-onetwo{
+  margin-bottom: 7.2rem;
+}
+
+.logging-img-onetwo,
+.logging-img-threefour{
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
 }
 
 
