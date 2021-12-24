@@ -279,6 +279,19 @@
 
 
 /* ======= USING PAGE || TABS CONTENT ============ */
+.inner-tabs section{
+  border: 1px solid blue;
+  width: 100%;
+  max-width: 131.6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.inner-tabs section.active{
+  padding-right: 6.8rem;
+}
+
 .inner-tabs{
   background-color: var(--bg1);
   border-top: 1px solid var(--line2);
@@ -292,7 +305,7 @@
 
 .inner-tabs-carousel{
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .inner-tabs-slider{
@@ -316,16 +329,6 @@
 }
 
 /* ======== USING PAGE || LOGGING =========== */
-#logging{
-  border: 1px solid blue;
-  width: 100%;
-  max-width: 131.6rem;
-  /* padding-right: 4.8rem; */
-  margin-right: 4.8rem;
-  display: flex;
-  gap: 2rem;
-  justify-content: space-between;
-}
 
 .tab-text-area{
   width: 100%;
@@ -418,8 +421,6 @@ p.label{
 /* ============== USING PAGE || COMPLETING PROFILE ======== */
 #completing-profile{
   border: 1px solid green;
-  display: flex;
-  justify-content: space-between;
 }
 
 .tab-content_title{

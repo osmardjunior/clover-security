@@ -187,7 +187,7 @@
           <div class="inner-tabs-slider">
 
             <!-- ####### LOGGING TAB ######## -->
-            <section id="logging">
+            <section id="logging" class="active">
               <!--  TEXT -->
               <div class="tab-text-area">
                 <div class="tab-text-area_content">
@@ -382,6 +382,7 @@
     const allNext = document.querySelectorAll('.next')
     const allTabs = document.querySelectorAll('.tab-name')
     const activeTab = document.querySelectorAll('.tab-name.active')
+    const allSections = document.querySelectorAll('.inner-tabs section')
 
     const headerTabs = document.querySelector('.header-tabs')
 
@@ -432,13 +433,21 @@
         // slides inner content
         innerSlider.style.transform = `translate(${(sectionIndex) * (-11.11)}%)`
 
-        // add and remove active class
+        // add and remove active class from header slides
         allTabs.forEach((tabs,index) => {
           tabs.classList.remove('active')
 
           allTabs[sectionIndex].classList.add('active')
         })
 
+        // add and remove active class from inner tabs
+        allSections.forEach((tabs) => {
+          tabs.classList.remove('active')
+
+          allSections[sectionIndex].classList.add('active')
+        })
+
+        // if first slide, turn arrow inactive
         if(sectionIndex == 0){
           buttonPrev.classList.add('inactive')
         }
@@ -477,6 +486,13 @@
           tabs.classList.remove('active')
 
           allTabs[sectionIndex].classList.add('active')
+        })
+
+        // add and remove active class from inner tabs
+        allSections.forEach((tabs) => {
+          tabs.classList.remove('active')
+
+          allSections[sectionIndex].classList.add('active')
         })
 
 

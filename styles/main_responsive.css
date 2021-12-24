@@ -1,6 +1,10 @@
 @media (max-width: 1366px){
-  #logging{
+  /* #logging{
     margin-right: 50rem;
+    padding-right: 50rem;
+  } */
+  .inner-tabs section.active{
+    padding-right: 9rem;
   }
 }
 
@@ -65,6 +69,7 @@
   #logging{
     padding-right: 0;
   }
+
   .logging-img-onetwo,
   .logging-img-threefour{
     flex-direction: column;
