@@ -281,9 +281,34 @@
     const allTabs = document.querySelectorAll('.tab-name')
     const activeTab = document.querySelectorAll('.tab-name.active')
 
+    const headerTabs = document.querySelector('.header-tabs')
+
     const arrow = document.querySelectorAll('.controls .arrow-control')
 
     let sectionIndex = 0
+
+    // verifies window width
+    if(window.innerWidth <= 950 && window.innerWidth >=700){
+      headerTabs.classList.add('header-tabs-tablet')
+      headerTabs.classList.remove('header-tabs-phone')
+
+    } else if(window.innerWidth < 700){
+      headerTabs.classList.remove('header-tabs-tablet')
+      headerTabs.classList.add('header-tabs-phone')
+    }
+
+    window.addEventListener('resize', (event) => {
+      console.log(event)
+      if(window.innerWidth > 951 ){
+          headerSlider.style.transform = `translate(${(sectionIndex) * (-3.711)}%)`
+
+        } else if(window.innerWidth <= 950 && window.innerWidth > 700){
+          headerSlider.style.transform = `translate(${(sectionIndex) * (-5.56)}%)`
+
+        } else if(window.innerWidth <= 700 ){
+          headerSlider.style.transform = `translate(${(sectionIndex) * (-11.11)}%)`
+        }
+    })
 
     allPrevious.forEach((buttonPrev) => {
       buttonPrev.addEventListener('click', () => {
@@ -291,7 +316,18 @@
 
         sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0
 
-        headerSlider.style.transform = `translate(${(sectionIndex) * (-3.711)}%)`
+        // slides header 
+        if(window.innerWidth > 951 ){
+          headerSlider.style.transform = `translate(${(sectionIndex) * (-3.711)}%)`
+
+        } else if(window.innerWidth <= 950 && window.innerWidth > 700){
+          headerSlider.style.transform = `translate(${(sectionIndex) * (-5.56)}%)`
+
+        } else if(window.innerWidth <= 700 ){
+          headerSlider.style.transform = `translate(${(sectionIndex) * (-11.11)}%)`
+        }
+
+        // slides inner content
         innerSlider.style.transform = `translate(${(sectionIndex) * (-11.11)}%)`
 
         // add and remove active class
@@ -318,8 +354,20 @@
         // updates index
         sectionIndex = (sectionIndex < 8) ? sectionIndex + 1 : 8
 
-        // slides header and content sliders
-        headerSlider.style.transform = `translate(${(sectionIndex) * (-3.711)}%)`
+        // slides header
+        if(window.innerWidth > 951 ){
+          headerSlider.style.transform = `translate(${(sectionIndex) * (-3.711)}%)`
+        } else if(window.innerWidth <= 950 && window.innerWidth > 700){
+          headerSlider.style.transform = `translate(${(sectionIndex) * (-5.56)}%)`
+          console.log('moveu 5.56%')
+        } else if(window.innerWidth <= 700 ){
+          headerSlider.style.transform = `translate(${(sectionIndex) * (-11.11)}%)`
+          console.log('moveu 11.56%')
+        }
+
+        
+
+        // slides main slide content
         innerSlider.style.transform = `translate(${(sectionIndex) * (-11.11)}%)`    
         
         // add and remove active class
@@ -346,6 +394,8 @@
       })
 
     })
+
+    
 
   </script>
 

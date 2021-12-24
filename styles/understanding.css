@@ -184,11 +184,10 @@
 /* ========== USING PAGE || HEADER SLIDER ========= */
 .header-tabs .clover-container{
   max-width: 131.6rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .header-carousel{
-  border: 2px solid #ccc;
   height: 5.8rem;
   position: relative;
   overflow: hidden;
@@ -199,7 +198,7 @@
   display: flex;
   width: 900%;
   transition: .3s;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .header-slider .tab-name{
@@ -208,7 +207,15 @@
   justify-content: center;
   align-items: center;
   padding: 0 4rem;
-  border: 1px solid green;
+  /* border: 1px solid green; */
+}
+
+.header-tabs-tablet .header-slider .tab-name{
+  flex-basis: 5.56%;
+}
+
+.header-tabs-phone .header-slider .tab-name{
+  flex-basis: 11.56%;
 }
 
 .header-slider .tab-name h4{
@@ -272,8 +279,15 @@
 
 
 /* ======= USING PAGE || TABS CONTENT ============ */
+.inner-tabs{
+  background-color: var(--bg1);
+  border-top: 1px solid var(--line2);
+  border-bottom: 1px solid var(--line2);
+  padding: 7.4rem 0 7.9rem;
+}
 .inner-tabs .clover-container{
   max-width: 131.6rem;
+  border: 1px solid red;
 }
 
 .inner-tabs-carousel{
@@ -289,11 +303,6 @@
 
 .inner-tabs-slider section{
   flex-basis: 100%;
-  /* border: 1px solid red; */
-}
-
-.bottom-controls{
-  /* border: 1px solid red; */
 }
 
 .bottom-controls .clover-container{
@@ -304,6 +313,13 @@
 
 .bottom-controls span{
   cursor: pointer;
+}
+
+/* ======== USING PAGE || LOGGING =========== */
+#logging{
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: ;
 }
 
 
