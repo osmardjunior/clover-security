@@ -1,3 +1,9 @@
+@media (max-width: 1366px){
+  #logging{
+    margin-right: 50rem;
+  }
+}
+
 @media (max-width: 1290px){
   /* ============ ARTICLES PAGE || ASIDE ========= */
   aside{
@@ -23,10 +29,10 @@
   }
 
   /* ========== ARTICLE PAGE || PREVIOUS NEXT ====== */
-  /* .previous-next .clover-container {
+  .previous-next .clover-container {
     padding-right: 0;
     max-width: 46.2rem;
-  } */
+  }
 }
 
 
@@ -36,6 +42,11 @@
   .s-reporting .home_txt2{
     right: -1rem;
   }
+
+  /* =========== USING PAGE || LOGGING ================ */
+  /* #logging{
+    padding-right: 27rem;
+  } */
 }
 
 
@@ -49,12 +60,25 @@
   .s-hero{
     padding: 6.4rem 1.6rem;
   }
+
+  /* ============ USING PAGE || LOGGING ============= */
+  #logging{
+    padding-right: 0;
+  }
+  .logging-img-onetwo,
+  .logging-img-threefour{
+    flex-direction: column;
+  }
+
+  .label-print:nth-child(1){
+    margin-bottom: 7.2rem;
+  }
 }
 
 
 
 
-@media (max-width:800px){
+@media (max-width: 800px){
   .btn1 a{
     font-size: 1.3rem;
     line-height: 4.8rem;
@@ -145,6 +169,11 @@
   .s-contact-us .clover-container{
     padding: 0 1.6rem;
   }
+
+  /* =========== USING PAGE || HEADER SLIDER ============ */
+  .header-slider .tab-name h4{
+    font-size: 1.4rem;
+  }
    
   /* ========== USING PAGE || TEXT CONTENT============ */
   .s-using-content{
@@ -176,6 +205,60 @@
     margin-top: 0.9rem;
   }
 
+  /* ============ USING PAGE || LOGGING ============== */
+  .inner-tabs .clover-container{
+    padding: 0 1.6rem;
+  }
+
+  #logging{
+    margin-right: 41rem;
+  }
+
+  .logging-img{
+    display: none;
+  }
+
+  .tab-text-area{
+    max-width: 100%;
+  }
+
+  .logging-img-mobile{
+    display: block;
+    padding-top: 4rem;
+    margin: 1.4rem auto 1.4rem;
+  }
+
+  .logging-img-mobile .label-print{
+    margin-inline: auto;
+  }
+
+  .logging-img-onetwo{
+    margin-bottom: 0rem;
+  }
+
+  .inner-tab-dot{
+    display: none;
+  }
+
+  .inner-tab-dot + .inner-tab-list{
+    display: inline;
+  }
+
+  .dot-list{
+    margin-left: 0rem;
+  }
+
+  .hidden-step{
+    display: none;
+  }
+
+  .logging-txt h2{
+    font-size: 2.2rem;
+  }
+
+  .logging-txt p{
+    font-size: 1.5rem;
+  }
 
   /* =========== UNDERSTANDING || HERO ========== */
   .s-hero-understanding .clover-container{
@@ -543,6 +626,11 @@
     font-size: 1.2rem;
   }
 
+  /* =========== USING PAGE || LOGGING =========== */
+  #logging{
+    margin-right: 2.1rem;
+  }
+
   /* =========== UNDERSTANDING || HERO ======== */
   .s-hero-understanding{
     background: url(../assets/svg/black-gradient.svg),
@@ -579,6 +667,11 @@
 
   .s-reporting .home_txt2{
     bottom: -28rem;
+  }
+
+  /* ===========USING PAGE || LOGGING ============== */
+  #logging{
+    margin-right: 16rem;
   }
 
   /* ============== INDEX UNDERSTANDING CLOVER ======== */

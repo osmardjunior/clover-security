@@ -319,18 +319,25 @@
 #logging{
   border: 1px solid blue;
   font-weight: 400;
-  padding-right: 23rem;
+  width: 100%;
+  max-width: 131.6rem;
+  /* padding-right: 4.8rem; */
+  margin-right: 4.8rem;
   display: flex;
+  gap: 2rem;
   justify-content: space-between;
 }
 
-.logging-txt p{
-  margin: 2rem 0;
+.tab-text-area{
   width: 100%;
   max-width: 44.2rem;
 }
 
-.logging-top h2{
+.logging-txt p{
+  margin: 2rem 0;  
+}
+
+.logging-txt h2{
   margin-bottom: 0.3rem;
 }
 
@@ -394,6 +401,7 @@ p.label{
 
 .logging-img{
   margin-top: 4rem;
+  margin-left: auto;
 }
 
 .logging-img-onetwo{
@@ -404,7 +412,7 @@ p.label{
 .logging-img-threefour{
   display: flex;
   justify-content: space-between;
-  gap: 1.6rem;
+  gap: 2rem;
 }
 
 
