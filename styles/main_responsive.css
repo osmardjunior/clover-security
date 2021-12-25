@@ -1,11 +1,12 @@
 @media (max-width: 1366px){
-  /* #logging{
-    margin-right: 50rem;
-    padding-right: 50rem;
-  } */
-  .inner-tabs section.active{
+  .inner-tabs section#logging.active{
     /* padding-right: 9rem; */
     margin-right: 50rem;
+  }
+
+  .inner-tabs section#conducting-network.active{
+    /* padding-right: 3rem;
+    padding-left: 5rem; */
   }
 }
 
@@ -17,6 +18,11 @@
 }
 
 @media (max-width: 1110px){
+  /* ======= USING PAGE || CONDUCTING NETWORK ========= */
+  .inner-tabs section#conducting-network.active .tab-img-area{
+    margin-right: 2.5rem;
+  }
+
   /* ========= INDEX UNDERSTANDING CLOVER ======= */
   .s-understanding .home_txt2{
     left: -2rem;
@@ -54,6 +60,10 @@
 @media (max-width: 950px){
   main{
     margin-top: 11.1rem;
+  }
+
+  .clover-container{
+    padding: 0 1.6rem;
   }
 
   /* ======= INDEX HERO ======= */
@@ -172,9 +182,9 @@
   }
 
   /* ======== INDEX CONTACT US ======= */
-  .s-contact-us .clover-container{
+  /* .s-contact-us .clover-container{
     padding: 0 1.6rem;
-  }
+  } */
 
   /* =========== USING PAGE || HEADER SLIDER ============ */
   .header-slider .tab-name h4{
@@ -186,9 +196,9 @@
     padding: 6rem 0rem;
   }
 
-  .s-using-content .clover-container{
+  /* .s-using-content .clover-container{
     padding: 0 1.6rem;
-  }
+  } */
 
   .s-using-content .clover-container h1{
     font-size: 2rem;
@@ -212,9 +222,9 @@
   }
 
   /* ============ USING PAGE || LOGGING ============== */
-  .inner-tabs .clover-container{
+  /* .inner-tabs .clover-container{
     padding: 0 1.6rem;
-  }
+  } */
 
   .inner-tabs section#logging.active{
     margin-right: 41rem;
@@ -288,13 +298,34 @@
 
   .overlapping{
     position: unset;
-    
   }
 
-  /* =========== UNDERSTANDING || HERO ========== */
-  .s-hero-understanding .clover-container{
-    padding: 0 1.6rem;
+  /* =========== USING PAGE || CONDUCTING NETWORK ========= */
+  .inner-tabs section#conducting-network.active .tab-img-area{
+    display: none;
   }
+
+  .inner-tabs section#conducting-network.active .tab-img-mobile{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .inner-tabs section#conducting-network.active .tab-img-mobile .tab-img-group:nth-child(2){
+    margin-top: 5.6rem;
+  }
+
+  .inner-tabs section#conducting-network.active p.label{
+    font-size: 1rem;
+    top: -4rem;
+    margin: 0;
+
+  }
+
+
+  /* =========== UNDERSTANDING || HERO ========== */
+  /* .s-hero-understanding .clover-container{
+    padding: 0 1.6rem;
+  } */
 
   /* ========= UNDERSTANDING || WHAT IS ============= */
   .s-understand-security{
@@ -316,9 +347,9 @@
   }
 
   /* ====== UNDERSTANDING || ARTICLES BOX ====== */ 
-  .s-understand_boxes .clover-container{
+  /* .s-understand_boxes .clover-container{
     padding: 0 1.6rem;
-  }
+  } */
 
   /* ===== UNDERSTANDING || BOX OF CONTENTS */
   .s-understand_boxes{
@@ -337,9 +368,9 @@
   }
 
   /* ====== VIDEOS PAGE || HERO */
-  .s-hero-green-template .clover-container{
+  /* .s-hero-green-template .clover-container{
     padding: 0 1.6rem;
-  }
+  } */
 
   /* ========= VIDEOS PAGE || VIDEOS ======= */
   .s-videos{
@@ -349,7 +380,7 @@
 
   .s-videos .clover-container{
     gap: 6rem;
-    padding: 0 1.6rem;
+    /* padding: 0 1.6rem; */
   }
 
   .s-hero-green-template_txt p{
@@ -376,7 +407,7 @@
   }
 
   .s-education-articles .clover-container{
-    padding: 0 1.6rem;
+    /* padding: 0 1.6rem; */
     flex-direction: column;
   }
 
@@ -403,9 +434,9 @@
     padding-right: 0rem;
   }
 
-  .breadcrumbs .clover-container{
+  /* .breadcrumbs .clover-container{
     padding: 0 1.6rem;
-  }
+  } */
 
    /* ============ ARTICLES PAGE || ASIDE ========= */
    .article-page-grid{
@@ -484,7 +515,7 @@
   }
 
   .s-article-text > .clover-container{
-    padding: 0 1.6rem;
+    /* padding: 0 1.6rem; */
     max-width: 100%;
   }
 
@@ -649,9 +680,9 @@
     background-position: 0% 100%, 0% 100%, 61% 12%; 
   }
 
-  .s-hero-using .clover-container{
+  /* .s-hero-using .clover-container{
     padding: 0 1.6rem;
-  }
+  } */
 
   .s-hero-using_txt{
     padding: 6.6rem 0rem;
