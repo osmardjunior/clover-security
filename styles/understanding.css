@@ -280,7 +280,13 @@
 
 /* ======= USING PAGE || TABS CONTENT ============ */
 .inner-tabs section{
-  border: 1px solid blue;
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.inner-tabs section.active{
+  display: block;
   width: 100%;
   max-width: 131.6rem;
   display: flex;
@@ -288,17 +294,8 @@
   gap: 2rem;
   padding: 0;
   margin: 0;
-}
-
-.inner-tabs section#logging.active{
-  padding-right: 6.8rem;
-  background-color: red;
-}
-
-.inner-tabs section#completing-profile.active{
-  margin-left: 3rem;
-  margin-right: 6.8rem;
-  background-color: blue;
+  opacity: 1;
+  pointer-events: all;
 }
 
 .inner-tabs{
@@ -309,17 +306,16 @@
 }
 .inner-tabs .clover-container{
   max-width: 131.6rem;
-  border: 1px solid red;
 }
 
 .inner-tabs-carousel{
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .inner-tabs-slider{
   display: flex;
-  width: 950%;
+  width: 100%;
   transition: .3s;
 }
 
@@ -349,7 +345,7 @@
 }
 
 .tab-text-area_content p{
-  margin: 2rem 0;  
+  margin: 1.5rem 0;  
   font-weight: 400;
 }
 
@@ -359,25 +355,34 @@
   margin-right: 0.5rem;
 }
 
-.dot-list{
-  margin-left: 2.5rem;
-}
-
 .inner-tab-highlight{
   font-weight: 500;
 }
 
-.inner-tab-dot{
+.dot-list{
+  margin-left: 2.5rem;
+}
+
+.dot-list p{
+  position: relative;
+  margin: 0;
+}
+
+.dot-list p::before{
+  content: '';
   width: 5px;
   height: 5px;
   background-color: var(--green);
-  display: inline-block;
-  border-radius: 2rem;
-  margin-bottom: 0.3rem;
-  margin-right: 0.5rem;
+  position: absolute;
+  top: 0.8rem;
+  left: -1.5rem;
+  border-radius: 5rem;
 }
 
-.inner-tab-dot + .inner-tab-list{
+#logging .dot-list p:nth-child(2){
+  margin-top: 1rem;
+}
+.dot-list .inner-tab-list{
   display: none;
 }
 
@@ -387,7 +392,6 @@
 
 .tab-img-area{
   margin-top: 4rem;
-  margin-left: auto;
   width: 100%;
   max-width: 70.6rem;
 }
@@ -430,12 +434,16 @@ p.label{
 }
 
 /* ============== USING PAGE || COMPLETING PROFILE ======== */
-#completing-profile{
-  border: 1px solid green;
+.inner-tabs section#completing-profile.active{
+  gap: 4rem;
 }
 
 .tab-content_title{
   margin-bottom: 2rem;
+}
+
+#completing-profile .dot-list p:nth-child(2){
+  margin: 1rem 1rem 1rem 0;
 }
 
 .completing-images{
@@ -458,18 +466,6 @@ p.label{
 }
 
 /* ========= USING PAGE | CONDUCTING NETWORK ============ */
-/* .inner-tabs section#conducting-network{
-  display: none;
-} */
-.inner-tabs section#conducting-network.active{
-  display: block;
-  background-color: lightpink;
-  /* padding-left: 5rem;
-  padding-right: 2rem; */
-  margin-right: 26rem;
-  margin-left: 8rem;
-}
-
 .note{
   padding: 2.4rem;
   background-color: var(--bg-article);
@@ -482,21 +478,23 @@ p.label{
   margin: 0;
 }
 
+.note p::before{
+  display: none;
+}
+
 section#conducting-network.active .tab-text-area_content h4{
   color: var(--green);
+  margin-top: 3.3rem;
 }
 
 section#conducting-network.active .tab-text-area_content h4 + p{
   margin-top: 1rem;
 }
 
-.inner-tabs section#conducting-network.active .tab-img-area{
-  margin-right: 4rem;
-}
-
 .tab-img-flex{
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .tab-img-flex .tab-img-group{
