@@ -267,11 +267,15 @@
   }
 
   /* =========== USING PAGE || COMPLETING PROFILE ========= */
-  .inner-tabs section#completing-profile{
+  .inner-tabs section#completing-profile.active{
     flex-direction: column;
     justify-content: flex-start;
     padding-right: 11rem;
     padding-left: 1rem;
+  }
+
+  .inner-tabs-slider section#completing-profile.active{
+    height: 30rem;
   }
 
   .inner-tabs section#completing-profile .tab-img-area{
