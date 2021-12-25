@@ -288,8 +288,15 @@
   gap: 2rem;
 }
 
-.inner-tabs section.active{
+.inner-tabs section#logging.active{
   padding-right: 6.8rem;
+  background-color: red;
+}
+
+.inner-tabs section#completing-profile.active{
+  margin-left: 3rem;
+  margin-right: 6.8rem;
+  background-color: blue;
 }
 
 .inner-tabs{
@@ -305,7 +312,7 @@
 
 .inner-tabs-carousel{
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .inner-tabs-slider{

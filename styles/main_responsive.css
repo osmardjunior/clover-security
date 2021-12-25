@@ -4,7 +4,8 @@
     padding-right: 50rem;
   } */
   .inner-tabs section.active{
-    padding-right: 9rem;
+    /* padding-right: 9rem; */
+    margin-right: 50rem;
   }
 }
 
@@ -46,11 +47,6 @@
   .s-reporting .home_txt2{
     right: -1rem;
   }
-
-  /* =========== USING PAGE || LOGGING ================ */
-  /* #logging{
-    padding-right: 27rem;
-  } */
 }
 
 
@@ -66,7 +62,7 @@
   }
 
   /* ============ USING PAGE || LOGGING ============= */
-  #logging{
+  .inner-tabs section#logging.active{
     padding-right: 0;
   }
 
@@ -77,6 +73,11 @@
 
   .label-print:nth-child(1){
     margin-bottom: 7.2rem;
+  }
+
+  /* ======== USING PAGE || COMPLETING PROFILE =========== */
+  .inner-tabs section#completing-profile.active{
+    margin-left: 1rem;
   }
 }
 
@@ -215,11 +216,11 @@
     padding: 0 1.6rem;
   }
 
-  #logging{
+  .inner-tabs section#logging.active{
     margin-right: 41rem;
   }
 
-  .tab-img-area{
+  section#logging .tab-img-area{
     display: none;
   }
 
@@ -263,6 +264,27 @@
 
   .tab-text-area_content p{
     font-size: 1.5rem;
+  }
+
+  /* =========== USING PAGE || COMPLETING PROFILE ========= */
+  .inner-tabs section#completing-profile{
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 11rem;
+    padding-left: 1rem;
+  }
+
+  .inner-tabs section#completing-profile .tab-img-area{
+    margin-inline: auto;
+  }
+
+  .main-image{
+    margin-bottom: 0rem;
+  }
+
+  .overlapping{
+    position: unset;
+    
   }
 
   /* =========== UNDERSTANDING || HERO ========== */
@@ -551,6 +573,11 @@
     gap: 5.8rem;
   }
 
+   /* =========== USING PAGE || LOGGING =========== */
+   .inner-tabs section.active{
+    margin-right: 3.1rem;
+  }
+
   /* ========== ARTICLES PAGE || BREADCRUMBS ========== */
   .breadcrumbs{
     padding-top: 2.4rem;
@@ -632,7 +659,7 @@
   }
 
   /* =========== USING PAGE || LOGGING =========== */
-  #logging{
+  .inner-tabs section.active{
     margin-right: 2.1rem;
   }
 
@@ -675,8 +702,8 @@
   }
 
   /* ===========USING PAGE || LOGGING ============== */
-  #logging{
-    margin-right: 16rem;
+  .inner-tabs section.active{
+    margin-right: 0rem;
   }
 
   /* ============== INDEX UNDERSTANDING CLOVER ======== */

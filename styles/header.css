@@ -188,6 +188,13 @@ nav.menu ul{
   }
 
   nav.menu{
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+}
+
+@media (max-width: 720px){
+  nav.menu{
     padding-left: 1.6rem;
     padding-right: 1.6rem;
   }
