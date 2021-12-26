@@ -524,7 +524,7 @@ section#network.active .tab-text-area_content h4 + p{
 }
 
 /* =========== USING PAGE || NETWORK SCANNING =========== */
-.inner-tabs section#network.active .dot-list p::before{
+.inner-tabs section.active .number-list p::before{
   width: 0;
   height: 0;
   color: var(--green);
@@ -533,19 +533,19 @@ section#network.active .tab-text-area_content h4 + p{
   left: -2.5rem;
 }
 
-.inner-tabs section#network.active .dot-list p.pseudo-one::before{
+.inner-tabs section.active .number-list p.pseudo-one::before{
   content: '1.';
 }
-.inner-tabs section#network.active .dot-list p.pseudo-two::before{
+.inner-tabs section.active .number-list p.pseudo-two::before{
   content: '2.';
 }
-.inner-tabs section#network.active .dot-list p.pseudo-three::before{
+.inner-tabs section.active .number-list p.pseudo-three::before{
   content: '3.';
 }
-.inner-tabs section#network.active .dot-list p.pseudo-four::before{
+.inner-tabs section.active .number-list p.pseudo-four::before{
   content: '4.';
 }
-.inner-tabs section#network.active .dot-list p.pseudo-five::before{
+.inner-tabs section.active .number-list p.pseudo-five::before{
   content: '5.';
 }
 
@@ -572,6 +572,28 @@ p.see-below{
 
 #network.active .tab-img-area .tab-img-group:nth-child(2) .overlapping{
   bottom: -6rem;
+}
+
+/* ========== USING PAGE || COMPLETING SECURITY ========= */
+#completing-security.active .tab-img-area .tab-img-group:nth-child(1) .overlapping{
+  width: 100%;
+  max-width: 30.7rem;
+  bottom: -10rem;
+}
+
+#completing-security.active .tab-img-area .tab-img-flex{
+  margin-top: 18.5rem;
+  margin: 18.5rem 0 7rem;
+}
+
+#completing-security.active .tab-img-area .tab-img-group:nth-child(3) .overlapping{
+  width: 100%;
+  max-width: 40.9rem;
+  bottom: -13rem;
+}
+
+#completing-security.active .tab-img-area .tab-img-group:nth-child(4){
+  margin-top: 19.5rem;
 }
 
 
