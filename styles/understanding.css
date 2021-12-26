@@ -603,6 +603,10 @@ p.see-below{
   margin-bottom: 7rem;
 }
 
+/* ========== USING PAGE || MANAGING =============== */
+#managing.active .tab-img-area > .tab-img-group{
+  margin-bottom: 7rem;
+}
 
 
 
