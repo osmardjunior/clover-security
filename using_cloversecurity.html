@@ -569,63 +569,114 @@
               <!--  TEXT -->
               <div class="tab-text-area">
                 <div class="tab-text-area_content">
-                  <h2>Conducting A Group Scan</h2>
+                  <h2>Network Scanning Troubleshooting</h2>
                   <p>
-                    If your business has many locations that need to be scanned as part of your PCI Compliance, you can conduct a Group Scan on a number of locations at once. You must first create the group of Domains/IP Addresses to be scanned before scheduling the scan.  
-                  </p>
-                  <p>
-                    Your next steps box in the top left will alert you, also the ‘Be scan compliant’ widget will also show that you need to take action.  
+                    At times when you run a scan on your network you may need to review certain items before it can be considered “compliant” 
                   </p>
                   <p>
                     <span class="inner-tab-list">1.</span>
-                    Click <span class="inner-tab-highlight">'Begin step'</span> in the next steps box or <span class="inner-tab-highlight">'Manage'</span> from the <span class="inner-tab-highlight">'Be scan compliant'</span> widget to begin.     
+                    When you login you will be presented with your dashboard where your next step will highlight the need to Review your scan results. Click <span class="inner-tab-highlight">'Begin Step'</span> 
+                  </p>
+
+                  <h4>Reviewing The Scan</h4>
+                  <p>From this menu you can review the scan that has just run.</p>
+
+                  <div class="dot-list">
+                    <p>
+                      <span class="inner-tab-highlight">Status</span> is the current overview of the scan. In this example there is a special note the user must review.  
+                    </p>
+                    <p>
+                      <span class="inner-tab-highlight">Domains</span> lists all domains (IP addresses) or host names (e-commerce store) that were covered by the scan. 
+                    </p>
+                    <p>
+                      <span class="inner-tab-highlight">Related Hosts</span> are areas that the scan uncovered that were not included in the scan. You may need to review this area.
+                    </p>
+                    <p>
+                      <span class="inner-tab-highlight">Vulnerabilities</span> are areas that scan uncovered that must be reviewed. 
+                    </p>
+                    <p>
+                      <span class="inner-tab-highlight">Special Notes</span> are any comments or mentions the scan team want to bring to your attention. <span class="inner-tab-highlight">YOU MUST CLICK INTO AND REVIEW A SPECIAL NOTE FOR THE SCAN TO PASS</span>. 
+                    </p>
+                    <p class="see-below">
+                      See below for more information.
+                    </p>
+                  </div>
+
+                  <p>
+                    You will need to review to see if there is anything that needs your attention from any of the menu items. If the scan has not passed, you will need to address the highlighted items and rerun the scan. 
                   </p>
                   <p>
-                    <span class="inner-tab-list">2.</span>
-                    On the next page select ‘Manage multiple domains / IP addresses’
+                    Once you have reviewed the items, and there is nothing outstanding click <span class="inner-tab-highlight">‘Confirm and attest scan.’</span>
+                  </p>
+
+                  <h4>Special Notes</h4>
+                  <p>
+                    Often your scan will have passed subject to a <span class="inner-tab-highlight">Special Note</span>. This means that you must confirm or review certain item(s) in order for the scan to be considered ‘Passed.’   
                   </p>
                   <p>
-                    <span class="inner-tab-list">3.</span>
-                    Make sure you’re on the <span class="inner-tab-highlight">'Manage Group Scanning'</span> tab on the next page and select <span class="inner-tab-highlight">'Add a Group'</span>. Give a name to the group you wish to scan and select if the IP addresses to be added are dynamic or static (if you are unsure you will need to check with your internet service provider). Once done select <span class="inner-tab-highlight">'Submit'</span>
+                    Special Notes usually appear when the scan has picked up software that is in use on your network and is using what’s called an ‘Open Port’. This is essentially a hole on your network that could potentially be exploited by a cybercriminal.
                   </p>
                   <p>
-                    <span class="inner-tab-list">4.</span>
-                    Now the group is created you will need to add the IP addresses to the group. Click the three dots to the right and select <span class="inner-tab-highlight">'Edit Group'</span>. On the next page select <span class="inner-tab-highlight">'Add New Item'</span>
+                    We need you to confirm that this software using the Open Port is secure and/or does not come in contact with the cardholder data being processed on the network.
                   </p>
                   <p>
-                    <span class="inner-tab-list">5.</span>
-                    Input the relevant Domain/IP Address in the box provided and the corresponding Merchant ID number it applies to. Fill out the description if applicable and select <span class="inner-tab-highlight">'Submit'</span>. The added element should now appear in the list below. Repeat this process to add all relevant Domains/IP Addresses
+                    Please ensure you check the scan review page for the presence of Special Notes. If one appears as shown on the right:
                   </p>
-                  <p>
-                    <span class="inner-tab-list">6.</span>
-                    When this is done, select <span class="inner-tab-highlight">'Schedule'</span> to schedule the scan. See <a href="using_cloversecurity#conducting-network.html" class="link">Conducting a Network Scan</a> for more information on this process.
-                  </p>
+                  <div class="dot-list">
+                    <p>
+                      <span class="inner-tab-list">1.</span>
+                      Click the warning symbol to review    
+                    </p>
+                    <p>
+                      <span class="inner-tab-list">2.</span>
+                      Click the <span class="inner-tab-highlight">‘Declaration’</span> button that will appear beside the Open Ports found
+                    </p>
+                    <p>
+                      <span class="inner-tab-list">3.</span>
+                      On the next page you will need to provide more information about the open port that has been found i.e. what software is using and confirm that it is secure and/or does not interact with the cardholder data being processed. Click <span class="inner-tab-highlight">'Submit'</span> when done.
+                    </p>
+                    <p>
+                      <span class="inner-tab-list">4.</span>
+                      Your answers will now appear on the Status page. When finished, click <span class="inner-tab-highlight">'Confirm and Attest'</span> to resubmit your scan.
+                    </p>
+                    <p>
+                      <span class="inner-tab-list">5.</span>
+                      Your Special Notes will then be reviewed by a human agent within 1 - 4 hours. If satisfied with your answer(s) the scan will be confirmed as a pass. If not, further notes will appear on your account that must be addressed.
+                    </p>
+                  </div>
+                  <p>If at any point you are unsure as to the security of the port you are declaring it’s always a good idea to check with your IT provider or whoever maintains your network or your internet service provider. The PCI helpdesk is also on hand to assist at any point.</p>
                 </div>
               </div>
 
               <!-- IMAGES -->
               <div class="tab-img-area">
                 <div class="tab-img-group">
-                  <p class="label">BEGIN STEP</p>
-                  <img src="./assets/using-clover-page-img/conducting-group/img1.png" alt="Beginning steps's print screen">
+                  <p class="label">REVIEWING SCAN RESULTS</p>
+                  <img src="./assets/using-clover-page-img/network-scanning/img1.png" alt="Reviewing scan results's print screen">
+                </div>
+                <div class="tab-img-group">
+                  <img src="./assets/using-clover-page-img/network-scanning/img2.png" alt="Print screen">
+                  <img src="./assets/using-clover-page-img/network-scanning/overlapping-img.png" alt="Overlapping print screen">
                 </div>
                 <div class="tab-img-flex">
                   <div class="tab-img-group">
-                    <p class="label">MANAGE MULTIPLE</p>
-                    <img src="./assets/using-clover-page-img/conducting-group/img2.png" alt="Print screen on managing multiple domains">
+                    <p class="label">REVIEW YOUR SCANS MENU</p>
+                    <img src="./assets/using-clover-page-img/network-scanning/img3.png" alt="Review your scans menu print screen">
                   </div>
                   <div class="tab-img-group">
-                    <p class="label">ADD A GROUP</p>
-                    <img src="./assets/using-clover-page-img/conducting-group/img3.png" alt="Print screen on how to add a group">
+                    <p class="label">REVIEW YOUR SCANS MENU</p>
+                    <img src="./assets/using-clover-page-img/network-scanning/img4.png" alt="Review your scans menu print screen">
                   </div>
                 </div>
-                <div class="tab-img-group">
-                  <p class="label">ADD DOMAINS/IP’S TO THE GROUP</p>
-                  <img src="./assets/using-clover-page-img/conducting-group/img4.png" alt="Adding domains/IP's to the group print screen">
-                </div>
-                <div class="tab-img-group">
-                  <p class="label">SUBMIT AND SCHEDULE</p>
-                  <img src="./assets/using-clover-page-img/conducting-group/img5.png" alt="Submit and schedule print screen">
+                <div class="tab-img-flex">
+                  <div class="tab-img-group">
+                    <p class="label">SCHEDULE SCAN</p>
+                    <img src="./assets/using-clover-page-img/network-scanning/img5.png" alt="Schedule scan print screen">
+                  </div>
+                  <div class="tab-img-group">
+                    <p class="label">FIND YOUR IP ADDRESS</p>
+                    <img src="./assets/using-clover-page-img/network-scanning/img6.png" alt="Print screen of finding your ID adress">
+                  </div>
                 </div>
               </div>
             </section>
