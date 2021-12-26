@@ -23,6 +23,7 @@
 /* LAYOUT */
 main{
   margin-top: 14rem;
+  position: relative;
 }
 
 .clover-container{

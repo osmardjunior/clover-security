@@ -182,6 +182,11 @@
 
 
 /* ========== USING PAGE || HEADER SLIDER ========= */
+/* .header-tabs{
+  position: sticky;
+  top:
+} */
+
 .header-tabs .clover-container{
   max-width: 131.6rem;
   /* border: 1px solid red; */
@@ -368,6 +373,7 @@
   margin: 0;
 }
 
+#logging .dot-list .number-list p::after,
 .dot-list p::before{
   content: '';
   width: 5px;
@@ -375,14 +381,15 @@
   background-color: var(--green);
   position: absolute;
   top: 0.8rem;
-  left: -1.5rem;
+  left: -2.5rem;
   border-radius: 5rem;
 }
 
 #logging .dot-list p:nth-child(2){
   margin-top: 1rem;
 }
-.dot-list .inner-tab-list{
+
+#logging .dot-list .number-list p::before{
   display: none;
 }
 
@@ -442,6 +449,10 @@ p.label{
   margin-bottom: 2rem;
 }
 
+#completing-profile .dot-list{
+  margin-left: 5rem;
+}
+
 #completing-profile .dot-list p:nth-child(2){
   margin: 1rem 1rem 1rem 0;
 }
@@ -466,6 +477,13 @@ p.label{
 }
 
 /* ========= USING PAGE | CONDUCTING NETWORK ============ */
+#conducting-network .dot-list{
+  margin-left: 5rem;
+}
+#conducting-network .dot-list p{
+  margin: 1.5rem 0;
+}
+
 .note{
   padding: 2.4rem;
   background-color: var(--bg-article);
@@ -526,6 +544,7 @@ section.active .tab-text-area_content h4 + .numer-list{
 .inner-tabs section.active .number-list p{
   margin-left: 2.5rem;
 }
+
 .inner-tabs section.active .number-list p::before{
   width: 0;
   height: 0;
@@ -562,6 +581,10 @@ section.active .tab-text-area_content h4 + .numer-list{
 
 p.see-below{
   font-weight: 300;
+}
+
+p.see-below::before{
+  display: none;
 }
 
 #network.active .tab-img-area .first-flex{
@@ -610,23 +633,40 @@ p.see-below{
 
 /* ============ USING PAGE || FAQ =============== */
 #faq .tab-text-area{
-  border: 1px solid green;
   width: 100%;
   max-width: 104.9rem;
   padding: 0 2.4rem;
 }
 
 #faq .accordion{
-  border: 1px solid red;
   width: 100%;
 }
 
-#faq .accordion-button::after {
-  /* display: none; */
+#faq .accordion-item{
+  border: none;
+  background-color: var(--bg1);
 }
 
-.accordion-header{
-  position: relative;
+#faq .accordion-button::after {
+  display: none;
+}
+
+#faq .accordion-item{
+  border-bottom: none;
+}
+
+#faq .accordion-header{
+  margin: 0;
+}
+
+/* #faq .accordion-button{
+  border-bottom: 1px solid var(--line2);
+} */
+
+#faq .accordion-button:not(.collapsed) {
+  color: var(--black);
+  border-bottom: none;
+  box-shadow: none;
 }
 
 #faq .accordion-button::before {
@@ -642,7 +682,6 @@ p.see-below{
 }
 
 #faq .accordion-button:not(.collapsed)::before {
-
   background: url(../assets/svg/accordion-white-line.svg) no-repeat,
               url(../assets/svg/accordion-bg-green.svg);
   background-position: center center;
@@ -654,7 +693,7 @@ p.see-below{
   justify-content: center;
 }
 
-.accordion-header .accordion-button{
+#faq .accordion-header .accordion-button{
   font-size: 2rem;
   padding: 2.4rem 0rem 2.4rem 4.5rem;
 }
@@ -663,6 +702,55 @@ p.see-below{
   background-color: transparent;
 }
 
+#faq .accordion-body{
+  border-bottom: 1px solid var(--line2);
+}
+
+#faq .accordion-body p{
+  font-weight: 300;
+} 
+
+.inner-tabs section#faq.active .number-list p::before{
+  left: 4rem;
+}
+
+section#faq.active .accordion-body .dot-list p::before{
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: var(--green);
+  position: absolute;
+  top: 0.8rem;
+  left: -2.5rem;
+  border-radius: 5rem;
+}
+
+.inner-tabs section#faq.active .number-list.footnote p{
+  font-size: 1rem;
+  margin-left: 4rem;
+}
+
+.inner-tabs section#faq.active .number-list.footnote p::before{
+  left: 6.5rem;
+}
+
+
+/* ======== USING PAGE || CONTROL BUTTONS ============= */
+.bottom-controls{
+  padding: 2.3rem 0 16.9rem;
+  background-color: var(--white);
+}
+
+.bottom-controls span{
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color:var(--green);
+}
+
+.bottom-controls span.inactive{
+  opacity: 0.5;
+}
 
 
 
