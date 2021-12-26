@@ -482,14 +482,13 @@ p.label{
   display: none;
 }
 
-section#conducting-network.active .tab-text-area_content h4,
-section#network.active .tab-text-area_content h4{
+section.active .tab-text-area_content h4{
   color: var(--green);
   margin-top: 3.3rem;
 }
 
-section#conducting-network.active .tab-text-area_content h4 + p,
-section#network.active .tab-text-area_content h4 + p{
+section.active .tab-text-area_content h4 + p,
+section.active .tab-text-area_content h4 + .numer-list{
   margin-top: 1rem;
 }
 
@@ -524,17 +523,21 @@ section#network.active .tab-text-area_content h4 + p{
 }
 
 /* =========== USING PAGE || NETWORK SCANNING =========== */
+.inner-tabs section.active .number-list p{
+  margin-left: 2.5rem;
+}
 .inner-tabs section.active .number-list p::before{
   width: 0;
   height: 0;
   color: var(--green);
   font-weight: 500;
-  top: 0;
-  left: -2.5rem;
+  position: absolute;
+  left: 0rem;
 }
 
 .inner-tabs section.active .number-list p.pseudo-one::before{
   content: '1.';
+  
 }
 .inner-tabs section.active .number-list p.pseudo-two::before{
   content: '2.';
@@ -594,6 +597,10 @@ p.see-below{
 
 #completing-security.active .tab-img-area .tab-img-group:nth-child(4){
   margin-top: 19.5rem;
+}
+
+#revalidating .tab-img-area .tab-img-group:not(:last-child){
+  margin-bottom: 7rem;
 }
 
 
