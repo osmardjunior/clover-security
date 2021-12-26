@@ -704,6 +704,8 @@ p.see-below::before{
 
 #faq .accordion-body{
   border-bottom: 1px solid var(--line2);
+  padding-top: 0;
+  padding-bottom: 2.2rem;
 }
 
 #faq .accordion-body p{
@@ -728,6 +730,7 @@ section#faq.active .accordion-body .dot-list p::before{
 .inner-tabs section#faq.active .number-list.footnote p{
   font-size: 1rem;
   margin-left: 4rem;
+  line-height: 1.4rem;
 }
 
 .inner-tabs section#faq.active .number-list.footnote p::before{

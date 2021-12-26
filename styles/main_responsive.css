@@ -333,6 +333,42 @@
     flex-direction: column;
   }
 
+  /* ======== USING PAGE || FAQ ===================== */
+  #faq .tab-text-area{
+    padding: 0 1.4rem;
+  }
+
+  #faq .accordion-header .accordion-button {
+    font-size: 1.8rem;
+}
+
+  #faq .accordion-body{
+    padding: 0 0 2.1rem;
+  }
+
+  #faq .accordion-body p{
+    font-size: 1.5rem;
+  }
+
+  .inner-tabs section#faq.active .number-list p::before{
+    left: 1.5rem;
+  }
+
+  section#faq.active .accordion-body .dot-list{
+    margin-left: 1.5rem;
+  }
+  section#faq.active .accordion-body .dot-list p::before{
+    left: -1.5rem;
+  }
+
+  .inner-tabs section#faq.active .number-list.footnote p{
+    margin-left: 2.5rem;
+  }
+
+  .inner-tabs section#faq.active .number-list.footnote p::before{
+    left: 2.5rem;
+  }
+
   /* ========= UNDERSTANDING || WHAT IS ============= */
   .s-understand-security{
     padding-top: 6rem;
