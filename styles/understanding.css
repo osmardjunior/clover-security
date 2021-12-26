@@ -482,12 +482,14 @@ p.label{
   display: none;
 }
 
-section#conducting-network.active .tab-text-area_content h4{
+section#conducting-network.active .tab-text-area_content h4,
+section#network.active .tab-text-area_content h4{
   color: var(--green);
   margin-top: 3.3rem;
 }
 
-section#conducting-network.active .tab-text-area_content h4 + p{
+section#conducting-network.active .tab-text-area_content h4 + p,
+section#network.active .tab-text-area_content h4 + p{
   margin-top: 1rem;
 }
 
@@ -521,6 +523,56 @@ section#conducting-network.active .tab-text-area_content h4 + p{
   margin-bottom: 0rem;
 }
 
+/* =========== USING PAGE || NETWORK SCANNING =========== */
+.inner-tabs section#network.active .dot-list p::before{
+  width: 0;
+  height: 0;
+  color: var(--green);
+  font-weight: 500;
+  top: 0;
+  left: -2.5rem;
+}
+
+.inner-tabs section#network.active .dot-list p.pseudo-one::before{
+  content: '1.';
+}
+.inner-tabs section#network.active .dot-list p.pseudo-two::before{
+  content: '2.';
+}
+.inner-tabs section#network.active .dot-list p.pseudo-three::before{
+  content: '3.';
+}
+.inner-tabs section#network.active .dot-list p.pseudo-four::before{
+  content: '4.';
+}
+.inner-tabs section#network.active .dot-list p.pseudo-five::before{
+  content: '5.';
+}
+
+.inner-tabs section#network.active .dot-list .inner-tab-list{
+  display: inline-block;
+}
+
+.inner-tabs section#network.active .dot-list > p{
+  margin: 1rem 0;
+}
+
+p.see-below{
+  font-weight: 300;
+}
+
+#network.active .tab-img-area .first-flex{
+  margin: 14rem 0 7rem;
+}
+
+#network.active .tab-img-area > .tab-img-group:nth-child(2){
+  margin-top: 7rem;
+  position: relative
+}
+
+#network.active .tab-img-area .tab-img-group:nth-child(2) .overlapping{
+  bottom: -6rem;
+}
 
 
 
