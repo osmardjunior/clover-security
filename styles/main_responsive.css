@@ -320,6 +320,11 @@
     margin-top: 2.4rem;
   }
 
+  /* ========== USING PAGE || CONDUCTING GROUP ============ */
+  .inner-tabs section#conducting-group.active{
+    flex-direction: column;
+  }
+
   /* ========= UNDERSTANDING || WHAT IS ============= */
   .s-understand-security{
     padding-top: 6rem;

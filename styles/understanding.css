@@ -491,6 +491,10 @@ section#conducting-network.active .tab-text-area_content h4 + p{
   margin-top: 1rem;
 }
 
+.not-link{
+  pointer-events: none;
+}
+
 .tab-img-flex{
   display: flex;
   justify-content: space-between;
@@ -502,15 +506,18 @@ section#conducting-network.active .tab-text-area_content h4 + p{
   max-width: 32.2rem;
 }
 
-#conducting-network .tab-img-area > .tab-img-group{
+#conducting-network .tab-img-area > .tab-img-group,
+#conducting-group .tab-img-area > .tab-img-group{
   margin: 7rem 0;
 }
 
-#conducting-network .tab-img-area > .tab-img-group:nth-child(1){
+#conducting-network .tab-img-area > .tab-img-group:nth-child(1),
+#conducting-group .tab-img-area > .tab-img-group:nth-child(1){
   margin-top: 0;
 }
 
-#conducting-network .tab-img-area > .tab-img-group:nth-child(4){
+#conducting-network .tab-img-area > .tab-img-group:nth-child(4),
+#conducting-group .tab-img-area > .tab-img-group:nth-child(4){
   margin-bottom: 0rem;
 }
 
