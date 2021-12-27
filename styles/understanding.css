@@ -7,6 +7,10 @@
   background-position: 0% 100%, 0% 100%, 61% 0%;
 }
 
+.s-hero-using .clover-container{
+  max-width: 131.6rem
+}
+
 .s-hero-using_txt{
   padding: 9.1rem 0rem;
   width: 100%;
@@ -963,6 +967,9 @@ section#faq.active .accordion-body .dot-list p::before{
 } 
 
 .article-page-grid{
+  width: 100%;
+  max-width: 125.3rem;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 28.15rem;
   grid-template-rows: 12.1rem auto 1fr;
@@ -980,9 +987,10 @@ aside{
   /* max-width: 28.15rem; */
   position: sticky;
   right: 16rem;
-  top: 30%;
+  top: 24%;
   margin-left: auto;
   margin-top: 7.7rem;
+  margin-bottom: 30rem;
 }
 
 .aside-header a{

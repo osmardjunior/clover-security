@@ -29,7 +29,8 @@ header{
 
 .logo{
   grid-area: logo;
-  padding-left: 4.9rem;
+  /* padding-left: 4.9rem; */
+  padding-left: 7rem;
   background-color: var(--bg1);
 }
 
@@ -49,7 +50,8 @@ header{
 
 .phone a{
   margin-left: auto;
-  padding-right: 4.9rem;
+  /* padding-right: 4.9rem; */
+  padding-right: 7rem;
 }
 
 .login{
@@ -65,7 +67,8 @@ header{
 /*** MENU NAV ***/
 nav.menu{
   grid-area: nav;
-  padding-left: 4.9rem;
+  /* padding-left: 4.9rem; */
+  padding-left: 7rem;
   /* border-bottom: 1px solid var(--line2); */
 }
 
