@@ -108,7 +108,7 @@ allHeaderLinks.forEach((item) => {
     })
     
     overlay.style.display = 'block'
-    preventScroll.classList.add('noscroll')
+    // preventScroll.classList.add('noscroll')
 
     // allHeaderLinks.forEach((menudropdown) => {
     //   if(menudropdown.classList.contains('active')){
@@ -134,11 +134,11 @@ allMenuDropdown.forEach((menu) => {
   const activeDropdown = document.querySelector('.js-menu-dropdown.active')
 
   overlay.style.display = 'none'
-  preventScroll.classList.remove('noscroll')
+  // preventScroll.classList.remove('noscroll')
   activeDropdown.classList.remove('active')
   
   }
-  menu.addEventListener('mouseleave', mouseLeaveDrodpown)
+  // menu.addEventListener('mouseleave', mouseLeaveDrodpown)
 })
 
 
