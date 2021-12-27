@@ -1,12 +1,13 @@
 header{
   position: relative;
-  z-index: 100;
+  width: 100%;
 }
 
 .header{
-  border-bottom: 1px solid var(--line2);
+  border-bottom: 1px solid var(--line);
   background-color: var(--white);
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
@@ -29,7 +30,6 @@ header{
 
 .logo{
   grid-area: logo;
-  /* padding-left: 4.9rem; */
   padding-left: 7rem;
   background-color: var(--bg1);
 }
@@ -50,7 +50,6 @@ header{
 
 .phone a{
   margin-left: auto;
-  /* padding-right: 4.9rem; */
   padding-right: 7rem;
 }
 
@@ -61,34 +60,65 @@ header{
 .login button.btn2{
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 /*** MENU NAV ***/
 nav.menu{
   grid-area: nav;
-  /* padding-left: 4.9rem; */
   padding-left: 7rem;
+  padding-right: 1.6rem;
+  /* border: 1px solid blue; */
   /* border-bottom: 1px solid var(--line2); */
 }
 
-nav.menu ul{
+nav.menu .nav-menu{
   display: flex;
   gap: 5.7rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid green; */
 }
 
-.header nav.menu ul li a{
+nav.menu .nav-menu li a{
   font-weight: 400;
   display: flex;
   gap: 1.2rem;
   font-size: 1.3rem;
+  position: relative;
+}
+
+nav.menu .nav-menu li a::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--green);
+  bottom: -2.5rem;
+  transition: .3s;
+}
+
+nav.menu .nav-menu li.active a::after{
+  width: 100%;
+}
+
+nav.menu .nav-menu li a:hover{
+  color: var(--black);
+}
+
+nav.menu .nav-menu li a:hover::after{
+  width: 100%;
 }
 
 
 /**** HEADER ACTIVE ****/
 .header.active{
-  grid-template-columns: 27.8rem 1fr 23.1rem;
-  grid-template-rows: 7.3rem;
+  grid-template-columns: 30rem 1fr 23.1rem;
+  grid-template-rows: 6.8rem;
   grid-template-areas: "logo nav login";
 }
 
@@ -101,33 +131,64 @@ nav.menu ul{
   display: none;
 }
 
+.header.active nav.menu{
+  padding-left: 3.8rem;
+}
 
+nav.menu .nav-menu{
+  gap: 5.7rem;
+}
 
+ 
 
 /**** DROPDOWN ****/
-.menu-dropdown1,
-.menu-dropdown2{
+.no-scroll{
+  overflow: hidden;
+  height: 100%;
+}
+
+.overlay{
+  display: none;
+  /* background-color: rgba(0, 0, 0, 0.164); */
+  width: 100vw;
+  height: 100vh;
+}
+
+.js-menu-dropdown .menu-dropdown{
   background-color: var(--white);
-  position: fixed;
+  /* border: 1px solid red; */
+  position: absolute;
   top: 14rem;
-  width: 100%;
-  border: 1px solid red;
+  left: 0;
+  right: 0;
 
   opacity: 0;
   pointer-events: none;
   transition: all .2s;
 }
 
-.menu-dropdown1 .clover-container,
-.menu-dropdown2 .clover-container{
-  max-width: 100%;
-  padding: 4.7rem 4.9rem 6.1rem;
+.js-menu-dropdown.active .menu-dropdown{
+  opacity: 1;
+  pointer-events: all;
 }
 
+.menu-dropdown .clover-container{
+  max-width: 100%;
+  padding: 0 7rem;
+  margin: 0;
+}
+
+.top-dropdown_menu{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  padding: 4.7rem 0rem 6.1rem;
+}
 
 .dropdown-txt{
   width: 100%;
   max-width: 25.1rem;
+  margin-right: 4.5rem;
 }
 
 .dropdown-txt h3{
@@ -136,56 +197,127 @@ nav.menu ul{
   margin-bottom: 2.1rem;
 }
 
-.menu-dropdown1 nav,
-.menu-dropdown2 nav{
+.menu-dropdown nav{
   display: flex;
   gap: 4.5rem;
+  max-width: 100%;
 }
-.menu-dropdown1 nav ul,
-.menu-dropdown2 nav ul{
+
+.menu-dropdown nav ul{
   display: flex;
   flex-direction: column;
   gap: 2.9rem;
 }
 
-.menu-dropdown1 nav ul li a,
-.menu-dropdown2 nav ul li a{
+.menu-dropdown nav ul li a{
   font-size: 2.4rem;
+  font-weight: 300;
   line-height: 3rem;
   color: var(--black);
 }
 
-/* MENU USING CLOVERSECURITY.COM */
-.top-dropdown_menu1{
-  display: flex;
-  gap: 4.5rem;
-  border: 1px solid green;
+.menu-dropdown nav ul li a::after{
+  display: none;
 }
 
-/* MENU UNDERSTANDING DATA SECURITY */
-.top-dropdown_menu2{
-  display: flex;
-  gap: 4.5rem; 
+.menu-dropdown1 .top-dropdown_menu_col1{
+  width: 100%;
+  max-width: 32rem;
+}
+
+.menu-dropdown1 .top-dropdown_menu_col2{
+  width: 100%;
+  max-width: 47rem;
+}
+
+nav.menu .menu-dropdown ul {
+  align-items: flex-start;
 }
 
 
-.menu-dropdown1.active,
-.menu-dropdown2.active,
-.header.active .menu-dropdown1.active{
-  opacity: 1;
-  pointer-events: all;
-}
+
+
 
 
 /********* RESPONSIVE *************/
-@media (max-width: 950px){
+@media(max-width: 1345px){
+  .logo,
+  nav.menu{
+    padding-left: 4.9rem;
+  }
+
+  .phone a{
+    padding-right: 4.9rem;
+  }
+
+  .menu-dropdown .clover-container{
+    padding: 0 4.9rem;
+  }
+}
+
+@media (max-width: 1200px){
+  .header.active{
+    grid-template-columns: 30rem 1fr 15rem;
+  }
+
+  nav.menu .nav-menu{
+    gap: 3rem;
+  }
+
+  .dropdown-txt{
+    margin-right: 2.5rem;
+  }
+}
+
+@media(max-width: 1060px){
   .header{
-    grid-template-columns: 26rem 1fr 12.2rem;
+    grid-template-columns: 28rem 1fr 12.2rem;
     grid-template-rows: 5.5rem 5.5rem;
     grid-template-areas: "logo telephone login"
                           "nav nav nav";
   }
 
+  .top-dropdown_menu{
+    padding: 4.1rem 0rem 6.1rem;
+  }
+}
+
+@media (max-width: 950px){
+
+  .top-dropdown_menu{
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .dropdown-txt {
+    max-width: 32.7rem;
+    margin: 0 0 4rem;
+  }
+
+  .dropdown-txt h3{
+    margin-bottom: 1.7rem;
+  }
+
+  .dropdown-txt p{
+    margin: 0;
+  }
+
+  .menu-dropdown nav{
+    flex-direction: column;
+    gap: 2.9rem;
+  }
+
+  .menu-dropdown1 .top-dropdown_menu_col1,
+  .menu-dropdown1 .top-dropdown_menu_col2{
+    max-width: 100%;
+  }
+
+  nav.menu .nav-menu li a::after{
+    bottom: -2rem;
+  }
+}
+
+@media(max-width: 800px){
   .logo{
     padding-left: 1.6rem;
   }
@@ -201,17 +333,53 @@ nav.menu ul{
     padding-left: 1.6rem;
     padding-right: 1.6rem;
   }
+
+  .menu-dropdown .clover-container{
+    padding: 0 1.6rem;
+  }
 }
 
 
 /***************/
-@media (max-width: 720px){
-  nav.menu ul li:first-child{
+@media (max-width: 600px){
+  .header{
+    grid-template-columns: 24.7rem 1fr 9.2rem;
+    grid-template-rows: 5.5rem 5.5rem;
+    grid-template-areas: "logo telephone login"
+                          "nav nav nav";
+  }
+
+  .login button.btn2 a{
+    font-size: 1.3rem;
+  }
+
+  .phone a{
+    padding-right: 2.5rem;
+  }
+
+  nav.menu .nav-menu{
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    border: 1px solid red;
+  }
+
+  .home{
     display: none;
   }
 
-  nav.menu ul li a{
+  nav.menu .nav-menu li a{
     font-size: 1.05rem;
+  }
+
+  /* DROPDOWN */
+  .dropdown-txt h3{
+    font-size: 1.8rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .menu-dropdown nav ul li a{
+    font-size: 1.8rem;
   }
 }
 
@@ -231,14 +399,14 @@ nav.menu ul{
     margin-left: auto;
   }
 
-  nav.menu ul{
+  nav.menu .nav-menu ul{
     width: 100%;
-    max-width: 32.7rem;
+    /* max-width: 32.7rem; */
     justify-content: space-between;
-    gap: 0.9rem;
+    gap: 0rem;
   }
 
-  nav.menu ul li a img{
+  nav.menu .nav-menu li a img{
     display: none;
   }
 }
@@ -246,11 +414,24 @@ nav.menu ul{
 /***************/
 @media (max-width: 412px){
   .header{
-    grid-template-columns: 25rem 1fr 8.5rem;
+    grid-template-columns: 25rem 1fr 7.3rem;
   }
 
-  nav.menu{
-    width: 100%;
-    max-width: 34.1rem;
+  .phone a{
+    padding-right: 1.1rem;
+  }
+
+  .login button.btn2 a {
+    font-size: 1rem;
+  } 
+}
+
+@media (max-width: 375px){
+  nav.menu .nav-menu li a::after{
+    bottom: -1rem;
+  }
+
+  nav.menu .nav-menu li a{
+    text-align: center;
   }
 }
