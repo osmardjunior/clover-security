@@ -650,10 +650,20 @@
     gap: 5.8rem;
   }
 
-   /* ============ USING PAGE || LOGGING ============== */
-  /* .inner-tabs section#logging.active{
-    padding-right: 75rem;
-  } */
+  /* ============ USING PAGE || TABS ============== */
+  .controls{
+    display: none;
+  }
+
+  .mobile-controls{
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 28%;
+    z-index: 99;
+  }
 
   /* ========== ARTICLES PAGE || BREADCRUMBS ========== */
   .breadcrumbs{

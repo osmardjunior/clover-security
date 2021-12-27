@@ -55,132 +55,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ################### UNDERSTANDNG PAGE || HERO ################### */
-.s-hero-understanding{
-  background: url(../assets/svg/black-gradient.svg),
-              url(../assets/svg/green-gradient.svg),
-              url(../assets/understanding-page-img/hero-understanding.png);
-  background-size: cover;
-  background-position: 0% 100%, 0% 100%, 61% 0%;
-}
-
-.s-hero-understanding_txt{
-  padding: 8.5rem 0rem;
-  width: 100%;
-  max-width: 52rem;
-}
-
-.s-hero-understanding_txt h1{
-  color: var(--white);
-}
-
-.s-hero-understanding_txt p{
-  color: var(--white);
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin-top: 2.6rem;
-}
-
-
-
-/* ========== UNDERSTANDING || WHAT IS DATA SECURITY======= */
-.s-understand-security{
-  padding-top: 11.9rem;
-}
-
-.s-understand-security .clover-container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-}
-
-.s-understand-security_txt{
-  width: 100%;
-  max-width: 51.8rem;
-  padding-top: 6.5rem;
-  padding-bottom: 4.4rem;
-}
-
-.s-understand-security_txt_content:not(:last-child){
-  margin-bottom: 3.3rem;
-}
-
-.s-understand-security_txt_content p{
-  margin-top: 1.3rem;
-  font-weight: 300;
-}
-
-.s-understand-security_img{
-  background: url(../assets/understanding-page-img/cashier.png) no-repeat;
-  background-size: cover;
-  background-position: 18% 100%;
-  width: 100%;
-  max-width: 54.9rem;
-  min-height: 40.8rem;
-}
-
-
-/* ======= UNDERSTANDING || BOX OF CONTENTS ======= */
-.s-understand_boxes{
-  padding-top: 11.9rem;
-  padding-bottom: 17rem;
-}
-
-.s-understand_boxes .clover-container{
-  display: flex;
-  justify-content: space-between;
-  gap: 1.5rem;
-}
-
-.s-understand-boxes_box{
-  width: 100%;
-  max-width: 34.9rem;
-}
-
-.s-understand-boxes_box_content{
-  padding: 4rem;
-  background-color: var(--bg-article);
-}
-
-.s-understand-boxes_box_content p{
-  margin: 1.3rem 0 3.2rem;
-}
-
-.understanding-page .s-contact-us{
-  margin-top: 0rem;
-}
-
-
-
-
 /* ========== USING PAGE || HEADER SLIDER ========= */
 /* .header-tabs{
   position: sticky;
@@ -195,7 +69,7 @@
 .header-carousel{
   height: 5.8rem;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .header-slider{
@@ -251,6 +125,7 @@
   width: 100%;
 }
 
+/* ====== USING PAGE ||  HEADER AND MOBILE CONTROLS ====== */
 .controls .arrow-control{
   position: absolute;
   top: 50%;
@@ -259,25 +134,39 @@
   opacity: 1;
 }
 
-.controls .previous{
+.mobile-controls{
+  display: none;
+}
+
+.mobile-controls .arrow-control{
+  cursor: pointer;
+  opacity: 1;
+}
+
+.controls .previous,
+.mobile-controls .previous{
   left: 10px;
 }
 
-.controls .next{
+.controls .next,
+.mobile-controls .next{
   right: 10px;
 }
 
-.controls .arrow-control img{
+.controls .arrow-control img,
+.mobile-controls .arrow-control img{
   border: 1px solid var(--green);
   padding: 0.5rem 0.7rem;
   background-color: var(--green);
 }
 
-.controls .previous img{
+.controls .previous img,
+.mobile-controls .previous img{
   transform: rotate(180deg);
 }
 
-.controls .arrow-control.inactive{
+.controls .arrow-control.inactive,
+.mobile-controls .arrow-control.inactive{
   opacity: 0.5;
   cursor: unset;
 }
@@ -326,16 +215,6 @@
 
 .inner-tabs-slider section{
   flex-basis: 100%;
-}
-
-.bottom-controls .clover-container{
-  max-width: 131.6rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.bottom-controls span{
-  cursor: pointer;
 }
 
 /* ======== USING PAGE || LOGGING =========== */
@@ -738,7 +617,17 @@ section#faq.active .accordion-body .dot-list p::before{
 }
 
 
-/* ======== USING PAGE || CONTROL BUTTONS ============= */
+/* ======== USING PAGE || BOTTOM CONTROL BUTTONS ========= */
+.bottom-controls .clover-container{
+  max-width: 131.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-controls span{
+  cursor: pointer;
+}
+
 .bottom-controls{
   padding: 2.3rem 0 16.9rem;
   background-color: var(--white);
@@ -754,6 +643,136 @@ section#faq.active .accordion-body .dot-list p::before{
 .bottom-controls span.inactive{
   opacity: 0.5;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################### UNDERSTANDNG PAGE || HERO ################### */
+.s-hero-understanding{
+  background: url(../assets/svg/black-gradient.svg),
+              url(../assets/svg/green-gradient.svg),
+              url(../assets/understanding-page-img/hero-understanding.png);
+  background-size: cover;
+  background-position: 0% 100%, 0% 100%, 61% 0%;
+}
+
+.s-hero-understanding_txt{
+  padding: 8.5rem 0rem;
+  width: 100%;
+  max-width: 52rem;
+}
+
+.s-hero-understanding_txt h1{
+  color: var(--white);
+}
+
+.s-hero-understanding_txt p{
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 2.6rem;
+}
+
+
+
+/* ========== UNDERSTANDING || WHAT IS DATA SECURITY======= */
+.s-understand-security{
+  padding-top: 11.9rem;
+}
+
+.s-understand-security .clover-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.s-understand-security_txt{
+  width: 100%;
+  max-width: 51.8rem;
+  padding-top: 6.5rem;
+  padding-bottom: 4.4rem;
+}
+
+.s-understand-security_txt_content:not(:last-child){
+  margin-bottom: 3.3rem;
+}
+
+.s-understand-security_txt_content p{
+  margin-top: 1.3rem;
+  font-weight: 300;
+}
+
+.s-understand-security_img{
+  background: url(../assets/understanding-page-img/cashier.png) no-repeat;
+  background-size: cover;
+  background-position: 18% 100%;
+  width: 100%;
+  max-width: 54.9rem;
+  min-height: 40.8rem;
+}
+
+
+/* ======= UNDERSTANDING || BOX OF CONTENTS ======= */
+.s-understand_boxes{
+  padding-top: 11.9rem;
+  padding-bottom: 17rem;
+}
+
+.s-understand_boxes .clover-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.s-understand-boxes_box{
+  width: 100%;
+  max-width: 34.9rem;
+}
+
+.s-understand-boxes_box_content{
+  padding: 4rem;
+  background-color: var(--bg-article);
+}
+
+.s-understand-boxes_box_content p{
+  margin: 1.3rem 0 3.2rem;
+}
+
+.understanding-page .s-contact-us{
+  margin-top: 0rem;
+}
+
+
+
+
 
 
 
