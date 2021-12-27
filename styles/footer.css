@@ -2,8 +2,7 @@ footer{
   background-color: var(--bg1);
 }
 
-.footer-top .clover-container,
-.footer-bottom .clover-container{
+.footer-top .clover-container{
   max-width: 100%;
   padding: 0rem 7rem;
 }
@@ -42,13 +41,28 @@ footer{
 }
 
 .footer-bottom .clover-container{
+  padding: 0rem 7rem;
+  margin: 0;
   display: flex;
+  /* justify-content: space-between; */
   gap: 6.8rem;
+  max-width: 100%;
+}
+
+.footer-bottom .clover-container p{
+  /* width: 100%;
+  max-width: 83.2rem; */
+  max-width: 100%;
 }
 
 .terms-privacy{
   display: flex;
   gap: 4.7rem;
+}
+
+.terms-privacy a{
+  max-width: 100%;
+  display: inline-block;
 }
 
 .footer-bottom .clover-container p,
@@ -59,11 +73,23 @@ footer{
 
 
 /********* RESPONSIVE **********/
-@media(max-width: 950px){
-  .footer-top nav,
-  .footer-bottom{
-    padding-right: 1.6rem;
-    padding-left: 1.6rem;
+@media(max-width: 1345px){
+  .footer-top .clover-container,
+  .footer-bottom .clover-container{
+    padding: 0rem 4.9rem;
+  }
+}
+
+@media(max-width: 1255px){
+  .terms-privacy{
+    gap: 2rem;
+  }
+}
+
+@media(max-width: 800px){
+  .footer-top .clover-container,
+  .footer-bottom .clover-container{
+    padding: 0rem 1.6rem;
   }
 }
 
@@ -84,6 +110,11 @@ footer{
 }
 
 @media(max-width: 560px){
+  .footer-top .clover-container,
+  .footer-bottom .clover-container{
+    padding: 0rem;
+  }
+
   .footer-top nav{
     flex-direction: column;
     padding: 0rem;
