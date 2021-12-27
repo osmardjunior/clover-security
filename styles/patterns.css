@@ -16,6 +16,7 @@
   --font-inactive: #BFBFBF;
 
   --btn-border: #CCCCCC;
+  --btn-hover-bg: #276A16;
 }
 
 body,
@@ -68,7 +69,11 @@ a{
 .btn2{
   background-color: var(--green);
   border: none;
-  
+  transition: background-color .3s;
+}
+
+.btn2:hover{
+  background-color: var(--btn-hover-bg);
 }
 
 .btn2 a{

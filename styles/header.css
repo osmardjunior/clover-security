@@ -29,8 +29,9 @@ header{
 
 .logo{
   grid-area: logo;
-  padding-left: 4.9rem;
+  padding-left: 7rem;
   background-color: var(--bg1);
+  border: 1px solid red;
 }
 
 .logo a{
@@ -49,7 +50,7 @@ header{
 
 .phone a{
   margin-left: auto;
-  padding-right: 4.9rem;
+  padding-right: 7rem;
 }
 
 .login{
@@ -66,8 +67,9 @@ header{
 /*** MENU NAV ***/
 nav.menu{
   grid-area: nav;
-  padding-left: 4.9rem;
+  padding-left: 7rem;
   padding-right: 1.6rem;
+  border: 1px solid blue;
   /* border-bottom: 1px solid var(--line2); */
 }
 
@@ -75,6 +77,8 @@ nav.menu ul{
   display: flex;
   gap: 5.7rem;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav.menu ul li a{
@@ -95,6 +99,10 @@ nav.menu ul li a::after{
   transition: .3s;
 }
 
+nav.menu ul li a:hover{
+  color: var(--black);
+}
+
 nav.menu ul li a:hover::after{
   width: 100%;
 }
@@ -102,7 +110,7 @@ nav.menu ul li a:hover::after{
 
 /**** HEADER ACTIVE ****/
 .header.active{
-  grid-template-columns: 27.8rem 1fr 23.1rem;
+  grid-template-columns: 30rem 1fr 23.1rem;
   grid-template-rows: 7.3rem;
   grid-template-areas: "logo nav login";
 }
@@ -114,6 +122,14 @@ nav.menu ul li a:hover::after{
 
 .header.active .phone{
   display: none;
+}
+
+.header.active nav.menu{
+  padding-left: 3.8rem;
+}
+
+nav.menu ul{
+  gap: 5.7rem;
 }
 
 
@@ -185,10 +201,20 @@ nav.menu ul li a:hover::after{
 
 
 /********* RESPONSIVE *************/
-@media (max-width: 1150px){
+@media (max-width: 1200px){
   .header.active{
-    grid-template-columns: 28rem 1fr 15rem;
+    grid-template-columns: 30rem 1fr 15rem;
   }
+
+  nav.menu ul{
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 1150px){
+  /* .header.active{
+    grid-template-columns: 28rem 1fr 15rem;
+  } */
 
   nav.menu{
     padding-left: 2rem;
