@@ -93,10 +93,10 @@ allHeaderLinks.forEach((item) => {
 
     allMenuDropdown.forEach((menu) => {
       if (window.scrollY > 200 && window.innerWidth > 1200) {
-        menu.style.top = '7.3rem'
+        menu.style.top = '6.9rem'
     
       } else if(window.scrollY < 200 && window.innerWidth > 1200){
-        menu.style.top = '13.9rem'
+        menu.style.top = '14rem'
     
       } else if(window.innerWidth < 1200){
         menu.style.top = '11.1rem'

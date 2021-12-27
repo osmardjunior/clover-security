@@ -99,7 +99,7 @@ nav.menu ul li a::after{
   width: 0;
   height: 2px;
   background-color: var(--green);
-  bottom: -2.6rem;
+  bottom: -2.5rem;
   transition: .3s;
 }
 
@@ -115,7 +115,7 @@ nav.menu ul li a:hover::after{
 /**** HEADER ACTIVE ****/
 .header.active{
   grid-template-columns: 30rem 1fr 23.1rem;
-  grid-template-rows: 7.3rem;
+  grid-template-rows: 6.8rem;
   grid-template-areas: "logo nav login";
 }
 
@@ -156,9 +156,9 @@ nav.menu ul{
 
 .js-menu-dropdown .menu-dropdown{
   background-color: var(--white);
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: absolute;
-  /* top: 14rem; */
+  top: 13.9rem;
   left: 0;
   right: 0;
 
@@ -173,14 +173,22 @@ nav.menu ul{
 }
 
 .menu-dropdown .clover-container{
-  width: 100%;
-  padding: 0;
+  max-width: 100%;
+  padding: 0 7rem;
   margin: 0;
+}
+
+.top-dropdown_menu{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  padding: 4.7rem 0rem 6.1rem;
 }
 
 .dropdown-txt{
   width: 100%;
   max-width: 25.1rem;
+  margin-right: 4.5rem;
 }
 
 .dropdown-txt h3{
@@ -192,7 +200,9 @@ nav.menu ul{
 .menu-dropdown nav{
   display: flex;
   gap: 4.5rem;
+  max-width: 100%;
 }
+
 .menu-dropdown nav ul{
   display: flex;
   flex-direction: column;
@@ -201,16 +211,27 @@ nav.menu ul{
 
 .menu-dropdown nav ul li a{
   font-size: 2.4rem;
+  font-weight: 300;
   line-height: 3rem;
   color: var(--black);
 }
 
-/* DROPDOWN CONTENT */
-.top-dropdown_menu{
-  display: flex;
-  gap: 4.5rem;
-  max-width: 106.5rem;
-  padding: 4.7rem 4.9rem 6.1rem;
+.menu-dropdown nav ul li a::after{
+  display: none;
+}
+
+.menu-dropdown1 .top-dropdown_menu_col1{
+  width: 100%;
+  max-width: 32rem;
+}
+
+.menu-dropdown1 .top-dropdown_menu_col2{
+  width: 100%;
+  max-width: 47rem;
+}
+
+nav.menu .menu-dropdown ul {
+  align-items: flex-start;
 }
 
 
@@ -228,6 +249,10 @@ nav.menu ul{
   .phone a{
     padding-right: 4.9rem;
   }
+
+  .menu-dropdown .clover-container{
+    padding: 0 4.9rem;
+  }
 }
 
 @media (max-width: 1200px){
@@ -238,6 +263,10 @@ nav.menu ul{
   nav.menu ul{
     gap: 3rem;
   }
+
+  .dropdown-txt{
+    margin-right: 2.5rem;
+  }
 }
 
 @media(max-width: 1060px){
@@ -247,9 +276,41 @@ nav.menu ul{
     grid-template-areas: "logo telephone login"
                           "nav nav nav";
   }
+
+  .top-dropdown_menu{
+    padding: 4.1rem 0rem 6.1rem;
+  }
 }
 
 @media (max-width: 950px){
+
+  .top-dropdown_menu{
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .dropdown-txt {
+    max-width: 32.7rem;
+    margin: 0 0 4rem;
+  }
+
+  .dropdown-txt h3{
+    margin-bottom: 1.7rem;
+  }
+
+  .dropdown-txt p{
+    margin: 0;
+  }
+
+  .menu-dropdown nav{
+    flex-direction: column;
+    gap: 2.9rem;
+  }
+
+  .menu-dropdown1 .top-dropdown_menu_col1,
+  .menu-dropdown1 .top-dropdown_menu_col2{
+    max-width: 100%;
+  }
 
   /* DROPDOWN */
   /* .menu-dropdown{
@@ -288,6 +349,10 @@ nav.menu ul{
   nav.menu{
     padding-left: 1.6rem;
     padding-right: 1.6rem;
+  }
+
+  .menu-dropdown .clover-container{
+    padding: 0 1.6rem;
   }
 }
 

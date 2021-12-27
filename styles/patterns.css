@@ -45,7 +45,7 @@ a{
 .menu{
   font-size: 1.3rem;
   line-height: 1.7rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .tab-name{
