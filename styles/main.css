@@ -1,3 +1,229 @@
 main{
-  margin-top: 13.9rem;
+  margin-top: 7.5rem;
+}
+.clover-container{
+  width: 100%;
+  max-width: 119rem;
+  margin: 0 auto;
+  padding: 7.3rem 2.4rem;
+  border: 1px solid red;
+}
+
+/* ========= INDEX / HOME ========== */
+.s-hero{
+  padding: 6.4rem 4.9rem;
+}
+
+.s-hero .clover-container{
+  background: url('../assets/home-page-img/home_img1.png') no-repeat;
+  background-size: cover;
+  background-position: 77% 30%;
+  min-height: 50rem;
+  padding: 0rem;
+  position: relative;
+}
+
+.s-hero_txt{
+  width: 100%;
+  max-width: 49.9rem;
+  padding: 4rem;
+  background-color: var(--bg1);
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -11rem;
+}
+
+.s-hero_txt h1{
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
+}
+
+
+
+
+/* =========== INDEX / WHY =========*/
+.s-why{
+  margin-top: 15.5rem;
+  margin-bottom: 8.6rem;
+}
+
+.s-why .clover-container{
+  display: flex;
+  justify-content: center;
+}
+
+.s-why_content{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 2rem;
+  max-width: 103.9rem;
+}
+
+.s-why_content_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 25rem;
+}
+
+.s-why_content_box img{
+  width: 3.8rem;
+}
+
+.s-why_content_box h3{
+  font-size: 1.4rem;
+  margin: 2.4rem 0 1.6rem;
+}
+
+.s-why_content_box p{
+  text-align: center;
+}
+
+
+
+
+/* ======== INDEX WHAT IS CLOVER ======= */
+.s-whatis{
+  background-color: var(--bg2);
+  padding-top: 5.2rem;
+  padding-bottom: 5.2rem;
+}
+
+.s-whatis .clover-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s-whatis .home-txt{
+  width: 100%;
+  max-width: 58rem;
+  padding-right: 2.5rem;
+}
+
+.s-whatis .home-txt h1{
+  font-size: 3.8rem;
+  margin-bottom: 3rem;
+}
+
+.s-whatis .home-txt .home-txt_p{
+  margin-bottom: 3rem;
+}
+
+.s-whatis-img{
+  width: 100%;
+  max-width: 48.7rem;
+}
+
+
+
+
+/* ======= INDEX REPORTING ======*/
+.s-reporting{
+  padding: 8.6rem 2.4rem 0rem;
+}
+
+.s-reporting .clover-container{
+  padding: 0;
+}
+
+.s-reporting_content{
+  position: relative;
+  background: url(../assets/home-page-img/home_img4.png) no-repeat;
+  background-position: 28% 100%;
+  background-size: cover;
+  min-height: 50rem;
+  width: 100%;
+  max-width: 95.1rem;
+}
+
+.s-reporting .home_txt2{
+  width: 100%;
+  max-width: 41.3rem;
+  padding: 4rem;
+  background-color: var(--bg1);
+  position: absolute;
+  right: -11rem;
+  bottom: -7rem;
+}
+
+
+/* ======== INDEX UNDERSTANDING DATA SECURITY ========= */
+.s-understanding{
+  padding: 15.2rem 2.4rem 0 2.4rem;
+}
+
+.s-understanding .clover-container{
+  position: relative;
+}
+
+.s-understanding .s-understanding_content{
+  background: url(../assets/home-page-img/home_img3.png) no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+  width: 100%;
+  max-width: 95.1rem;
+  min-height: 50rem;
+  position: absolute;
+  right: 0;
+}
+
+.s-understanding .home_txt2{
+  width: 100%;
+  max-width: 41.3rem;
+  padding: 4rem;
+  background-color: var(--bg1);
+  position: absolute;
+  bottom: -7.5rem;
+  left: -11rem;
+}
+
+/* =======  INDEX || CONTACT US ======== */
+.s-contact-us{
+  margin-top: 68.9rem;
+  padding: 9.2rem 0 8.9rem;
+  background-color: var(--bg2);
+}
+
+.s-contact-us .clover-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.s-contact-us_box{
+  width: 100%;
+  max-width: 52.7rem;
+}
+
+.s-contact-us_header img{
+  width: 100%;
+  max-width: 3.6rem;
+  height: 3.6rem;
+}
+
+.s-contact-us_header h2{
+  margin: 2rem 0rem;
+  font-weight: 300;
+}
+
+.s-contact-us_box p{
+  margin-bottom: 2.9rem;
+}
+
+.phone-number p{
+  font-size: 2rem;
+}
+
+.phone-number p a{
+  font-size: 2rem;
+  color: var(--green);
+  text-decoration: underline;
+  transition: .2s;
+}
+
+.phone-number p a:hover{
+  color: var(--link-hover);
 }
