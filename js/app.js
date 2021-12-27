@@ -40,7 +40,7 @@
 //     body.classList.remove('js-prevent-scroll')
 //   }
   
-// }
+// // }
 
 // function handleDropdownMenu2(event) {
 //   event.preventDefault()
@@ -65,36 +65,59 @@ const header = document.querySelector('.js-header')
 
 function menuHandler(){
 
-  if (window.scrollY > 200 && window.innerWidth > 950) {
+  if (window.scrollY > 200 && window.innerWidth > 1200) {
     header.classList.add('active')
 
-  } else if(window.scrollY < 200 && window.innerWidth > 950){
+  } else if(window.scrollY < 200 && window.innerWidth > 1200){
     header.classList.remove('active')
 
-  } else if(window.scrollY < 200 && window.innerWidth < 950){
+  } else if(window.innerWidth < 1200){
     header.classList.remove('active')
 
   }
 }
 
 window.addEventListener('scroll', menuHandler)
+window.addEventListener('resize', menuHandler)
 
 // OPEN CLOSE HEADER DROPDOWN
-const headerLinkMenu = document.querySelectorAll('.js-menu-dropdown')
-const menuDropdown = document.querySelectorAll('.menu-dropdown')
+const allHeaderLinks = document.querySelectorAll('.js-menu-dropdown')
+const allMenuDropdown = document.querySelectorAll('.menu-dropdown')
 
+allHeaderLinks.forEach((item) => {
+  
+  function dropdownHandler(event){
+    const activeDropdown = document.querySelector('.js-menu-dropdown.active')
 
-headerLinkMenu.forEach((item) => {
-  function handleHeaderDropdown(event) {
     event.preventDefault()
-    // console.log(event)
 
-    menuDropdown.forEach((link) => {
-      link.classList.remove('active')
+    allMenuDropdown.forEach((menu) => {
+      if (window.scrollY > 200 && window.innerWidth > 1200) {
+        menu.style.top = '7.3rem'
+    
+      } else if(window.scrollY < 200 && window.innerWidth > 1200){
+        menu.style.top = '13.9rem'
+    
+      } else if(window.innerWidth < 1200){
+        menu.style.top = '11.1rem'
+    
+      }
     })
 
     this.classList.add('active')
+    activeDropdown.classList.remove('active')
   }
 
-  item.addEventListener('click', handleHeaderDropdown)
+  item.addEventListener('click', dropdownHandler)
 })
+
+// OPEN/CLOSE DROPDOWN ON MOUSE LEAVE
+
+// allMenuDropdown.forEach((menu) => {
+//   function mouseLeaveDrodpown(){
+//   const activeDropdown = document.querySelector('.js-menu-dropdown.active')
+
+//   activeDropdown.classList.remove('active')
+//   }
+//   menu.addEventListener('mouseleave', mouseLeaveDrodpown)
+// })

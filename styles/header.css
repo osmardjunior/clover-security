@@ -7,6 +7,7 @@ header{
   border-bottom: 1px solid var(--line);
   background-color: var(--white);
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
@@ -31,7 +32,6 @@ header{
   grid-area: logo;
   padding-left: 7rem;
   background-color: var(--bg1);
-  border: 1px solid red;
 }
 
 .logo a{
@@ -82,7 +82,7 @@ nav.menu ul{
   align-items: center;
   margin: 0;
   padding: 0;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 nav.menu ul li a{
@@ -137,14 +137,28 @@ nav.menu ul{
 }
 
 
-
+ 
 
 /**** DROPDOWN ****/
-.menu-dropdown{
-  /* background-color: var(--white); */
-  background-color: lightgray;
+.overlay{
+  background-color: rgba(0, 0, 0, 0.281);
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  top: 14rem;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* .menu .js-menu-dropdown .menu-dropdown{
+  background-color: lightpink;
+  position: absolute;
+} */
+
+.js-menu-dropdown .menu-dropdown{
+  background-color: var(--white);
+  border: 1px solid red;
+  position: absolute;
+  /* top: 14rem; */
   left: 0;
   right: 0;
 
@@ -153,7 +167,7 @@ nav.menu ul{
   transition: all .2s;
 }
 
-.menu-dropdown:active{
+.js-menu-dropdown.active .menu-dropdown{
   opacity: 1;
   pointer-events: all;
 }
@@ -226,16 +240,6 @@ nav.menu ul{
   }
 }
 
-@media (max-width: 1150px){
-  /* .header.active{
-    grid-template-columns: 28rem 1fr 15rem;
-  } */
-
-  /* nav.menu{
-    padding-left: 2rem;
-  } */
-}
-
 @media(max-width: 1060px){
   .header{
     grid-template-columns: 28rem 1fr 12.2rem;
@@ -248,7 +252,7 @@ nav.menu ul{
 @media (max-width: 950px){
 
   /* DROPDOWN */
-  .menu-dropdown{
+  /* .menu-dropdown{
     bottom: 0;
     top: 11.1rem;
     gap: 4rem;
@@ -269,7 +273,7 @@ nav.menu ul{
 
   .dropdown-txt{
     max-width: 32.7rem;
-  }
+  } */
 
   nav.menu ul li a::after{
     bottom: -2rem;
@@ -297,11 +301,6 @@ nav.menu ul{
                           "nav nav nav";
   }
 
-  /* .login button.btn2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
   .login button.btn2 a{
     font-size: 1.3rem;
   }
