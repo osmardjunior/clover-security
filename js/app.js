@@ -19,7 +19,7 @@ window.addEventListener('scroll', menuHandler)
 window.addEventListener('resize', menuHandler)
 
 
-// OPEN CLOSE HEADER DROPDOWN
+// OPEN HEADER DROPDOWN
 const allHeaderLinks = document.querySelectorAll('.js-menu-dropdown')
 const allMenuDropdown = document.querySelectorAll('.menu-dropdown')
 const overlay = document.querySelector('.overlay')
@@ -30,7 +30,7 @@ allHeaderLinks.forEach((item) => {
   function dropdownHandler(event){
     const activeDropdown = document.querySelector('.js-menu-dropdown.active')
 
-    event.preventDefault()
+    // event.preventDefault()
     
     allMenuDropdown.forEach((menu) => {
       if (window.scrollY > 200 && window.innerWidth > 1200) {
@@ -46,27 +46,16 @@ allHeaderLinks.forEach((item) => {
     })
     
     overlay.style.display = 'block'
-    preventScroll.classList.add('noscroll')
-
-    // allHeaderLinks.forEach((menudropdown) => {
-    //   if(menudropdown.classList.contains('active')){
-    //     overlay.style.display = 'block'
-
-    //   } else{
-    //     overlay.style.display = 'none'
-    //   }
-    // })
-
+    preventScroll.classList.add('noscroll') 
     this.classList.add('active')
     activeDropdown.classList.remove('active')
   }
 
-  item.addEventListener('click', dropdownHandler)
+  item.addEventListener('mouseover', dropdownHandler)
 })
 
 
-
-// OPEN/CLOSE DROPDOWN ON MOUSE LEAVE
+// CLOSE DROPDOWN ON MOUSE LEAVE
 allMenuDropdown.forEach((menu) => {
   function mouseLeaveDrodpown(){
   const activeDropdown = document.querySelector('.js-menu-dropdown.active')
