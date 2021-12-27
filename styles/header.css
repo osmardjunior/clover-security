@@ -103,6 +103,10 @@ nav.menu ul li a::after{
   transition: .3s;
 }
 
+nav.menu ul li.active a::after{
+  width: 100%;
+}
+
 nav.menu ul li a:hover{
   color: var(--black);
 }
@@ -136,29 +140,26 @@ nav.menu ul{
   gap: 5.7rem;
 }
 
-
  
 
 /**** DROPDOWN ****/
-.overlay{
-  background-color: rgba(0, 0, 0, 0.281);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  z-index: 0;
+.no-scroll{
   overflow: hidden;
+  height: 100%;
 }
 
-/* .menu .js-menu-dropdown .menu-dropdown{
-  background-color: lightpink;
-  position: absolute;
-} */
+.overlay{
+  display: none;
+  /* background-color: rgba(0, 0, 0, 0.164); */
+  width: 100vw;
+  height: 100vh;
+}
 
 .js-menu-dropdown .menu-dropdown{
   background-color: var(--white);
   /* border: 1px solid red; */
   position: absolute;
-  top: 13.9rem;
+  top: 14rem;
   left: 0;
   right: 0;
 

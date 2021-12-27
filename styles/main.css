@@ -2,6 +2,13 @@ main{
   margin-top: 7.5rem;
 }
 
+main.noscroll{
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
 .clover-container{
   width: 100%;
   max-width: 119rem;
