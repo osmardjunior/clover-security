@@ -188,7 +188,7 @@
   max-width: 131.6rem;
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 3rem;
   padding: 0;
   margin: 0;
   pointer-events: all;
@@ -304,6 +304,7 @@ p.label{
   font-weight: 500;
   font-size: 1rem;
   color: var(--white);
+  line-height: 1rem;
   padding: 0.8rem 1.9rem;
   background-color: var(--green);
   display: inline;
@@ -518,7 +519,7 @@ p.see-below::before{
   margin-bottom: 7rem;
 }
 
-#managing.active .number-list .dot-list p{
+#managing.active .number-list .dot-list p:not(:last-child){
   padding-bottom: 1rem;
 }
 
@@ -529,7 +530,7 @@ p.see-below::before{
   font-weight: 500;
   position: absolute;
   left: -2.5rem;
-  top: 0;
+  top: 0.9rem;
   box-sizing: border-box;
 }
 
@@ -560,10 +561,14 @@ p.see-below::before{
 #faq .accordion-header{
   margin: 0;
 }
-
-/* #faq .accordion-button{
+#faq .accordion .accordion-item{
   border-bottom: 1px solid var(--line2);
-} */
+}
+
+#faq .accordion-button:focus {
+  border-color: none !important;
+  box-shadow: none;
+}
 
 #faq .accordion-button:not(.collapsed) {
   color: var(--black);
@@ -600,12 +605,14 @@ p.see-below::before{
   padding: 2.4rem 0rem 2.4rem 4.5rem;
 }
 
+
+
 #faq .accordion-button{
   background-color: transparent;
 }
 
 #faq .accordion-body{
-  border-bottom: 1px solid var(--line2);
+  /* border-bottom: 1px solid var(--line2); */
   padding-top: 0;
   padding-bottom: 2.2rem;
 }
