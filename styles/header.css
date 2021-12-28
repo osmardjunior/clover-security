@@ -388,7 +388,7 @@ nav.menu .menu-dropdown .top-dropdown_menu {
     display: none;
   }
 
-  nav.menu .nav-menu li a{
+  nav.menu .nav-menu li > a{
     font-size: 1.05rem;
   }
 
@@ -421,8 +421,9 @@ nav.menu .menu-dropdown .top-dropdown_menu {
   nav.menu .nav-menu ul{
     width: 100%;
     /* max-width: 32.7rem; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 0rem;
+    border: 1px solid red;
   }
 
   nav.menu .nav-menu li a img{
