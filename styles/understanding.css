@@ -67,7 +67,8 @@
 
 .header-tabs .clover-container{
   max-width: 131.6rem;
-  /* border: 1px solid red; */
+  padding: 2rem 0;
+  border: 1px solid red;
 }
 
 .header-carousel{
@@ -200,7 +201,7 @@
   background-color: var(--bg1);
   border-top: 1px solid var(--line2);
   border-bottom: 1px solid var(--line2);
-  padding: 7.4rem 0 7.9rem;
+  padding: 0rem 0 7.9rem;
 }
 .inner-tabs .clover-container{
   max-width: 131.6rem;

@@ -334,9 +334,53 @@
   }
 
   /* ========== USING PAGE || CONDUCTING GROUP ============ */
-  .inner-tabs section#conducting-group.active{
-    flex-direction: column;
+  .inner-tabs section#conducting-group.active .tab-img-area{
+    display: none;
   }
+
+  .inner-tab-highlight.nohighlight{
+    font-weight: 400;
+  }
+
+  #conducting-group.active .tab-text-area .link.nohighlight{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--black);
+    cursor: none;
+    text-decoration: none;
+  }
+
+  #conducting-group.active .number-list p.pseudo-six::before{
+    content: '6';
+  }
+
+  .tab-img-mobile .tab-img-group .label{
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  /* ========= USING PAGE || NETWORK SCANNING ============= */
+  #network.active .tab-img-area{
+    display: none;
+  }
+
+  .nodisplay{
+    display: none;
+  }
+
+  .label.nodisplay{
+    display: none;
+  }
+
+  p.nopseudo::before{
+    display: none;
+  }
+
+  /* ========= USING PAGE || COMPLETING SECURITY ========= */
+  #completing-security.active .tab-img-area{
+    display: none;
+  }
+
 
   /* ======== USING PAGE || FAQ ===================== */
   #faq .tab-text-area{
