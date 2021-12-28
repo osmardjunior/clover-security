@@ -31,6 +31,8 @@
 .s-using-content .clover-container{
   max-width: 91rem;
   text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .s-using-content .clover-container h1{
@@ -60,19 +62,14 @@
 
 
 /* ========== USING PAGE || HEADER SLIDER ========= */
-/* .header-tabs{
-  position: sticky;
-  top:
-} */
-
 .header-tabs .clover-container{
   max-width: 131.6rem;
   padding: 2rem 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .header-carousel{
-  height: 5.8rem;
+  height: 6.8rem;
   position: relative;
   overflow: hidden;
 }
@@ -124,6 +121,7 @@
 .header-slider .tab-name.active h4{
   color: var(--black);
   position: relative;
+  line-height: 2rem;
 }
 
 .header-slider .tab-name.active h4::after{
@@ -205,6 +203,7 @@
 }
 .inner-tabs .clover-container{
   max-width: 131.6rem;
+  padding-top: 2.3rem;
 }
 
 .inner-tabs-carousel{
@@ -455,6 +454,10 @@ section.active .tab-text-area_content h4 + .numer-list{
   content: '5.';
 }
 
+.number-list p.pseudo-six::before{
+  content: '6.';
+}
+
 .inner-tabs section#network.active .dot-list .inner-tab-list{
   display: inline-block;
 }
@@ -513,6 +516,21 @@ p.see-below::before{
 /* ========== USING PAGE || MANAGING =============== */
 #managing.active .tab-img-area > .tab-img-group{
   margin-bottom: 7rem;
+}
+
+#managing.active .number-list .dot-list p{
+  padding-bottom: 1rem;
+}
+
+#managing.active .number-list .dot-list p::before {
+  width: 5px;
+  height: 5px;
+  color: var(--green);
+  font-weight: 500;
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+  box-sizing: border-box;
 }
 
 /* ============ USING PAGE || FAQ =============== */
@@ -627,6 +645,7 @@ section#faq.active .accordion-body .dot-list p::before{
   max-width: 131.6rem;
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 .bottom-controls span{
@@ -1086,9 +1105,6 @@ main.articleFive ul.aside-articles_list li a.active::before{
 
 .breadcrumbs nav{
   width: 100%;
-  /* max-width: 57.4rem; */
-  /* margin-right: 33.05rem; */
-  /* padding-right: 33.05rem; */
 }
 
 .breadcrumb-item a{ 
@@ -1129,6 +1145,7 @@ main.articleFive ul.aside-articles_list li a.active::before{
   max-width: unset;
   /* padding: 0 4.9rem 10.8rem 4.9rem; */
   padding-left: 4.9rem;
+  padding-top: 0;
   margin: 0;
 }
 
@@ -1241,8 +1258,15 @@ main.articleThree .article-content p:not(:last-child){
 
 
 /* ########### USEFUL LINKS PAGE ############## */
-.s-hero-useful-links .s-hero-green-template_txt{
+.s-hero-useful-links{
   max-width: 84.6rem;
+  padding: 4.2rem 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.s-hero-useful-links .clover-container{
+  padding: 0 2.4rem;
 }
 
 .s-links{

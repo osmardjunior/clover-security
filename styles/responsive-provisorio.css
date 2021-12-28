@@ -665,18 +665,15 @@
   }
 
   /* ============ USING PAGE || TABS ============== */
-  .controls{
-    display: none;
+  .inner-tabs .mobile-controls{
+    border: 1px solid red;
+    /* position: sticky; */
+    /* top: 28%; */
+    /* z-index: 99; */
   }
 
-  .mobile-controls{
-    display: inline-block;
-    width: 100%;
+  .inner-tabs .mobile-controls .clover-container{
     display: flex;
-    justify-content: space-between;
-    position: sticky;
-    top: 28%;
-    z-index: 99;
   }
 
   /* ========== ARTICLES PAGE || BREADCRUMBS ========== */

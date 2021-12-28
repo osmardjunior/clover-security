@@ -392,6 +392,11 @@
     display: none;
   }
 
+  /* ========== USING PAGE || MANAGING =================== */
+  #managing.active .tab-img-area{
+    display: none;
+  }
+
 
   /* ======== USING PAGE || FAQ ===================== */
   #faq .tab-text-area{
@@ -720,18 +725,41 @@
   }
 
   /* ============ USING PAGE || TABS ============== */
-  .controls{
+  .inner-tabs {
+    padding-top: 0;
+  }
+
+  .inner-tabs .clover-container{
+    padding-top: 0;
+  }
+
+  .bottom-controls{
     display: none;
   }
 
-  .mobile-controls{
+  .inner-tabs .mobile-controls{
     display: inline-block;
     width: 100%;
+    position: sticky;
+    top: 11.6%;
+    z-index: 99;
+  }
+
+  .inner-tabs .mobile-controls{
+    background-color: var(--white);
+  }
+
+  .inner-tabs .mobile-controls .clover-container{
     display: flex;
     justify-content: space-between;
-    position: sticky;
-    top: 28%;
-    z-index: 99;
+    align-items: center;
+    padding: 1.8rem 0;
+  }
+
+  .inner-tabs .mobile-controls .clover-container span{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--green);
   }
 
   /* ========== ARTICLES PAGE || BREADCRUMBS ========== */

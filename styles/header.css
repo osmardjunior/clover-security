@@ -106,7 +106,7 @@ nav.menu .nav-menu  li.active > a::after{
   width: 100%;
 }
 
-nav.menu .nav-menu li a:hover{
+nav.menu .nav-menu li > a:hover{
   color: var(--black);
 }
 
@@ -198,8 +198,13 @@ nav.menu .nav-menu{
 
 .dropdown-txt h3 a{
   font-weight: 300;
-  text-decoration: underline;
   font-size: 2.4rem;
+  text-decoration: none;
+  color: var(--green);
+}
+
+.dropdown-txt h3 a:hover{
+  text-decoration: underline;
 }
 
 .dropdown-txt h3 a:after{
@@ -222,14 +227,18 @@ nav.menu .nav-menu{
   gap: 2.9rem;
 }
 
-.menu-dropdown nav .top-dropdown_menu li a{
+.menu-dropdown nav .top-dropdown_menu li > a{
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 3rem;
   color: var(--black);
 }
 
-.menu-dropdown nav .top-dropdown_menu li a::after{
+.menu-dropdown nav .top-dropdown_menu li > a:hover{
+  text-decoration: underline;
+}
+
+.menu-dropdown nav .top-dropdown_menu li > a::after{
   display: none;
 }
 
