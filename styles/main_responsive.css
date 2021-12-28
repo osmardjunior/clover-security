@@ -381,6 +381,17 @@
     display: none;
   }
 
+  #completing-security.active .tab-img-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+  }
+
+  /* ========== USING PAGE || REVALIDATING ============== */
+  #revalidating.active .tab-img-area{
+    display: none;
+  }
+
 
   /* ======== USING PAGE || FAQ ===================== */
   #faq .tab-text-area{
