@@ -284,6 +284,21 @@ nav.menu .menu-dropdown .top-dropdown_menu {
   }
 }
 
+@media (max-width: 1290px){
+  .logo,
+  nav.menu{
+    padding-left: 2.4rem;
+  }
+
+  .phone a{
+    padding-right: 2.4rem;
+  }
+
+  .menu-dropdown .clover-container{
+    padding: 0 2.4rem;
+  }
+}
+
 @media (max-width: 1200px){
   .header.active{
     grid-template-columns: 30rem 1fr 15rem;
@@ -352,8 +367,8 @@ nav.menu .menu-dropdown .top-dropdown_menu {
   }
 
   nav.menu{
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
   }
 }
 

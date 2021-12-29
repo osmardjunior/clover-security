@@ -27,6 +27,10 @@ main{
   position: relative;
 }
 
+main.mobile{
+  margin-top: 11.1rem
+}
+
 .clover-container{
   width: 100%;
   max-width: 119rem;

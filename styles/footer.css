@@ -80,9 +80,10 @@ footer{
   }
 }
 
-@media(max-width: 1255px){
-  .terms-privacy{
-    gap: 2rem;
+@media(max-width: 1260px){
+  .footer-top .clover-container,
+  .footer-bottom .clover-container{
+    padding: 0rem 2.4rem;
   }
 }
 

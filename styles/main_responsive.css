@@ -34,8 +34,13 @@
   }
 
   /* ========= EDUCATION ARTICLES PAGE || ARTICLES ======== */
+  .s-hero-education-articles .clover-container{
+    padding: 0 1.6rem;
+  }
+
   .s-education-articles .clover-container{
     justify-content: space-around;
+    padding: 0 1.6rem;
   }
 
   /* ========== ARTICLE PAGE || PREVIOUS NEXT ====== */
@@ -99,6 +104,9 @@
 
 
 @media (max-width: 800px){
+  .clover-container{
+    padding: 0 1.6rem'
+  }
   .btn1 a{
     font-size: 1.3rem;
     line-height: 4.8rem;
@@ -522,6 +530,11 @@
     max-width: 100%;
     margin-inline: auto;
     margin-bottom: 6rem;
+  }
+
+
+  .s-education-articles .article.invisible{
+    display: none;
   }
 
   /* ========== USEFUL LINKS PAGE || LINKS =========== */

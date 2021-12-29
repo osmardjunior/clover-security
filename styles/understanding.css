@@ -836,17 +836,20 @@ section#faq.active .accordion-body .dot-list p::before{
   padding-bottom: 5.4rem;
 }
 
+
+
 .s-hero-green-template_txt{
   width: 100%;
   max-width: 32.6rem;
 }
 
-.s-hero-green-template_txt h1,
-.s-hero-green-template_txt p{
+.s-hero-green-template_txt h1{
   color: var(--font-title-hero);
+  font-weight: 400;
 }
 
 .s-hero-green-template_txt p{
+  color: var(--font-title-hero);
   font-size: 2.2rem;
   margin-top: 0.6rem;
   line-height: 2.6rem;
@@ -951,6 +954,10 @@ section#faq.active .accordion-body .dot-list p::before{
 
 
 /* ################ EDUCATION ARTICLES PAGE ############### */
+.s-hero-education-articles .clover-container{
+  padding: 0 2.4rem;
+}
+
 .s-hero-education-articles .s-hero-green-template_txt{
   max-width: 34.1rem;
 }
@@ -964,6 +971,8 @@ section#faq.active .accordion-body .dot-list p::before{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 2rem;
+  padding: 0 2.4rem;
 }
 
 .article{
