@@ -1026,8 +1026,8 @@ section#faq.active .accordion-body .dot-list p::before{
 }
 
 .s-hero-article-content .clover-container{
-  padding-left: 11rem;
-  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 } 
 
 .article-page-grid{
@@ -1144,7 +1144,7 @@ main.articleFive ul.aside-articles_list li a.active::before{
 
 .breadcrumbs .clover-container{
   margin-left: 0rem;
-  padding: 0 0 0 4.9rem;
+  padding: 0 0 0 2.4rem;
 }
 
 .breadcrumbs nav{
@@ -1188,9 +1188,8 @@ main.articleFive ul.aside-articles_list li a.active::before{
   /* max-width: 83.2rem; */
   max-width: unset;
   /* padding: 0 4.9rem 10.8rem 4.9rem; */
-  padding-left: 4.9rem;
+  padding-left: 2.4rem;
   padding-top: 0;
-  margin: 0;
 }
 
 .s-article-text .clover-container img{
@@ -1205,10 +1204,11 @@ main.articleFive ul.aside-articles_list li a.active::before{
   color: var(--green);
   margin-bottom: 1rem;
   font-size: 2.8rem;
+  margin-top: 4rem;
 }
 
-.article-content h2{
-  margin-top: 4rem;
+.article-content h2.nomargin{
+  margin-top: 0rem;
 }
 
 h2.no-margin-top{
@@ -1258,6 +1258,7 @@ main.articleThree .article-content p:not(:last-child){
 .previous-next .clover-container{
   border-top: 1.5px solid #EDEDED;
   padding: 2.4rem 0 17.1rem;
+  margin: 0;
   display: flex;
   justify-content: space-between;
 }

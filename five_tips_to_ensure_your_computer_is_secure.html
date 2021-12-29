@@ -41,7 +41,7 @@
           <li class="home">
             <a href="using_cloversecurity.html">HOME</a>
           </li>
-          <li class="js-menu-dropdown">
+          <li class="js-menu-dropdown js-menu-dropdown1">
             <a href="#">
               USING CLOVERSECURITY.COM
               <img src="./assets/svg/dropdown-icon.svg" alt="Dropdown icon">
@@ -78,7 +78,7 @@
               </div>
             </div>
           </li>
-          <li class="js-menu-dropdown">
+          <li class="js-menu-dropdown js-menu-dropdown2">
             <a href="#">
               UNDERSTANDING DATA SECURITY
               <img src="./assets/svg/dropdown-icon.svg" alt="Dropdown icon">
@@ -117,11 +117,10 @@
           <a href="">Log in</a>
         </button>
       </div>
-    </div>
-
-    
+    </div>  
   </header>
   <main>
+    <div class="overlay"></div>
     <!-- HERO -->
     <section class="s-hero-article-content s-hero-green-template">
       <div class="clover-container">
@@ -181,7 +180,7 @@
                 </div>
               </div>
 
-              <h2>1. Update</h2>
+              <h2 class="nomargin">1. Update</h2>
               <p>
                 1. Update If your operating system or software, such as Windows or Mac OSX asks that you update it, then
                 it is very important that you allow it to do so. The reason is that when developers of these important
@@ -251,36 +250,58 @@
 
 
   <footer>
-    <!-- FOOTER BOTTOM -->
+    <!-- FOOTER TOP -->
     <section class="footer-top">
       <div class="clover-container">
         <nav>
-          <div class="footer-nav">
-            <p>USING CLOVERSECURITY.COM</p>
-            <ul>
-              <li><a href="">Logging In And Registering</a></li>
-              <li><a href="">Completing Your Profile</a></li>
-              <li><a href="">Conducting A Network Scan</a></li>
-              <li><a href="">Conducting A Group Scan</a></li>
-              <li><a href="">Network Scanning FAQ</a></li>
-              <li><a href="">Completing Your Security Assessment</a></li>
-              <li><a href="">Revalidating If No Changes Have Occurred</a></li>
-              <li><a href="">Managing Your Profile And Adding Users</a></li>
-              <li><a href="">FAQs</a></li>
-            </ul>
+          <div class="accordion-footer">
+            <div class="accordion-footer_top js-accordion">
+              <p>
+                USING CLOVERSECURITY.COM 
+                <span>
+                  <img src="./assets/svg/dropdown-icon.svg" alt="Dropdown icon">
+                </span>
+              </p>
+            </div>
+
+            <div class="footer-nav">
+              <ul>
+                <li><a href="">Logging In And Registering</a></li>
+                <li><a href="">Completing Your Profile</a></li>
+                <li><a href="">Conducting A Network Scan</a></li>
+                <li><a href="">Conducting A Group Scan</a></li>
+                <li><a href="">Network Scanning FAQ</a></li>
+                <li><a href="">Completing Your Security Assessment</a></li>
+              </ul>
+              
+              <ul>
+                <li><a href="">Revalidating If No Changes Have Occurred</a></li>
+                <li><a href="">Managing Your Profile And Adding Users</a></li>
+                <li><a href="">FAQs</a></li>
+              </ul>
+            </div>
           </div>
 
-          <div class="footer-nav">
-            <p>UNDERSTANDING DATA SECURITY</p>
-            <ul>
-              <li><a href="">Education Videos</a></li>
-              <li><a href="">Education Articles</a></li>
-              <li><a href="">Useful Links</a></li>
-            </ul>
+          <div class="accordion-footer">
+            <div class="accordion-footer_top js-accordion">
+              <p>
+                UNDERSTANDING DATA SECURITY
+                <span>
+                  <img src="./assets/svg/dropdown-icon.svg" alt="Dropdown icon">
+                </span>
+              </p>
+            </div>
+
+            <div class="footer-nav">
+              <ul>
+                <li><a href="">Education Videos</a></li>
+                <li><a href="">Education Articles</a></li>
+                <li><a href="">Useful Links</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
-      </div>
-    </section>
+      </section>
 
     <!-- FOOTER BOTTOM -->
     <section class="footer-bottom">
@@ -291,6 +312,7 @@
           <a href="">Privacy Policy</a>
         </div>
       </section>
+    </div>
   </footer>
 
   <!-- ASIDE JS -->

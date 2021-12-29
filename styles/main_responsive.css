@@ -17,11 +17,6 @@
 }
 
 @media (max-width: 1150px){
-  /* ======= USING PAGE || CONDUCTING NETWORK ========= */
-  /* .inner-tabs section#conducting-network.active .tab-img-area{
-    margin-right: 2.5rem;
-  } */
-
   /* ========= INDEX UNDERSTANDING CLOVER ======= */
   .s-understanding .home_txt2{
     left: -2rem;
@@ -46,7 +41,6 @@
   /* ========== ARTICLE PAGE || PREVIOUS NEXT ====== */
   .previous-next .clover-container {
     padding-right: 0;
-    max-width: 46.2rem;
   }
 }
 
@@ -482,11 +476,6 @@
     margin-inline: auto;
   }
 
-  /* ====== VIDEOS PAGE || HERO */
-  /* .s-hero-green-template .clover-container{
-    padding: 0 1.6rem;
-  } */
-
   /* ========= VIDEOS PAGE || VIDEOS ======= */
   .s-videos{
     padding-top: 6rem;
@@ -552,6 +541,10 @@
   /* ============= ARTICLES PAGE || BREADCRUMBS */
   .breadcrumbs nav{
     padding-right: 0rem;
+  }
+
+  .breadcrumbs .clover-container{
+    padding: 0 1.6rem;
   }
 
   /* .breadcrumbs .clover-container{
@@ -637,7 +630,7 @@
   }
 
   .s-article-text > .clover-container{
-    /* padding: 0 1.6rem; */
+    padding: 0;
     max-width: 100%;
   }
 
