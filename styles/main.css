@@ -194,6 +194,8 @@ main.noscroll{
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .s-contact-us_box{
@@ -212,12 +214,13 @@ main.noscroll{
   font-weight: 300;
 }
 
-.s-contact-us_box p{
+.s-contact-us_box > p{
   margin-bottom: 2.9rem;
 }
 
 .phone-number p{
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .phone-number p a{

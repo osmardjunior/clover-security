@@ -714,6 +714,13 @@ section#faq.active .accordion-body .dot-list p::before{
   background-position: 0% 100%, 0% 100%, 61% 0%;
 }
 
+.s-hero-understanding .clover-container,
+.s-understand-security .clover-container,
+.s-understand_boxes .clover-container{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .s-hero-understanding_txt{
   padding: 8.5rem 0rem;
   width: 100%;

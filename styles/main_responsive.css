@@ -472,8 +472,12 @@
   }
 
   .s-understand-boxes_box{
-    max-width: 91.46%;
+    max-width: 100%;
     margin-inline: auto;
+  }
+
+  .s-understand-boxes_box img{
+    width: 100%;
   }
 
   /* ========= VIDEOS PAGE || VIDEOS ======= */
@@ -728,6 +732,19 @@
     flex-direction: column;
     align-items: center;
     gap: 5.8rem;
+  }
+
+  .s-contact-us_header h2{
+    font-size: 2.6rem;
+  }
+
+  .phone-number{
+    margin-bottom: 0;
+  }
+  
+  .phone-number p,
+  .phone-number p a{
+    font-size: 1.8rem;
   }
 
   /* ============ USING PAGE || TABS ============== */
