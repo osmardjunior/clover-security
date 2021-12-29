@@ -830,6 +830,11 @@ section#faq.active .accordion-body .dot-list p::before{
 
 
 /* ################### EDUCATION VIDEOS PAGE ############## */
+.s-hero-videos .clover-container,
+.s-videos .clover-container{
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .s-hero-green-template{
   background-color: var(--bg-hero);
   padding-top: 5.5rem;
