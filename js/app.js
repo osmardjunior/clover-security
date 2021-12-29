@@ -64,3 +64,20 @@ allMenuDropdown.forEach((menu) => {
   }
   menu.addEventListener('mouseout', mouseLeaveDrodpown)
 })
+
+// ACCORDION MOBILE FOOTER
+const accordionContent = document.querySelectorAll('.js-accordion')
+const allAccordions = document.querySelectorAll('.accordion-footer')
+
+accordionContent.forEach((item) => {
+    function accordionActive() {
+      // allAccordions.forEach((accordion) => {
+      //   accordion.classList.remove('active')
+      // })
+      
+      this.parentElement.classList.toggle('active')
+      
+    }
+
+    item.addEventListener('click', accordionActive)
+})
