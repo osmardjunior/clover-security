@@ -25,6 +25,7 @@
 main{
   margin-top: 14rem;
   position: relative;
+  height: auto;
 }
 
 main.mobile{

@@ -8,7 +8,10 @@
 }
 
 .s-hero-using .clover-container{
-  max-width: 131.6rem
+  max-width: 131.6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+
 }
 
 .s-hero-using_txt{
@@ -64,7 +67,8 @@
 /* ========== USING PAGE || HEADER SLIDER ========= */
 .header-tabs .clover-container{
   max-width: 131.6rem;
-  padding: 2rem 0;
+  padding: 0rem;
+  /* padding: 0 2rem; */
   /* border: 1px solid red; */
 }
 
@@ -203,7 +207,6 @@
 }
 .inner-tabs .clover-container{
   max-width: 131.6rem;
-  padding-top: 2.3rem;
 }
 
 .inner-tabs-carousel{
@@ -229,11 +232,11 @@
 }
 
 .tab-text-area_content h2{
-  margin-bottom: 0.3rem;
+  margin-bottom: 2.3rem;
 }
 
 .tab-text-area_content p{
-  margin: 1.5rem 0;  
+  margin: 2rem 0;  
   font-weight: 400;
 }
 
@@ -253,7 +256,7 @@
 
 .dot-list p{
   position: relative;
-  margin: 0;
+  margin: 2rem 0;
 }
 
 #logging .dot-list .number-list p::after,
@@ -364,7 +367,7 @@ p.label{
 #conducting-network .dot-list{
   margin-left: 5rem;
 }
-#conducting-network .dot-list p{
+#conducting-network .dot-list > p{
   margin: 1.5rem 0;
 }
 

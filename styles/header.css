@@ -1,6 +1,7 @@
 header{
   position: relative;
   width: 100%;
+  height: auto;
 }
 
 .header{
@@ -144,14 +145,15 @@ nav.menu .nav-menu{
 /**** DROPDOWN ****/
 .no-scroll{
   overflow: hidden;
-  height: 100%;
 }
 
 .overlay{
   display: none;
+  display: block;
   background-color: rgba(0, 0, 0, 0.164);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  
 }
 
 .js-menu-dropdown .menu-dropdown{

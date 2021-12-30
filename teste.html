@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+    }
+
+    header{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu > ul{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .menu > ul li{
+      margin-right: 30px;
+    }
+
+    .top-dropdown-menu{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .div1{
+      width: 100%;
+      height: 100vh;
+      background-color: red;
+    }
+
+    .div2{
+      width: 100%;
+      height: 100vh;
+      background-color: blue;
+    }
+
+    .div3{
+      width: 100%;
+      height: 100vh;
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <header class="header js-header">
+    <div class="logo">Logo</div>
+    <nav class="menu">
+      <ul class="nav-menu">
+        <li class="home">
+          <a href="">HOME</a>
+        </li>
+        <li class="js-menu-dropdown js-menu-dropdown1">
+          <a href="#">
+            OPEN DROPDOWN 1
+          </a>
+
+          <!-- DROPDOWN MENU 1 -->
+          <div class="menu-dropdown menu-dropdown1">
+            <div class="container">
+              <div class="top-dropdown_menu">
+                <nav>
+                  <ul class="top-dropdown_menu top-dropdown_menu_col1">
+                    <li><a href="">LINK</a></li>
+                    <li><a href="">LINK</a></li>
+                    <li><a href="">LINK</a></li>
+                    <li><a href="">LINK</a></li>
+                    <li><a href="">LINK</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="js-menu-dropdown js-menu-dropdown2">
+          <a href="#">
+            OPEN DROPDOWN 2
+          </a>
+          <div class="menu-dropdown menu-dropdown2">
+            <div class="container">
+              <div class="top-dropdown_menu">
+                <nav>
+                  <ul class=" top-dropdown_menu top-dropdown_menu_col1">
+                    <li><a href="">LINK</a></li>
+                    <li><a href="">LINK</a></li>
+                  </ul>
+                </nav>
+              </div> 
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="div1">div1</div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+  </main>
+</body>
+</html>
