@@ -207,7 +207,7 @@
   }
 
   .highlight p,
-  .highlight p a.link{
+  .highlight p span.link{
     font-size: 2rem;
   }
 
