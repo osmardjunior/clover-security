@@ -165,9 +165,9 @@ main.mobile{
 
 main.noscroll{
   overflow: hidden;
-  height: 100%;
   position: fixed;
   width: 100%;
+  max-height: 100%;
 }
 
 .clover-container{
@@ -376,7 +376,6 @@ nav.menu{
   grid-area: nav;
   padding-left: 7rem;
   padding-right: 1.6rem;
-  /* border: 1px solid blue; */
   /* border-bottom: 1px solid var(--line2); */
 }
 
@@ -386,7 +385,6 @@ nav.menu .nav-menu{
   align-items: center;
   margin: 0;
   padding: 0;
-  /* border: 1px solid green; */
 }
 
 nav.menu .nav-menu li > a{
@@ -429,7 +427,6 @@ nav.menu .nav-menu li.active a:hover::after{
 
 .header.active .logo{
   background-color: var(--white);
-  /* border: 1px solid red; */
 }
 
 .header.active .phone{
@@ -447,13 +444,13 @@ nav.menu .nav-menu{
  
 
 /**** DROPDOWN ****/
-.no-scroll{
+/* .no-scroll{
   overflow: hidden;
-}
+} */
 
 .overlay{
   display: none;
-  display: block;
+  /* display: block; */
   background-color: rgba(0, 0, 0, 0.164);
   width: 100%;
   height: 100%;
@@ -462,7 +459,6 @@ nav.menu .nav-menu{
 
 .js-menu-dropdown .menu-dropdown{
   background-color: var(--white);
-  /* border: 1px solid red; */
   position: absolute;
   top: 14rem;
   left: 0;
@@ -574,217 +570,6 @@ nav.menu .menu-dropdown .top-dropdown_menu {
 
 
 
-/********* RESPONSIVE *************/
-@media(max-width: 1345px){
-  .logo,
-  nav.menu{
-    padding-left: 4.9rem;
-  }
-
-  .phone a{
-    padding-right: 4.9rem;
-  }
-
-  .menu-dropdown .clover-container{
-    padding: 0 4.9rem;
-  }
-}
-
-@media (max-width: 1290px){
-  .logo,
-  nav.menu{
-    padding-left: 2.4rem;
-  }
-
-  .phone a{
-    padding-right: 2.4rem;
-  }
-
-  .menu-dropdown .clover-container{
-    padding: 0 2.4rem;
-  }
-}
-
-@media (max-width: 1200px){
-  .header.active{
-    grid-template-columns: 30rem 1fr 15rem;
-  }
-
-  nav.menu .nav-menu{
-    gap: 3rem;
-  }
-
-  .dropdown-txt{
-    margin-right: 2.5rem;
-  }
-}
-
-@media(max-width: 1060px){
-  .header{
-    grid-template-columns: 28rem 1fr 12.2rem;
-    grid-template-rows: 5.5rem 5.5rem;
-    grid-template-areas: "logo telephone login"
-                          "nav nav nav";
-  }
-
-  .top-dropdown_menu{
-    padding: 4.1rem 0rem 6.1rem;
-  }
-}
-
-@media (max-width: 950px){
-
-  .top-dropdown_menu{
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  .dropdown-txt {
-    max-width: 32.7rem;
-    margin: 0 0 4rem;
-  }
-
-  .dropdown-txt p{
-    margin-top: 1.7rem;
-  }
-
-  .dropdown-txt p{
-    margin: 0;
-  }
-
-  .menu-dropdown nav{
-    flex-direction: column;
-    gap: 2.9rem;
-  }
-
-  .menu-dropdown1 .top-dropdown_menu_col1,
-  .menu-dropdown1 .top-dropdown_menu_col2{
-    max-width: 100%;
-  }
-
-  nav.menu .nav-menu li a::after{
-    bottom: -2rem;
-  }
-}
-
-@media(max-width: 800px){
-  .logo{
-    padding-left: 1.6rem;
-  }
-
-  nav.menu{
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-  }
-}
-
-@media (max-width: 720px){
-  nav.menu{
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-  }
-
-  .menu-dropdown .clover-container{
-    padding: 0 1.6rem;
-  }
-}
-
-
-/***************/
-@media (max-width: 600px){
-  .header{
-    grid-template-columns: 24.7rem 1fr 9.2rem;
-    grid-template-rows: 5.5rem 5.5rem;
-    grid-template-areas: "logo telephone login"
-                          "nav nav nav";
-  }
-
-  .login button.btn2 a{
-    font-size: 1.3rem;
-  }
-
-  .phone a{
-    padding-right: 2.5rem;
-  }
-
-  nav.menu .nav-menu{
-    width: 100%;
-    justify-content: space-between;
-    gap: 1rem;
-    border: 1px solid red;
-  }
-
-  .home{
-    display: none;
-  }
-
-  nav.menu .nav-menu li > a{
-    font-size: 1.05rem;
-  }
-
-  /* DROPDOWN */
-  .dropdown-txt h3 a{
-    font-size: 1.8rem;
-  }
-
-  .menu-dropdown nav .top-dropdown_menu li a{
-    font-size: 1.8rem;
-  }
-}
-
-/***************/
-@media (max-width: 500px){
-  .header{
-    grid-template-columns: 25rem 1fr 9.2rem;
-  }
-
-  .phone a{
-    padding-right: 1.6rem;
-  }
-
-  .login{
-    width: 100%;
-    max-width: 9.2rem;
-    margin-left: auto;
-  }
-
-  nav.menu .nav-menu ul{
-    width: 100%;
-    /* max-width: 32.7rem; */
-    /* justify-content: space-between; */
-    gap: 0rem;
-    border: 1px solid red;
-  }
-
-  nav.menu .nav-menu li a img{
-    display: none;
-  }
-}
-
-/***************/
-@media (max-width: 412px){
-  .header{
-    grid-template-columns: 25rem 1fr 7.3rem;
-  }
-
-  .phone a{
-    padding-right: 1.1rem;
-  }
-
-  .login button.btn2 a {
-    font-size: 1rem;
-  } 
-}
-
-@media (max-width: 375px){
-  nav.menu .nav-menu li a::after{
-    bottom: -1rem;
-  }
-
-  nav.menu .nav-menu li a{
-    text-align: center;
-  }
-}
 
 
 
@@ -878,112 +663,11 @@ footer{
 }
 
 
-/********* RESPONSIVE **********/
-@media(max-width: 1345px){
-  .footer-top .clover-container,
-  .footer-bottom .clover-container{
-    padding: 0rem 4.9rem;
-  }
-}
 
-@media(max-width: 1260px){
-  .footer-top .clover-container,
-  .footer-bottom .clover-container{
-    padding: 0rem 2.4rem;
-  }
-}
 
-@media(max-width: 800px){
-  .footer-top .clover-container,
-  .footer-bottom .clover-container{
-    padding: 0rem 1.6rem;
-  }
-}
 
-@media (max-width: 700px){
-  .footer-bottom{
-    padding-top: 3.9rem;
-    padding-bottom: 2.6rem;
-  }
 
-  .footer-bottom .clover-container{
-    flex-direction: column;
-    gap: 3.2rem;
-  }
 
-  .terms-privacy{
-    gap: 3.4rem;
-  }
-}
-
-@media(max-width: 560px){
-  .footer-top .clover-container,
-  .footer-bottom .clover-container{
-    padding: 0rem;
-  }
-
-  .footer-top nav{
-    flex-direction: column;
-    padding: 0rem;
-    gap: 0;
-  }
-
-  .accordion-footer_top{
-    border-bottom: 1px solid var(--line);
-    cursor: pointer;
-  }
-
-  .accordion-footer{
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
-
-  .footer-top p{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-    line-height: 5.4rem;
-    margin-bottom: 0;
-  }
-
-  .footer-top p span{
-    display: inline-block;
-  }
-
-  .footer-nav{
-    display: flex;
-    gap: 1.5rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-  }
-
-  .footer-top ul{
-    padding: 3rem 0rem 4.5rem;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .footer-top ul li:not(:last-child) {
-    margin-bottom: 2.1rem;
-  }
-
-  .footer-bottom{
-    padding: 3.9rem 1.6rem 2.6rem;
-    flex-direction: column;
-    text-align: justify;
-    gap: 3.2rem;
-  }
-
-  /* ACCORDION */
-  .accordion-footer ul{
-    display: none;
-  }
-
-  .accordion-footer.active ul{
-    display: block;
-  }
-
-}
 
 
 
@@ -1256,7 +940,6 @@ footer{
   max-width: 131.6rem;
   padding-top: 0;
   padding-bottom: 0;
-
 }
 
 .s-hero-using_txt{
@@ -1313,8 +996,6 @@ footer{
 .header-tabs .clover-container{
   max-width: 131.6rem;
   padding: 0rem;
-  /* padding: 0 2rem; */
-  /* border: 1px solid red; */
 }
 
 .header-carousel{
@@ -1328,7 +1009,6 @@ footer{
   display: flex;
   width: 900%;
   transition: .3s;
-  /* border: 1px solid blue; */
 }
 
 .header-slider .tab-name{
@@ -1337,7 +1017,6 @@ footer{
   justify-content: center;
   align-items: center;
   padding: 0 4rem;
-  /* border: 1px solid green; */
 }
 
 .header-tabs-tablet .header-slider .tab-name{
@@ -1908,7 +1587,7 @@ section#faq.active .accordion-body .dot-list p::before{
 }
 
 .bottom-controls{
-  padding: 2.3rem 0 16.9rem;
+  padding: 2.3rem 2.4rem 16.9rem;
   background-color: var(--white);
 }
 
@@ -2506,7 +2185,6 @@ main.articleThree .article-content p:not(:last-child){
   max-width: 80.2rem;
   grid-area: next;
   padding: 0rem;
-  /* border: 1px solid red; */
   width: 100%;
 }
 
